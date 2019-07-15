@@ -1,0 +1,25 @@
+@tailwind utilities;
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+
+.menu-border-right::after {
+  content: '';
+  height: 60%;
+  width: 1px;
+  position: absolute;
+  right: 0;
+  top: 20%;
+  background-color: #CCC ;
+}
+
+.header-underline {
+    content: '';
+    height: 1px;
+    width: 25%;
+    background-color: #ccccccd6;
+}

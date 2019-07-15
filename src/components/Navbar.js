@@ -39,7 +39,7 @@ const Navbar = class extends React.Component {
         role="navigation"
         aria-label="main-navigation"
       >
-        <div className="container">
+        <div className="">
           <div className="navbar-brand">
             {/* Hamburger menu */}
             <div
@@ -56,20 +56,20 @@ const Navbar = class extends React.Component {
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
-            <div className="navbar-end has-text-centered">
-              <Link className="navbar-item menu-border-right" to="/about">
+            <div className="flex justify-end">
+              <Link className="relative hover:text-blue-500 p-4 menu-border-right" to="/about">
                 About
               </Link>
-              <Link className="navbar-item menu-border-right" to="/products">
+              <Link className="relative hover:text-blue-500 p-4 menu-border-right" to="/products">
                 Products
               </Link>
-              <Link className="navbar-item menu-border-right" to="/blog">
+              <Link className="relative hover:text-blue-500 p-4 menu-border-right" to="/blog">
                 Blog
               </Link>
-              <Link className="navbar-item menu-border-right" to="/contact">
+              <Link className="relative hover:text-blue-500 p-4 menu-border-right" to="/contact">
                 Contact
               </Link>
-              <Link className="navbar-item" to="/contact/examples">
+              <Link className="relative hover:text-blue-500 p-4" to="/contact/examples">
                 Form Examples
               </Link>
             </div>
