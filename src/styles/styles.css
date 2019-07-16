@@ -5,21 +5,104 @@
 
 @tailwind utilities;
 
+@responsive {
+    .menu-border-mobile::after {
+        display: none;
+    }
 
+    .menu-border::after {
+        display: block; 
+    }
+
+    .navbar-menu {
+        display: flex !important;
+        background-color: white;
+        top: 54px;
+        right: 4px;
+        box-shadow: 0px 3px 2px 4px #2525251c;
+        border-radius: 1px;
+    }
+}
+
+.is-active  .mdm\:h-0{
+    height: 240px;
+}
+
+.mdm\:navbar-menu .mdm\:h-0 {
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    -webkit-transition-duration: 86ms;
+    transition-duration: 86ms;
+    -webkit-transition-property: height, -webkit-transform;
+    transition-property: height, -webkit-transform;
+    transition-property: height, transform;
+    transition-property: height, transform, -webkit-transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
 
 .menu-border-right::after {
   content: '';
-  height: 60%;
+  height: 44%;
   width: 1px;
   position: absolute;
   right: 0;
-  top: 20%;
-  background-color: #CCC ;
+  top: 28%;
+  background-color: #cccccc7a;
 }
+
+/*Fixa react bootstrap, ibland får man fatksitk använda egen byggda komponenter som inte liknar bootstraps egna
+typ som min egna nav här och nu*/
 
 .header-underline {
     content: '';
     height: 1px;
     width: 25%;
     background-color: #ccccccd6;
+    align-self: center;
+    margin: 0;
 }
+
+.navbar-burger {
+    color: #4a4a4a;
+    cursor: pointer;
+    display: block;
+    height: 3.25rem;
+    position: relative;
+    width: 3.25rem;
+    margin-left: auto;
+    right: 4px; }
+.navbar-burger span {
+    background-color: currentColor;
+    display: block;
+    height: 1px;
+    left: calc(50% - 8px);
+    position: absolute;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transition-duration: 86ms;
+            transition-duration: 86ms;
+    -webkit-transition-property: background-color, opacity, -webkit-transform;
+    transition-property: background-color, opacity, -webkit-transform;
+    transition-property: background-color, opacity, transform;
+    transition-property: background-color, opacity, transform, -webkit-transform;
+    -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+    width: 16px; }
+.navbar-burger span:nth-child(1) {
+top: calc(50% - 6px); }
+.navbar-burger span:nth-child(2) {
+top: calc(50% - 1px); }
+.navbar-burger span:nth-child(3) {
+top: calc(50% + 4px); }
+.navbar-burger:hover {
+background-color: rgba(0, 0, 0, 0.05); }
+.navbar-burger.is-active span:nth-child(1) {
+-webkit-transform: translateY(5px) rotate(45deg);
+        transform: translateY(5px) rotate(45deg); }
+.navbar-burger.is-active span:nth-child(2) {
+opacity: 0; }
+.navbar-burger.is-active span:nth-child(3) {
+-webkit-transform: translateY(-5px) rotate(-45deg);
+        transform: translateY(-5px) rotate(-45deg); }
+  

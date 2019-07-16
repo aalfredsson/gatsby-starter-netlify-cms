@@ -22,48 +22,53 @@ export const IndexPageTemplate = ({
                 style={{
                     backgroundImage: `url(${
                         !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-                        })`,
+                    })`,
                     backgroundPosition: `top left`,
                     backgroundAttachment: `fixed`,
                 }}>
                 <div className="flex flex-col text-center py-8 xl:py-48 lg:py-32 sm:py-16">
                     <h1
-                        className="text-4xl py-4"
+                        className="text-5xl py-4"
                         >
                         {title}
                     </h1>
                     <h3
-                        className="text-sm py-4">
+                        className="text-sm py-8">
                         {subheading}
                     </h3>
                     <hr className="header-underline"></hr>
-                    <div>
+                    <div className="py-2">
                         Go to play
                     </div>
                 </div>
             </div>
-            <section className="section section--gradient">
+            <section>
+                <div>
+
+                </div>
+            </section>
+            <section className="flex justify-center">
                 <div className="container">
-                    <div className="section">
-                        <div className="columns">
-                            <div className="column is-10 is-offset-1">
-                                <div className="content">
-                                    <div className="content">
-                                        <div className="tile">
-                                            <h1 className="title">{mainpitch.title}</h1>
+                    <div className="">
+                        <div className="">
+                            <div className="">
+                                <div className="">
+                                    <div className="">
+                                        <div className="justify-center text-center pt-8">
+                                            <h1 className="text-4xl">{mainpitch.title}</h1>
                                         </div>
-                                        <div className="tile">
-                                            <h3 className="subtitle">{mainpitch.description}</h3>
+                                        <div className="justify-center text-center pt-4 pb-16 max-w-6xl">
+                                            <h3 className="">{mainpitch.description}</h3>
                                         </div>
                                     </div>
-                                    <div className="columns">
+                                    {/* <div className="columns">
                                         <div className="column is-12">
                                             <h3 className="has-text-weight-semibold is-size-2">
                                                 {heading}
                                             </h3>
                                             <p>{description}</p>
                                         </div>
-                                    </div>
+                                    </div> */}
                                     <Features gridItems={intro.blurbs} />
                                     <div className="columns">
                                         <div className="column is-12 has-text-centered">

@@ -26,7 +26,7 @@ const Navbar = class extends React.Component {
               navBarActiveClass: 'is-active',
             })
           : this.setState({
-              navBarActiveClass: '',
+              navBarActiveClass: 'not-active',
             })
       }
     )
@@ -35,12 +35,12 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-transparent"
+        className="justify-end flex "
         role="navigation"
         aria-label="main-navigation"
       >
         <div className="">
-          <div className="navbar-brand">
+          <div className="flex md:hidden">
             {/* Hamburger menu */}
             <div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
@@ -54,22 +54,21 @@ const Navbar = class extends React.Component {
           </div>
           <div
             id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
-          >
-            <div className="flex justify-end">
-              <Link className="relative hover:text-blue-500 p-4 menu-border-right" to="/about">
+            className={`mdm:navbar-menu mdm:absolute md:flex ${this.state.navBarActiveClass} `}>
+            <div className="justify-end mdm:h-0 overflow-hidden flex flex-col md:flex-row">
+              <Link className="relative hover:text-blue-500 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border" to="/about">
                 About
               </Link>
-              <Link className="relative hover:text-blue-500 p-4 menu-border-right" to="/products">
+              <Link className="relative hover:text-blue-500 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border" to="/products">
                 Products
               </Link>
-              <Link className="relative hover:text-blue-500 p-4 menu-border-right" to="/blog">
+              <Link className="relative hover:text-blue-500 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border" to="/blog">
                 Blog
               </Link>
-              <Link className="relative hover:text-blue-500 p-4 menu-border-right" to="/contact">
+              <Link className="relative hover:text-blue-500 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border" to="/contact">
                 Contact
               </Link>
-              <Link className="relative hover:text-blue-500 p-4" to="/contact/examples">
+              <Link className="relative hover:text-blue-500 p-3 lg:p-4" to="/contact/examples">
                 Form Examples
               </Link>
             </div>
