@@ -38,7 +38,7 @@ export const IndexPageTemplate = ({
                     </h3>
                     <hr className="header-underline"></hr>
                     <div className="py-2">
-                        Go to play
+                        Välkommen!
                     </div>
                 </div>
             </div>
@@ -47,18 +47,18 @@ export const IndexPageTemplate = ({
 
                 </div>
             </section>
-            <section className="flex justify-center">
+            <section className="flex justify-center px-3">
                 <div className="container">
                     <div className="">
                         <div className="">
                             <div className="">
                                 <div className="">
-                                    <div className="">
-                                        <div className="justify-center text-center pt-8">
+                                    <div className="mb-6 lg:mb-12">
+                                        <div className="text-center pt-8">
                                             <h1 className="text-4xl">{mainpitch.title}</h1>
                                         </div>
-                                        <div className="justify-center text-center pt-4 pb-16 max-w-6xl">
-                                            <h3 className="">{mainpitch.description}</h3>
+                                        <div className="flex justify-center text-center pt-4 pb-8">
+                                            <h3 className="max-w-4xl xl:max-w-6xl">{mainpitch.description}</h3>
                                         </div>
                                     </div>
                                     {/* <div className="columns">
@@ -70,19 +70,19 @@ export const IndexPageTemplate = ({
                                         </div>
                                     </div> */}
                                     <Features gridItems={intro.blurbs} />
-                                    <div className="columns">
-                                        <div className="column is-12 has-text-centered">
+                                    <div className="">
+                                        <div className="">
                                             <Link className="btn" to="/products">
                                                 See all products
                                             </Link>
                                         </div>
                                     </div>
-                                    <div className="column is-12">
-                                        <h3 className="has-text-weight-semibold is-size-2">
+                                    <div className="">
+                                        <h3 className="">
                                             Latest stories
                                         </h3>
                                         <BlogRoll />
-                                        <div className="column is-12 has-text-centered">
+                                        <div className="">
                                             <Link className="btn" to="/blog">
                                                 Read more
                                             </Link>

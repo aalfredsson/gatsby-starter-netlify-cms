@@ -644,6 +644,49 @@ video {
   border-radius: 1px;
 }
 
+.blurb-middle-item:nth-child(2) {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.index-sections::after {
+  content: '';
+  width: 50%;
+  height: 1px;
+  position: relative;
+  background-color: #9e9e9e2e;
+  left: 25%;
+}
+
+.blurb-heading {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 36px;
+  position: relative;
+  background-color: #2a62ffe0;
+  width: auto;
+  color: white;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.blurb-heading::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 40%;
+  border-top: 18px solid #2a62ffe0;
+  border-top-color: #2a62ffe0;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+}
+
+.blurb-heading span {
+  padding: 0px 2em;
+}
+
 .is-active  .mdm\:h-0{
   height: 240px;
 }
@@ -4819,82 +4862,6 @@ typ som min egna nav här och nu*/
   flex-grow: 1;
 }
 
-.flex-1 {
-  flex: 1 1 0%;
-}
-
-.flex-auto {
-  flex: 1 1 auto;
-}
-
-.flex-initial {
-  flex: 0 1 auto;
-}
-
-.flex-none {
-  flex: none;
-}
-
-.content-center {
-  align-content: center;
-}
-
-.content-start {
-  align-content: flex-start;
-}
-
-.content-end {
-  align-content: flex-end;
-}
-
-.content-between {
-  align-content: space-between;
-}
-
-.content-around {
-  align-content: space-around;
-}
-
-.justify-start {
-  justify-content: flex-start;
-}
-
-.justify-end {
-  justify-content: flex-end;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.justify-between {
-  justify-content: space-between;
-}
-
-.justify-around {
-  justify-content: space-around;
-}
-
-.self-auto {
-  align-self: auto;
-}
-
-.self-start {
-  align-self: flex-start;
-}
-
-.self-end {
-  align-self: flex-end;
-}
-
-.self-center {
-  align-self: center;
-}
-
-.self-stretch {
-  align-self: stretch;
-}
-
 .appearance-none {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -7653,6 +7620,82 @@ typ som min egna nav här och nu*/
   align-items: stretch;
 }
 
+.self-auto {
+  align-self: auto;
+}
+
+.self-start {
+  align-self: flex-start;
+}
+
+.self-end {
+  align-self: flex-end;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.self-stretch {
+  align-self: stretch;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.content-center {
+  align-content: center;
+}
+
+.content-start {
+  align-content: flex-start;
+}
+
+.content-end {
+  align-content: flex-end;
+}
+
+.content-between {
+  align-content: space-between;
+}
+
+.content-around {
+  align-content: space-around;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+.flex-auto {
+  flex: 1 1 auto;
+}
+
+.flex-initial {
+  flex: 0 1 auto;
+}
+
+.flex-none {
+  flex: none;
+}
+
 @media (max-width: 639px) {
   .smm\:menu-border-mobile::after {
     display: none;
@@ -7669,6 +7712,11 @@ typ som min egna nav här och nu*/
     right: 4px;
     box-shadow: 0px 3px 2px 4px #2525251c;
     border-radius: 1px;
+  }
+
+  .smm\:blurb-middle-item:nth-child(2) {
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 
   .smm\:z-0 {
@@ -11761,82 +11809,6 @@ typ som min egna nav här och nu*/
     flex-grow: 1;
   }
 
-  .smm\:flex-1 {
-    flex: 1 1 0%;
-  }
-
-  .smm\:flex-auto {
-    flex: 1 1 auto;
-  }
-
-  .smm\:flex-initial {
-    flex: 0 1 auto;
-  }
-
-  .smm\:flex-none {
-    flex: none;
-  }
-
-  .smm\:content-center {
-    align-content: center;
-  }
-
-  .smm\:content-start {
-    align-content: flex-start;
-  }
-
-  .smm\:content-end {
-    align-content: flex-end;
-  }
-
-  .smm\:content-between {
-    align-content: space-between;
-  }
-
-  .smm\:content-around {
-    align-content: space-around;
-  }
-
-  .smm\:justify-start {
-    justify-content: flex-start;
-  }
-
-  .smm\:justify-end {
-    justify-content: flex-end;
-  }
-
-  .smm\:justify-center {
-    justify-content: center;
-  }
-
-  .smm\:justify-between {
-    justify-content: space-between;
-  }
-
-  .smm\:justify-around {
-    justify-content: space-around;
-  }
-
-  .smm\:self-auto {
-    align-self: auto;
-  }
-
-  .smm\:self-start {
-    align-self: flex-start;
-  }
-
-  .smm\:self-end {
-    align-self: flex-end;
-  }
-
-  .smm\:self-center {
-    align-self: center;
-  }
-
-  .smm\:self-stretch {
-    align-self: stretch;
-  }
-
   .smm\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -14594,6 +14566,82 @@ typ som min egna nav här och nu*/
   .smm\:items-stretch {
     align-items: stretch;
   }
+
+  .smm\:self-auto {
+    align-self: auto;
+  }
+
+  .smm\:self-start {
+    align-self: flex-start;
+  }
+
+  .smm\:self-end {
+    align-self: flex-end;
+  }
+
+  .smm\:self-center {
+    align-self: center;
+  }
+
+  .smm\:self-stretch {
+    align-self: stretch;
+  }
+
+  .smm\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .smm\:justify-end {
+    justify-content: flex-end;
+  }
+
+  .smm\:justify-center {
+    justify-content: center;
+  }
+
+  .smm\:justify-between {
+    justify-content: space-between;
+  }
+
+  .smm\:justify-around {
+    justify-content: space-around;
+  }
+
+  .smm\:content-center {
+    align-content: center;
+  }
+
+  .smm\:content-start {
+    align-content: flex-start;
+  }
+
+  .smm\:content-end {
+    align-content: flex-end;
+  }
+
+  .smm\:content-between {
+    align-content: space-between;
+  }
+
+  .smm\:content-around {
+    align-content: space-around;
+  }
+
+  .smm\:flex-1 {
+    flex: 1 1 0%;
+  }
+
+  .smm\:flex-auto {
+    flex: 1 1 auto;
+  }
+
+  .smm\:flex-initial {
+    flex: 0 1 auto;
+  }
+
+  .smm\:flex-none {
+    flex: none;
+  }
 }
 
 @media (max-width: 767px) {
@@ -14612,6 +14660,11 @@ typ som min egna nav här och nu*/
     right: 4px;
     box-shadow: 0px 3px 2px 4px #2525251c;
     border-radius: 1px;
+  }
+
+  .mdm\:blurb-middle-item:nth-child(2) {
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 
   .mdm\:z-0 {
@@ -18704,82 +18757,6 @@ typ som min egna nav här och nu*/
     flex-grow: 1;
   }
 
-  .mdm\:flex-1 {
-    flex: 1 1 0%;
-  }
-
-  .mdm\:flex-auto {
-    flex: 1 1 auto;
-  }
-
-  .mdm\:flex-initial {
-    flex: 0 1 auto;
-  }
-
-  .mdm\:flex-none {
-    flex: none;
-  }
-
-  .mdm\:content-center {
-    align-content: center;
-  }
-
-  .mdm\:content-start {
-    align-content: flex-start;
-  }
-
-  .mdm\:content-end {
-    align-content: flex-end;
-  }
-
-  .mdm\:content-between {
-    align-content: space-between;
-  }
-
-  .mdm\:content-around {
-    align-content: space-around;
-  }
-
-  .mdm\:justify-start {
-    justify-content: flex-start;
-  }
-
-  .mdm\:justify-end {
-    justify-content: flex-end;
-  }
-
-  .mdm\:justify-center {
-    justify-content: center;
-  }
-
-  .mdm\:justify-between {
-    justify-content: space-between;
-  }
-
-  .mdm\:justify-around {
-    justify-content: space-around;
-  }
-
-  .mdm\:self-auto {
-    align-self: auto;
-  }
-
-  .mdm\:self-start {
-    align-self: flex-start;
-  }
-
-  .mdm\:self-end {
-    align-self: flex-end;
-  }
-
-  .mdm\:self-center {
-    align-self: center;
-  }
-
-  .mdm\:self-stretch {
-    align-self: stretch;
-  }
-
   .mdm\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -21537,6 +21514,82 @@ typ som min egna nav här och nu*/
   .mdm\:items-stretch {
     align-items: stretch;
   }
+
+  .mdm\:self-auto {
+    align-self: auto;
+  }
+
+  .mdm\:self-start {
+    align-self: flex-start;
+  }
+
+  .mdm\:self-end {
+    align-self: flex-end;
+  }
+
+  .mdm\:self-center {
+    align-self: center;
+  }
+
+  .mdm\:self-stretch {
+    align-self: stretch;
+  }
+
+  .mdm\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .mdm\:justify-end {
+    justify-content: flex-end;
+  }
+
+  .mdm\:justify-center {
+    justify-content: center;
+  }
+
+  .mdm\:justify-between {
+    justify-content: space-between;
+  }
+
+  .mdm\:justify-around {
+    justify-content: space-around;
+  }
+
+  .mdm\:content-center {
+    align-content: center;
+  }
+
+  .mdm\:content-start {
+    align-content: flex-start;
+  }
+
+  .mdm\:content-end {
+    align-content: flex-end;
+  }
+
+  .mdm\:content-between {
+    align-content: space-between;
+  }
+
+  .mdm\:content-around {
+    align-content: space-around;
+  }
+
+  .mdm\:flex-1 {
+    flex: 1 1 0%;
+  }
+
+  .mdm\:flex-auto {
+    flex: 1 1 auto;
+  }
+
+  .mdm\:flex-initial {
+    flex: 0 1 auto;
+  }
+
+  .mdm\:flex-none {
+    flex: none;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -21555,6 +21608,11 @@ typ som min egna nav här och nu*/
     right: 4px;
     box-shadow: 0px 3px 2px 4px #2525251c;
     border-radius: 1px;
+  }
+
+  .lgm\:blurb-middle-item:nth-child(2) {
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 
   .lgm\:z-0 {
@@ -25647,82 +25705,6 @@ typ som min egna nav här och nu*/
     flex-grow: 1;
   }
 
-  .lgm\:flex-1 {
-    flex: 1 1 0%;
-  }
-
-  .lgm\:flex-auto {
-    flex: 1 1 auto;
-  }
-
-  .lgm\:flex-initial {
-    flex: 0 1 auto;
-  }
-
-  .lgm\:flex-none {
-    flex: none;
-  }
-
-  .lgm\:content-center {
-    align-content: center;
-  }
-
-  .lgm\:content-start {
-    align-content: flex-start;
-  }
-
-  .lgm\:content-end {
-    align-content: flex-end;
-  }
-
-  .lgm\:content-between {
-    align-content: space-between;
-  }
-
-  .lgm\:content-around {
-    align-content: space-around;
-  }
-
-  .lgm\:justify-start {
-    justify-content: flex-start;
-  }
-
-  .lgm\:justify-end {
-    justify-content: flex-end;
-  }
-
-  .lgm\:justify-center {
-    justify-content: center;
-  }
-
-  .lgm\:justify-between {
-    justify-content: space-between;
-  }
-
-  .lgm\:justify-around {
-    justify-content: space-around;
-  }
-
-  .lgm\:self-auto {
-    align-self: auto;
-  }
-
-  .lgm\:self-start {
-    align-self: flex-start;
-  }
-
-  .lgm\:self-end {
-    align-self: flex-end;
-  }
-
-  .lgm\:self-center {
-    align-self: center;
-  }
-
-  .lgm\:self-stretch {
-    align-self: stretch;
-  }
-
   .lgm\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -28480,6 +28462,82 @@ typ som min egna nav här och nu*/
   .lgm\:items-stretch {
     align-items: stretch;
   }
+
+  .lgm\:self-auto {
+    align-self: auto;
+  }
+
+  .lgm\:self-start {
+    align-self: flex-start;
+  }
+
+  .lgm\:self-end {
+    align-self: flex-end;
+  }
+
+  .lgm\:self-center {
+    align-self: center;
+  }
+
+  .lgm\:self-stretch {
+    align-self: stretch;
+  }
+
+  .lgm\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .lgm\:justify-end {
+    justify-content: flex-end;
+  }
+
+  .lgm\:justify-center {
+    justify-content: center;
+  }
+
+  .lgm\:justify-between {
+    justify-content: space-between;
+  }
+
+  .lgm\:justify-around {
+    justify-content: space-around;
+  }
+
+  .lgm\:content-center {
+    align-content: center;
+  }
+
+  .lgm\:content-start {
+    align-content: flex-start;
+  }
+
+  .lgm\:content-end {
+    align-content: flex-end;
+  }
+
+  .lgm\:content-between {
+    align-content: space-between;
+  }
+
+  .lgm\:content-around {
+    align-content: space-around;
+  }
+
+  .lgm\:flex-1 {
+    flex: 1 1 0%;
+  }
+
+  .lgm\:flex-auto {
+    flex: 1 1 auto;
+  }
+
+  .lgm\:flex-initial {
+    flex: 0 1 auto;
+  }
+
+  .lgm\:flex-none {
+    flex: none;
+  }
 }
 
 @media (max-width: 1279px) {
@@ -28498,6 +28556,11 @@ typ som min egna nav här och nu*/
     right: 4px;
     box-shadow: 0px 3px 2px 4px #2525251c;
     border-radius: 1px;
+  }
+
+  .xlm\:blurb-middle-item:nth-child(2) {
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 
   .xlm\:z-0 {
@@ -32590,82 +32653,6 @@ typ som min egna nav här och nu*/
     flex-grow: 1;
   }
 
-  .xlm\:flex-1 {
-    flex: 1 1 0%;
-  }
-
-  .xlm\:flex-auto {
-    flex: 1 1 auto;
-  }
-
-  .xlm\:flex-initial {
-    flex: 0 1 auto;
-  }
-
-  .xlm\:flex-none {
-    flex: none;
-  }
-
-  .xlm\:content-center {
-    align-content: center;
-  }
-
-  .xlm\:content-start {
-    align-content: flex-start;
-  }
-
-  .xlm\:content-end {
-    align-content: flex-end;
-  }
-
-  .xlm\:content-between {
-    align-content: space-between;
-  }
-
-  .xlm\:content-around {
-    align-content: space-around;
-  }
-
-  .xlm\:justify-start {
-    justify-content: flex-start;
-  }
-
-  .xlm\:justify-end {
-    justify-content: flex-end;
-  }
-
-  .xlm\:justify-center {
-    justify-content: center;
-  }
-
-  .xlm\:justify-between {
-    justify-content: space-between;
-  }
-
-  .xlm\:justify-around {
-    justify-content: space-around;
-  }
-
-  .xlm\:self-auto {
-    align-self: auto;
-  }
-
-  .xlm\:self-start {
-    align-self: flex-start;
-  }
-
-  .xlm\:self-end {
-    align-self: flex-end;
-  }
-
-  .xlm\:self-center {
-    align-self: center;
-  }
-
-  .xlm\:self-stretch {
-    align-self: stretch;
-  }
-
   .xlm\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -35423,6 +35410,82 @@ typ som min egna nav här och nu*/
   .xlm\:items-stretch {
     align-items: stretch;
   }
+
+  .xlm\:self-auto {
+    align-self: auto;
+  }
+
+  .xlm\:self-start {
+    align-self: flex-start;
+  }
+
+  .xlm\:self-end {
+    align-self: flex-end;
+  }
+
+  .xlm\:self-center {
+    align-self: center;
+  }
+
+  .xlm\:self-stretch {
+    align-self: stretch;
+  }
+
+  .xlm\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .xlm\:justify-end {
+    justify-content: flex-end;
+  }
+
+  .xlm\:justify-center {
+    justify-content: center;
+  }
+
+  .xlm\:justify-between {
+    justify-content: space-between;
+  }
+
+  .xlm\:justify-around {
+    justify-content: space-around;
+  }
+
+  .xlm\:content-center {
+    align-content: center;
+  }
+
+  .xlm\:content-start {
+    align-content: flex-start;
+  }
+
+  .xlm\:content-end {
+    align-content: flex-end;
+  }
+
+  .xlm\:content-between {
+    align-content: space-between;
+  }
+
+  .xlm\:content-around {
+    align-content: space-around;
+  }
+
+  .xlm\:flex-1 {
+    flex: 1 1 0%;
+  }
+
+  .xlm\:flex-auto {
+    flex: 1 1 auto;
+  }
+
+  .xlm\:flex-initial {
+    flex: 0 1 auto;
+  }
+
+  .xlm\:flex-none {
+    flex: none;
+  }
 }
 
 @media (min-width: 639px) {
@@ -35441,6 +35504,11 @@ typ som min egna nav här och nu*/
     right: 4px;
     box-shadow: 0px 3px 2px 4px #2525251c;
     border-radius: 1px;
+  }
+
+  .sm\:blurb-middle-item:nth-child(2) {
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 
   .sm\:z-0 {
@@ -39533,82 +39601,6 @@ typ som min egna nav här och nu*/
     flex-grow: 1;
   }
 
-  .sm\:flex-1 {
-    flex: 1 1 0%;
-  }
-
-  .sm\:flex-auto {
-    flex: 1 1 auto;
-  }
-
-  .sm\:flex-initial {
-    flex: 0 1 auto;
-  }
-
-  .sm\:flex-none {
-    flex: none;
-  }
-
-  .sm\:content-center {
-    align-content: center;
-  }
-
-  .sm\:content-start {
-    align-content: flex-start;
-  }
-
-  .sm\:content-end {
-    align-content: flex-end;
-  }
-
-  .sm\:content-between {
-    align-content: space-between;
-  }
-
-  .sm\:content-around {
-    align-content: space-around;
-  }
-
-  .sm\:justify-start {
-    justify-content: flex-start;
-  }
-
-  .sm\:justify-end {
-    justify-content: flex-end;
-  }
-
-  .sm\:justify-center {
-    justify-content: center;
-  }
-
-  .sm\:justify-between {
-    justify-content: space-between;
-  }
-
-  .sm\:justify-around {
-    justify-content: space-around;
-  }
-
-  .sm\:self-auto {
-    align-self: auto;
-  }
-
-  .sm\:self-start {
-    align-self: flex-start;
-  }
-
-  .sm\:self-end {
-    align-self: flex-end;
-  }
-
-  .sm\:self-center {
-    align-self: center;
-  }
-
-  .sm\:self-stretch {
-    align-self: stretch;
-  }
-
   .sm\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -42366,6 +42358,82 @@ typ som min egna nav här och nu*/
   .sm\:items-stretch {
     align-items: stretch;
   }
+
+  .sm\:self-auto {
+    align-self: auto;
+  }
+
+  .sm\:self-start {
+    align-self: flex-start;
+  }
+
+  .sm\:self-end {
+    align-self: flex-end;
+  }
+
+  .sm\:self-center {
+    align-self: center;
+  }
+
+  .sm\:self-stretch {
+    align-self: stretch;
+  }
+
+  .sm\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .sm\:justify-end {
+    justify-content: flex-end;
+  }
+
+  .sm\:justify-center {
+    justify-content: center;
+  }
+
+  .sm\:justify-between {
+    justify-content: space-between;
+  }
+
+  .sm\:justify-around {
+    justify-content: space-around;
+  }
+
+  .sm\:content-center {
+    align-content: center;
+  }
+
+  .sm\:content-start {
+    align-content: flex-start;
+  }
+
+  .sm\:content-end {
+    align-content: flex-end;
+  }
+
+  .sm\:content-between {
+    align-content: space-between;
+  }
+
+  .sm\:content-around {
+    align-content: space-around;
+  }
+
+  .sm\:flex-1 {
+    flex: 1 1 0%;
+  }
+
+  .sm\:flex-auto {
+    flex: 1 1 auto;
+  }
+
+  .sm\:flex-initial {
+    flex: 0 1 auto;
+  }
+
+  .sm\:flex-none {
+    flex: none;
+  }
 }
 
 @media (min-width: 767px) {
@@ -42384,6 +42452,11 @@ typ som min egna nav här och nu*/
     right: 4px;
     box-shadow: 0px 3px 2px 4px #2525251c;
     border-radius: 1px;
+  }
+
+  .md\:blurb-middle-item:nth-child(2) {
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 
   .md\:z-0 {
@@ -46476,82 +46549,6 @@ typ som min egna nav här och nu*/
     flex-grow: 1;
   }
 
-  .md\:flex-1 {
-    flex: 1 1 0%;
-  }
-
-  .md\:flex-auto {
-    flex: 1 1 auto;
-  }
-
-  .md\:flex-initial {
-    flex: 0 1 auto;
-  }
-
-  .md\:flex-none {
-    flex: none;
-  }
-
-  .md\:content-center {
-    align-content: center;
-  }
-
-  .md\:content-start {
-    align-content: flex-start;
-  }
-
-  .md\:content-end {
-    align-content: flex-end;
-  }
-
-  .md\:content-between {
-    align-content: space-between;
-  }
-
-  .md\:content-around {
-    align-content: space-around;
-  }
-
-  .md\:justify-start {
-    justify-content: flex-start;
-  }
-
-  .md\:justify-end {
-    justify-content: flex-end;
-  }
-
-  .md\:justify-center {
-    justify-content: center;
-  }
-
-  .md\:justify-between {
-    justify-content: space-between;
-  }
-
-  .md\:justify-around {
-    justify-content: space-around;
-  }
-
-  .md\:self-auto {
-    align-self: auto;
-  }
-
-  .md\:self-start {
-    align-self: flex-start;
-  }
-
-  .md\:self-end {
-    align-self: flex-end;
-  }
-
-  .md\:self-center {
-    align-self: center;
-  }
-
-  .md\:self-stretch {
-    align-self: stretch;
-  }
-
   .md\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -49309,6 +49306,82 @@ typ som min egna nav här och nu*/
   .md\:items-stretch {
     align-items: stretch;
   }
+
+  .md\:self-auto {
+    align-self: auto;
+  }
+
+  .md\:self-start {
+    align-self: flex-start;
+  }
+
+  .md\:self-end {
+    align-self: flex-end;
+  }
+
+  .md\:self-center {
+    align-self: center;
+  }
+
+  .md\:self-stretch {
+    align-self: stretch;
+  }
+
+  .md\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .md\:justify-end {
+    justify-content: flex-end;
+  }
+
+  .md\:justify-center {
+    justify-content: center;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+
+  .md\:justify-around {
+    justify-content: space-around;
+  }
+
+  .md\:content-center {
+    align-content: center;
+  }
+
+  .md\:content-start {
+    align-content: flex-start;
+  }
+
+  .md\:content-end {
+    align-content: flex-end;
+  }
+
+  .md\:content-between {
+    align-content: space-between;
+  }
+
+  .md\:content-around {
+    align-content: space-around;
+  }
+
+  .md\:flex-1 {
+    flex: 1 1 0%;
+  }
+
+  .md\:flex-auto {
+    flex: 1 1 auto;
+  }
+
+  .md\:flex-initial {
+    flex: 0 1 auto;
+  }
+
+  .md\:flex-none {
+    flex: none;
+  }
 }
 
 @media (min-width: 1023px) {
@@ -49327,6 +49400,11 @@ typ som min egna nav här och nu*/
     right: 4px;
     box-shadow: 0px 3px 2px 4px #2525251c;
     border-radius: 1px;
+  }
+
+  .lg\:blurb-middle-item:nth-child(2) {
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 
   .lg\:z-0 {
@@ -53419,82 +53497,6 @@ typ som min egna nav här och nu*/
     flex-grow: 1;
   }
 
-  .lg\:flex-1 {
-    flex: 1 1 0%;
-  }
-
-  .lg\:flex-auto {
-    flex: 1 1 auto;
-  }
-
-  .lg\:flex-initial {
-    flex: 0 1 auto;
-  }
-
-  .lg\:flex-none {
-    flex: none;
-  }
-
-  .lg\:content-center {
-    align-content: center;
-  }
-
-  .lg\:content-start {
-    align-content: flex-start;
-  }
-
-  .lg\:content-end {
-    align-content: flex-end;
-  }
-
-  .lg\:content-between {
-    align-content: space-between;
-  }
-
-  .lg\:content-around {
-    align-content: space-around;
-  }
-
-  .lg\:justify-start {
-    justify-content: flex-start;
-  }
-
-  .lg\:justify-end {
-    justify-content: flex-end;
-  }
-
-  .lg\:justify-center {
-    justify-content: center;
-  }
-
-  .lg\:justify-between {
-    justify-content: space-between;
-  }
-
-  .lg\:justify-around {
-    justify-content: space-around;
-  }
-
-  .lg\:self-auto {
-    align-self: auto;
-  }
-
-  .lg\:self-start {
-    align-self: flex-start;
-  }
-
-  .lg\:self-end {
-    align-self: flex-end;
-  }
-
-  .lg\:self-center {
-    align-self: center;
-  }
-
-  .lg\:self-stretch {
-    align-self: stretch;
-  }
-
   .lg\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -56252,6 +56254,82 @@ typ som min egna nav här och nu*/
   .lg\:items-stretch {
     align-items: stretch;
   }
+
+  .lg\:self-auto {
+    align-self: auto;
+  }
+
+  .lg\:self-start {
+    align-self: flex-start;
+  }
+
+  .lg\:self-end {
+    align-self: flex-end;
+  }
+
+  .lg\:self-center {
+    align-self: center;
+  }
+
+  .lg\:self-stretch {
+    align-self: stretch;
+  }
+
+  .lg\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .lg\:justify-end {
+    justify-content: flex-end;
+  }
+
+  .lg\:justify-center {
+    justify-content: center;
+  }
+
+  .lg\:justify-between {
+    justify-content: space-between;
+  }
+
+  .lg\:justify-around {
+    justify-content: space-around;
+  }
+
+  .lg\:content-center {
+    align-content: center;
+  }
+
+  .lg\:content-start {
+    align-content: flex-start;
+  }
+
+  .lg\:content-end {
+    align-content: flex-end;
+  }
+
+  .lg\:content-between {
+    align-content: space-between;
+  }
+
+  .lg\:content-around {
+    align-content: space-around;
+  }
+
+  .lg\:flex-1 {
+    flex: 1 1 0%;
+  }
+
+  .lg\:flex-auto {
+    flex: 1 1 auto;
+  }
+
+  .lg\:flex-initial {
+    flex: 0 1 auto;
+  }
+
+  .lg\:flex-none {
+    flex: none;
+  }
 }
 
 @media (min-width: 1279px) {
@@ -56270,6 +56348,11 @@ typ som min egna nav här och nu*/
     right: 4px;
     box-shadow: 0px 3px 2px 4px #2525251c;
     border-radius: 1px;
+  }
+
+  .xl\:blurb-middle-item:nth-child(2) {
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 
   .xl\:z-0 {
@@ -60362,82 +60445,6 @@ typ som min egna nav här och nu*/
     flex-grow: 1;
   }
 
-  .xl\:flex-1 {
-    flex: 1 1 0%;
-  }
-
-  .xl\:flex-auto {
-    flex: 1 1 auto;
-  }
-
-  .xl\:flex-initial {
-    flex: 0 1 auto;
-  }
-
-  .xl\:flex-none {
-    flex: none;
-  }
-
-  .xl\:content-center {
-    align-content: center;
-  }
-
-  .xl\:content-start {
-    align-content: flex-start;
-  }
-
-  .xl\:content-end {
-    align-content: flex-end;
-  }
-
-  .xl\:content-between {
-    align-content: space-between;
-  }
-
-  .xl\:content-around {
-    align-content: space-around;
-  }
-
-  .xl\:justify-start {
-    justify-content: flex-start;
-  }
-
-  .xl\:justify-end {
-    justify-content: flex-end;
-  }
-
-  .xl\:justify-center {
-    justify-content: center;
-  }
-
-  .xl\:justify-between {
-    justify-content: space-between;
-  }
-
-  .xl\:justify-around {
-    justify-content: space-around;
-  }
-
-  .xl\:self-auto {
-    align-self: auto;
-  }
-
-  .xl\:self-start {
-    align-self: flex-start;
-  }
-
-  .xl\:self-end {
-    align-self: flex-end;
-  }
-
-  .xl\:self-center {
-    align-self: center;
-  }
-
-  .xl\:self-stretch {
-    align-self: stretch;
-  }
-
   .xl\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -63194,6 +63201,82 @@ typ som min egna nav här och nu*/
 
   .xl\:items-stretch {
     align-items: stretch;
+  }
+
+  .xl\:self-auto {
+    align-self: auto;
+  }
+
+  .xl\:self-start {
+    align-self: flex-start;
+  }
+
+  .xl\:self-end {
+    align-self: flex-end;
+  }
+
+  .xl\:self-center {
+    align-self: center;
+  }
+
+  .xl\:self-stretch {
+    align-self: stretch;
+  }
+
+  .xl\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .xl\:justify-end {
+    justify-content: flex-end;
+  }
+
+  .xl\:justify-center {
+    justify-content: center;
+  }
+
+  .xl\:justify-between {
+    justify-content: space-between;
+  }
+
+  .xl\:justify-around {
+    justify-content: space-around;
+  }
+
+  .xl\:content-center {
+    align-content: center;
+  }
+
+  .xl\:content-start {
+    align-content: flex-start;
+  }
+
+  .xl\:content-end {
+    align-content: flex-end;
+  }
+
+  .xl\:content-between {
+    align-content: space-between;
+  }
+
+  .xl\:content-around {
+    align-content: space-around;
+  }
+
+  .xl\:flex-1 {
+    flex: 1 1 0%;
+  }
+
+  .xl\:flex-auto {
+    flex: 1 1 auto;
+  }
+
+  .xl\:flex-initial {
+    flex: 0 1 auto;
+  }
+
+  .xl\:flex-none {
+    flex: none;
   }
 }
   
