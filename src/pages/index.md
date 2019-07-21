@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: sGreat coffee with a conscience
+title: Great coffee with a conscience
 image: /img/home-jumbotron.jpg
 heading: Great coffee with a conscience
 subheading: Support sustainable farming while enjoying a cup
@@ -19,6 +19,8 @@ description: >-
 intro:
   blurbs:
     - image: /img/coffee.png
+      textheading: >
+        För medlemmar
       text: >
         We sell green and roasted coffee beans that are sourced directly from
         independent farmers and farm cooperatives. We’re proud to offer a
