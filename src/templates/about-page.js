@@ -51,7 +51,7 @@ const AboutPage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
-        firstImage={post.frontmatter.image}
+        firstImage={post.frontmatter.bodyimage}
       />
     </Layout>
   )
@@ -69,7 +69,7 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
-        image {
+        bodyimage {
             childImageSharp {
               fluid(maxWidth: 2048, quality: 100) {
                 ...GatsbyImageSharpFluid
