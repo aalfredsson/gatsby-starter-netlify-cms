@@ -4,23 +4,34 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const AboutPageTemplate = ({ title, content, contentComponent, firstImage }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <PageContent className="content" content={content} />
+    <section className="">
+        <h2 className="text-center text-2xl pb-12 pt-24 bg-page-header">
+            {title}
+        </h2>
+        <div className=" flex justify-center">
+            
+            <div className="container">
+            <div className="">
+                <div className="flex">
+                    <PageContent className="" content={content} />
+                    <div
+                        className="flex text-white justify-center pt-12"
+                        style={{
+                            backgroundImage: `url(${
+                                !!firstImage.childImageSharp ? firstImage.childImageSharp.fluid.src : firstImage
+                            })`,
+                            backgroundPosition: `top left`,
+                            backgroundAttachment: `fixed`,
+                        }}>
+                    </div>
+                </div>
             </div>
-          </div>
+            </div>
         </div>
-      </div>
     </section>
   )
 }
@@ -40,6 +51,7 @@ const AboutPage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
+        firstImage={post.frontmatter.image}
       />
     </Layout>
   )
@@ -57,6 +69,13 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
+        image {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
       }
     }
   }

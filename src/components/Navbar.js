@@ -9,7 +9,32 @@ const Navbar = class extends React.Component {
     this.state = {
       active: false,
       navBarActiveClass: '',
+      theposition: 0,
     }
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.listenToScroll)
+  }
+  
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.listenToScroll)
+  }
+  
+  listenToScroll = () => {
+    const winScroll =
+      document.body.scrollTop || document.documentElement.scrollTop
+  
+    const height =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight
+  
+    const scrolled = winScroll / height
+  
+    this.setState({
+      theposition: scrolled,
+    })
+    console.log(this.state.theposition);
   }
 
   toggleHamburger = () => {
@@ -33,11 +58,16 @@ const Navbar = class extends React.Component {
   }
 
   render() {
+      const alu = this.state.theposition === 0 ? 'top-nav' : 'scroll-nav'
     return (
       <nav
-        className="justify-end flex "
+        className={`${alu} justify-end flex`}
         role="navigation"
         aria-label="main-navigation"
+        style={{position: 'fixed',
+        right: '0',
+        width: '100%',
+        zIndex: '9999'}}
       >
         <div className="">
           <div className="flex md:hidden">

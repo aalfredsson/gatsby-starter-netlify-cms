@@ -19,7 +19,6 @@
         background-color: white;
         top: 54px;
         right: 4px;
-        box-shadow: 0px 3px 2px 4px #2525251c;
         border-radius: 1px;
     }
 
@@ -92,6 +91,27 @@
   right: 0;
   top: 28%;
   background-color: #cccccc7a;
+}
+
+.bg-page-header {
+    background-color: #2a89ffe0;
+    color: white;
+}
+
+.scroll-nav {
+    background-color: white;
+    color: black;
+    -webkit-transition: background-color 200ms ease-in-out;
+    -ms-transition: background-color 200ms ease-in-out;
+    transition: background-color 200ms ease-in-out;
+    box-shadow: 0px -5px 6px 5px rgba(0,0,0,0.1);
+}
+
+.top-nav {
+    color: white;
+    -webkit-transition: background-color 200ms ease-in-out;
+    -ms-transition: background-color 200ms ease-in-out;
+    transition: background-color 200ms ease-in-out;
 }
 
 /*Fixa react bootstrap, ibland får man fatksitk använda egen byggda komponenter som inte liknar bootstraps egna
