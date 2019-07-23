@@ -22,7 +22,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent, firstImage
                         className="flex text-white justify-center pt-12"
                         style={{
                             backgroundImage: `url(${
-                                !!firstImage.childImageSharp ? firstImage.childImageSharp.fluid.src : firstImage
+                                !!firstImage && !!firstImage.childImageSharp ? firstImage.childImageSharp.fluid.src : firstImage
                             })`,
                             backgroundPosition: `top left`,
                             backgroundAttachment: `fixed`,
