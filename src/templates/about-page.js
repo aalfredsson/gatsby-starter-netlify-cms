@@ -17,16 +17,10 @@ export const AboutPageTemplate = ({ title, content, contentComponent, firstImage
             <div className="container">
             <div className="">
                 <div className="flex">
-                    <PageContent className="" content={content} />
+                    <PageContent className="flex flex-col" content={content} />
                     <div
-                        className="flex text-white justify-center pt-12"
-                        style={{
-                            backgroundImage: `url(${
-                                !!firstImage && !!firstImage.childImageSharp ? firstImage.childImageSharp.fluid.src : firstImage
-                            })`,
-                            backgroundPosition: `top left`,
-                            backgroundAttachment: `fixed`,
-                        }}>
+                        className="flex text-white justify-center pt-12">
+                            <img src={!!firstImage && !!firstImage.childImageSharp ? firstImage.childImageSharp.fluid.src : firstImage}></img>
                     </div>
                 </div>
             </div>
@@ -71,7 +65,7 @@ export const aboutPageQuery = graphql`
         title
         bodyimage {
             childImageSharp {
-              fluid(maxWidth: 2048, quality: 100) {
+              fluid(maxWidth: 980, quality: 100) {
                 ...GatsbyImageSharpFluid
               }
             }
