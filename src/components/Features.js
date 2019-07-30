@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 const FeatureGrid = ({ gridItems }) => (
-    <div className="flex flex-col lg:flex-row mb-16">
+    <div className="flex flex-col lg:flex-row mb-16 container">
         {gridItems.slice(0, 3).map(item => (
             <div key={item.text} className="lgm:pb-12 flex-1 lg:blurb-middle-item">
                 <section className="flex flex-col">

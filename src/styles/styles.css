@@ -1,5 +1,14 @@
 @tailwind utilities;
 @tailwind base;
+h1 {
+    @apply text-2xl;
+}
+h2 {
+    @apply text-xl;
+}
+h3 {
+    @apply text-lg;
+}
 
 @tailwind components;
 
@@ -37,12 +46,16 @@
     left: 25%;
 }
 
+.bc-lightgrey {
+    background-color: #EDF1F4;
+}
+
 .blurb-heading {
     text-align: center;
     font-size: 22px;
     margin-bottom: 36px;
     position: relative;
-    background-color: #2a62ffe0;
+    background-color: #3296E1; /*#2a62ffe0*/
     width: auto;
     color: white;
     padding: 3px;
@@ -56,8 +69,8 @@
     position: absolute;
     top: 100%;
     left: 40%;
-    border-top: 18px solid #2a62ffe0;
-    border-top-color: #2a62ffe0;
+    border-top: 18px solid #3296E1; /*#2a62ffe0*/
+    border-top-color: #3296E1; /*#2a62ffe0*/
     border-left: 18px solid transparent;
     border-right: 18px solid transparent;
 }
@@ -94,7 +107,7 @@
 }
 
 .bg-page-header {
-    background-color: #2a89ffe0;
+    background-color: #3296E1; /*2a89ffe0*/
     color: white;
 }
 

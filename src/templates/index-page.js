@@ -47,18 +47,20 @@ export const IndexPageTemplate = ({
 
                 </div>
             </section>
-            <section className="flex justify-center px-3">
-                <div className="container">
+            <section className="flex justify-center">
+                <div className="flex-1">
                     <div className="">
                         <div className="">
                             <div className="">
                                 <div className="">
-                                    <div className="mb-6 lg:mb-12">
-                                        <div className="text-center pt-8">
-                                            <h1 className="text-4xl">{mainpitch.title}</h1>
-                                        </div>
-                                        <div className="flex justify-center text-center pt-4 pb-8">
-                                            <h3 className="max-w-4xl xl:max-w-6xl">{mainpitch.description}</h3>
+                                    <div className="flex justify-center px-3">
+                                        <div className="mb-6 lg:mb-12 container">
+                                            <div className="text-center pt-8">
+                                                <h1 className="text-4xl">{mainpitch.title}</h1>
+                                            </div>
+                                            <div className="flex justify-center text-center pt-4 pb-8">
+                                                <h3 className="max-w-4xl xl:max-w-6xl">{mainpitch.description}</h3>
+                                            </div>
                                         </div>
                                     </div>
                                     {/* <div className="columns">
@@ -69,23 +71,29 @@ export const IndexPageTemplate = ({
                                             <p>{description}</p>
                                         </div>
                                     </div> */}
-                                    <Features gridItems={intro.blurbs} />
-                                    <div className="">
-                                        <div className="">
-                                            <Link className="btn" to="/products">
-                                                See all products
-                                            </Link>
-                                        </div>
+                                    <div className="flex justify-center px-3">
+                                        <Features gridItems={intro.blurbs} />
                                     </div>
-                                    <div className="">
-                                        <h3 className="">
-                                            Latest stories
-                                        </h3>
-                                        <BlogRoll />
-                                        <div className="">
-                                            <Link className="btn" to="/blog">
-                                                Read more
-                                            </Link>
+                                    <div className="flex justify-center px-3">
+                                        <div className="container">
+                                            <div className="">
+                                                <Link className="btn" to="/products">
+                                                    See all products
+                                                </Link>
+                                            </div>
+                                        </div>  
+                                    </div>
+                                    <div className="flex justify-center px-3 bc-lightgrey">
+                                        <div className="container">
+                                            <h1 className="text-center py-12">
+                                                Latest stories
+                                            </h1>
+                                            <BlogRoll />
+                                            <div className="pt-4">
+                                                <Link className="btn" to="/blog">
+                                                    Read more
+                                                </Link>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

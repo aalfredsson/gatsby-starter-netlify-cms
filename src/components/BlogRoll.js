@@ -9,18 +9,35 @@ class BlogRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <div className="columns is-multiline">
+      <div className="flex ">
         {posts &&
           posts.map(({ node: post }) => (
-            <div className="is-parent column is-6" key={post.id}>
+            <div className="flex-1 mr-6" style={{boxShadow: '0px 0px 11px 0px rgba(0,0,0,0.1)', borderRadius: '2px', backgroundColor: '#FFFFFF'}} key={post.id}>
               <article
-                className={`blog-list-item tile is-child box notification ${
+                className={`blog-list-item tile is-child box notification p-8 ${
                   post.frontmatter.featuredpost ? 'is-featured' : ''
                 }`}
               >
-                <header>
-                  {post.frontmatter.featuredimage ? (
-                    <div className="featured-thumbnail">
+                <header className="pb-2">
+                  
+                  <p className="post-meta flex flex-col">
+                    <Link
+                      className=" font-semibold"
+                      to={post.fields.slug}
+                    >
+                      {post.frontmatter.title}
+                    </Link>
+                    <span className="text-sm italic">
+                        {post.frontmatter.date}
+                    </span>
+                  </p>
+                </header>
+                <p>
+                    <span>
+                        {post.excerpt}
+                    </span>
+                    {post.frontmatter.featuredimage ? (
+                    <div className="featured-thumbnail pt-2">
                       <PreviewCompatibleImage
                         imageInfo={{
                           image: post.frontmatter.featuredimage,
@@ -31,22 +48,6 @@ class BlogRoll extends React.Component {
                       />
                     </div>
                   ) : null}
-                  <p className="post-meta">
-                    <Link
-                      className="title has-text-primary is-size-4"
-                      to={post.fields.slug}
-                    >
-                      {post.frontmatter.title}
-                    </Link>
-                    <span> &bull; </span>
-                    <span className="subtitle is-size-5 is-block">
-                      {post.frontmatter.date}
-                    </span>
-                  </p>
-                </header>
-                <p>
-                  {post.excerpt}
-                  <br />
                   <br />
                   <Link className="button" to={post.fields.slug}>
                     Keep Reading →
@@ -78,7 +79,7 @@ export default () => (
         ) {
           edges {
             node {
-              excerpt(pruneLength: 400)
+              excerpt(pruneLength: 50)
               id
               fields {
                 slug
