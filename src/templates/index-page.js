@@ -48,7 +48,7 @@ export const IndexPageTemplate = ({
                 </div>
             </section>
             <section className="flex justify-center">
-                <div className="flex-1">
+                <div className="flex-1 max-w-full">
                     <div className="">
                         <div className="">
                             <div className="">
