@@ -16,7 +16,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent, firstImage
             
             <div className="container">
             <div className="">
-                <div className="flex pt-12">
+                <div className="flex-col md:flex-row pt-12 ">
                     <PageContent className="flex flex-col flex-1 px-8 justify-center" content={content} />
                     <div
                         className="flex text-white justify-center px-8 flex-1">
