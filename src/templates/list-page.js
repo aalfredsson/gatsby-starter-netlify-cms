@@ -2,20 +2,75 @@ import React from 'react';
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import SideNav from '../components/SideNav'
+import Helmet from 'react-helmet'
 import Content, { HTMLContent } from '../components/Content'
 
-const ListsPage = ( {data} ) => {
-    const { markdownRemark: post } = data;
-
+export const ListsPage = ({
+    content,
+    contentComponent,
+    description,
+    tags,
+    title,
+    helmet,
+  }) => {
+    const PageContent = contentComponent || Content
     return(
-      <div className="section">
-        <h2 className="title is-size-3 has-text-weight-bold is-bold-light">{post.frontmatter.title}</h2>
-        <p>{post.frontmatter.description}</p>
-      </div>
+    <section className="flex flex-col">
+        <h2 className="text-center text-2xl pb-12 pt-24 bg-page-header">{title}</h2>
+        <div className="flex justify-center pt-12">
+            <div className="container flex-row flex">
+                <div className="flex">
+                    <ul>
+                        <SideNav />
+                        
+                    </ul>
+                </div>
+                <div className="flex-1 text-center ">
+                    {helmet || ''}
+                    <p>{description}</p>
+                    <PageContent content={content} />
+                </div>
+            </div>
+        </div>
+    </section>
     );
 };
 
-export default ListsPage;
+ListsPage.propTypes = {
+    content: PropTypes.node.isRequired,
+    contentComponent: PropTypes.func,
+    description: PropTypes.string,
+    title: PropTypes.string,
+    helmet: PropTypes.object,
+  }
+
+const PagePost = ({ data }) => {
+    const { markdownRemark: post } = data
+  
+    return (
+      <Layout>
+        <ListsPage
+          content={post.html}
+          contentComponent={HTMLContent}
+          description={post.frontmatter.description}
+          helmet={
+            <Helmet titleTemplate="%s | Blog">
+              <title>{`${post.frontmatter.title}`}</title>
+              <meta
+                name="description"
+                content={`${post.frontmatter.description}`}
+              />
+            </Helmet>
+          }
+          tags={post.frontmatter.tags}
+          title={post.frontmatter.title}
+        />
+      </Layout>
+    )
+  }
+
+export default PagePost;
 
 export const ListsPageQuery = graphql`
 query ListsPage($id: String!) {

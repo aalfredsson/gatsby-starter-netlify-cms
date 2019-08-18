@@ -15,15 +15,15 @@ export const AboutPageTemplate = ({ title, content, contentComponent, firstImage
         <div className=" flex justify-center">
             
             <div className="container">
-            <div className="">
-                <div className="flex flex-col md:flex-row pt-12 ">
-                    <PageContent className="flex flex-col flex-1 px-8 justify-center" content={content} />
-                    <div
-                        className="flex text-white justify-center px-8 flex-1">
-                            <img src={!!firstImage && !!firstImage.childImageSharp ? firstImage.childImageSharp.fluid.src : firstImage}></img>
+                <div className="">
+                    <div className="flex flex-col md:flex-row pt-12 ">
+                        <PageContent className="flex flex-col flex-1 px-8 justify-center" content={content} />
+                        <div
+                            className="flex text-white justify-center px-8 flex-1">
+                                <img src={!!firstImage && !!firstImage.childImageSharp ? firstImage.childImageSharp.fluid.src : firstImage}></img>
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
         </div>
     </section>
