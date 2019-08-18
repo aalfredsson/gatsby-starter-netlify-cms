@@ -16,8 +16,9 @@ class SideNav extends React.Component {
                 <Link
                     className=" font-semibold"
                     to={post.fields.slug}
-                />
-                {post.frontmatter.menuitem}
+                >
+                    {post.frontmatter.menuitem}
+                </Link>
           </li>
         ))}
       </div>
