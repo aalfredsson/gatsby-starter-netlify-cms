@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
+title: BRF Sandbacken Malmö
 image: /img/home-jumbotron.jpg
-heading: Great coffee with a consciences
-subheading: Support sustainable farming while enjoying a cup
+heading: BRF Sandbacken Malmö
+subheading: 'En hemtrevlig förening i mysigt område i Malmö '
 mainpitch:
   title: Why Kaldi
   description: >
