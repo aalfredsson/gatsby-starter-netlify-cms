@@ -87,19 +87,19 @@ const Navbar = class extends React.Component {
             className={`mdm:navbar-menu mdm:absolute md:flex ${this.state.navBarActiveClass} `}>
             <div className="justify-end mdm:h-0 overflow-hidden flex flex-col md:flex-row">
               <Link className="relative hover:text-blue-500 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border" to="/about">
-                About
+                Om Föreningen
               </Link>
               <Link className="relative hover:text-blue-500 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border" to="/products">
-                Products
+                Bo i BRF
               </Link>
               <Link className="relative hover:text-blue-500 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border" to="/blog">
-                Blog
+                Anslagstavla
               </Link>
               <Link className="relative hover:text-blue-500 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border" to="/contact">
-                Contact
+                Närområde
               </Link>
               <Link className="relative hover:text-blue-500 p-3 lg:p-4" to="/contact/examples">
-                Form Examples
+                Tvätt
               </Link>
             </div>
           </div>
