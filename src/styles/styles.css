@@ -26,15 +26,40 @@ h3 {
     .navbar-menu {
         display: flex !important;
         background-color: white;
-        top: 54px;
-        right: 4px;
+        top: 0px;
+        right: 0px;
         border-radius: 1px;
+        transform: translate3d(100%, 0, 0);
+        height: 100vh;
+        box-shadow: 4px 0px 11px 0px rgba(0,0,0,0.24);
     }
 
     .blurb-middle-item:nth-child(2) {
         padding-right: 2rem;
         padding-left: 2rem;
     }
+
+    .scroll-nav {
+        background-color: white;
+        color: black;
+        -webkit-transition: background-color 200ms ease-in-out;
+        -ms-transition: background-color 200ms ease-in-out;
+        transition: background-color 200ms ease-in-out;
+        box-shadow: 0px -5px 6px 5px rgba(0,0,0,0.1);
+    }
+
+    .top-nav {
+        color: white;
+        -webkit-transition: background-color 200ms ease-in-out;
+        -ms-transition: background-color 200ms ease-in-out;
+        transition: background-color 200ms ease-in-out;
+    }
+
+    .menu-hover:hover {
+        transition: 44ms linear;
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+
 }
 
 .index-sections::after {
@@ -62,6 +87,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-self: center;
+    z-index: -1;
 }
 
 .blurb-heading::after {
@@ -79,8 +105,21 @@ h3 {
     padding: 0px 2em;
 }
 
-.is-active  .mdm\:h-0{
-    height: 240px;
+.mdm\:navbar-menu {
+    -webkit-transform-origin: right;
+    transform-origin: right;
+    -webkit-transition-duration: 200ms;
+    transition-duration: 200ms;
+    -webkit-transition-property: transform, -webkit-transform;
+    transition-property: transform, -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.is-active.mdm\:navbar-menu{
+    transform: translate3d(0%, 0, 0);
 }
 
 .mdm\:navbar-menu .mdm\:h-0 {
@@ -111,21 +150,6 @@ h3 {
     color: white;
 }
 
-.scroll-nav {
-    background-color: white;
-    color: black;
-    -webkit-transition: background-color 200ms ease-in-out;
-    -ms-transition: background-color 200ms ease-in-out;
-    transition: background-color 200ms ease-in-out;
-    box-shadow: 0px -5px 6px 5px rgba(0,0,0,0.1);
-}
-
-.top-nav {
-    color: white;
-    -webkit-transition: background-color 200ms ease-in-out;
-    -ms-transition: background-color 200ms ease-in-out;
-    transition: background-color 200ms ease-in-out;
-}
 
 /*Fixa react bootstrap, ibland får man fatksitk använda egen byggda komponenter som inte liknar bootstraps egna
 typ som min egna nav här och nu*/
@@ -146,8 +170,7 @@ typ som min egna nav här och nu*/
     height: 3.25rem;
     position: relative;
     width: 3.25rem;
-    margin-left: auto;
-    right: 4px; }
+    margin-left: auto; }
 .navbar-burger span {
     background-color: currentColor;
     display: block;

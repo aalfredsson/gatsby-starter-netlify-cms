@@ -84,7 +84,7 @@ export const IndexPageTemplate = ({
                                         </div>  
                                     </div>
                                     <div className="flex justify-center px-3 bc-lightgrey">
-                                        <div className="container">
+                                        <div className="container mdm:px-4">
                                             <h1 className="text-center py-12">
                                                 Latest stories
                                             </h1>

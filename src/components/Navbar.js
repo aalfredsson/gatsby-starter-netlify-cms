@@ -10,7 +10,10 @@ const Navbar = class extends React.Component {
       active: false,
       navBarActiveClass: '',
       theposition: 0,
+      isHovered: false,
+      navActive: '',
     }
+    this.handleHover = this.handleHover.bind(this);
   }
 
   componentDidMount() {
@@ -37,6 +40,26 @@ const Navbar = class extends React.Component {
     console.log(this.state.theposition);
   }
 
+  handleHover(){
+    this.setState(
+        {
+            isHovered: !this.state.isHovered,
+        },
+        // after state has been updated,
+        () => {
+          // set the class in state for the navbar accordingly
+          this.state.isHovered
+            ? this.setState({
+                navActive: 'is-active',
+              })
+            : this.setState({
+                navActive: 'not-active',
+              })
+        }
+      )
+   
+}
+
   toggleHamburger = () => {
     // toggle the active boolean in the state
     this.setState(
@@ -61,19 +84,24 @@ const Navbar = class extends React.Component {
       const alu = this.state.theposition === 0 ? 'top-nav' : 'scroll-nav'
     return (
       <nav
-        className={`${alu} justify-end flex`}
+        className={` md:${alu} flex md:fixed`}
         role="navigation"
         aria-label="main-navigation"
-        style={{position: 'fixed',
+        style={{
         right: '0',
         width: '100%',
-        zIndex: '9999'}}
+        zIndex: '999'}}
       >
-        <div className="">
-          <div className="flex md:hidden">
+        <div className="flex flex-grow justify-around">
+            <div className="flex mdm:hidden">
+                <Link className="relative hover:text-blue-500 p-3 lg:p-4" to="/">
+                    <h2>BRF Sandbacken</h2>
+                </Link>
+            </div>
+          <div className="flex md:hidden fixed right-0" style={{zIndex: '9999'}}>
             {/* Hamburger menu */}
             <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
+              className={`navbar-burger menu-hover burger ${this.state.navBarActiveClass}`}
               data-target="navMenu"
               onClick={() => this.toggleHamburger()}
             >
@@ -84,23 +112,26 @@ const Navbar = class extends React.Component {
           </div>
           <div
             id="navMenu"
-            className={`mdm:navbar-menu mdm:absolute md:flex ${this.state.navBarActiveClass} `}>
-            <div className="justify-end mdm:h-0 overflow-hidden flex flex-col md:flex-row">
-              <Link className="relative hover:text-blue-500 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border" to="/about">
-                Om Föreningen
-              </Link>
-              <Link className="relative hover:text-blue-500 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border" to="/products">
-                Bo i BRF
-              </Link>
-              <Link className="relative hover:text-blue-500 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border" to="/blog">
-                Anslagstavla
-              </Link>
-              <Link className="relative hover:text-blue-500 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border" to="/contact">
-                Närområde
-              </Link>
-              <Link className="relative hover:text-blue-500 p-3 lg:p-4" to="/contact/examples">
-                Tvätt
-              </Link>
+            className={`mdm:navbar-menu mdm:fixed md:flex mdm:w-3/5 ${this.state.navBarActiveClass} `}>
+            <div className="md:justify-end overflow-hidden flex flex-col md:flex-row mdm:w-full">
+                <Link className="relative md:hidden hover:text-blue-500 p-3 lg:p-4 mdm:menu-hover" style={{backgroundColor: 'rgba(0, 0, 0, 0.05)'}} to="/">
+                    <h2>BRF Sandbacken</h2>
+                </Link>
+                <Link className="relative hover:text-blue-500 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-hover" to="/about">
+                    Om Föreningen
+                </Link>
+                <Link  onMouseEnter={this.handleHover} onMouseLeave={this.handleHover} className={`relative hover:text-blue-500 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-hover`} to="/lists/test-list">
+                    Bo i BRF
+                </Link>
+                <Link className="relative hover:text-blue-500 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-hover" to="/blog">
+                    Anslagstavla
+                </Link>
+                <Link className="relative hover:text-blue-500 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-hover" to="/contact">
+                    Närområde
+                </Link>
+                <Link className="relative hover:text-blue-500 p-3 lg:p-4 mdm:menu-hover" to="/contact/examples">
+                    Tvätt
+                </Link>
             </div>
           </div>
         </div>

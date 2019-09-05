@@ -650,14 +650,34 @@ h3 {
 .navbar-menu {
   display: flex !important;
   background-color: white;
-  top: 54px;
-  right: 4px;
+  top: 0px;
+  right: 0px;
   border-radius: 1px;
+  transform: translate3d(100%, 0, 0);
+  height: 100vh;
+  box-shadow: 4px 0px 11px 0px rgba(0,0,0,0.24);
 }
 
 .blurb-middle-item:nth-child(2) {
   padding-right: 2rem;
   padding-left: 2rem;
+}
+
+.scroll-nav {
+  background-color: white;
+  color: black;
+  transition: background-color 200ms ease-in-out;
+  box-shadow: 0px -5px 6px 5px rgba(0,0,0,0.1);
+}
+
+.top-nav {
+  color: white;
+  transition: background-color 200ms ease-in-out;
+}
+
+.menu-hover:hover {
+  transition: 44ms linear;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .index-sections::after {
@@ -685,6 +705,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-self: center;
+  z-index: -1;
 }
 
 .blurb-heading::after {
@@ -702,8 +723,15 @@ h3 {
   padding: 0px 2em;
 }
 
-.is-active  .mdm\:h-0{
-  height: 240px;
+.mdm\:navbar-menu {
+  transform-origin: right;
+  transition-duration: 200ms;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+
+.is-active.mdm\:navbar-menu{
+  transform: translate3d(0%, 0, 0);
 }
 
 .mdm\:navbar-menu .mdm\:h-0 {
@@ -728,18 +756,6 @@ h3 {
   color: white;
 }
 
-.scroll-nav {
-  background-color: white;
-  color: black;
-  transition: background-color 200ms ease-in-out;
-  box-shadow: 0px -5px 6px 5px rgba(0,0,0,0.1);
-}
-
-.top-nav {
-  color: white;
-  transition: background-color 200ms ease-in-out;
-}
-
 /*Fixa react bootstrap, ibland får man fatksitk använda egen byggda komponenter som inte liknar bootstraps egna
 typ som min egna nav här och nu*/
 
@@ -760,7 +776,6 @@ typ som min egna nav här och nu*/
   position: relative;
   width: 3.25rem;
   margin-left: auto;
-  right: 4px;
 }
 
 .navbar-burger span {
@@ -4800,6 +4815,24 @@ typ som min egna nav här och nu*/
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-none {
+  float: none;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .appearance-none {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -7710,24 +7743,6 @@ typ som min egna nav här och nu*/
   order: 0;
 }
 
-.float-right {
-  float: right;
-}
-
-.float-left {
-  float: left;
-}
-
-.float-none {
-  float: none;
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 @media (max-width: 639px) {
   .smm\:menu-border-mobile::after {
     display: none;
@@ -7740,14 +7755,34 @@ typ som min egna nav här och nu*/
   .smm\:navbar-menu {
     display: flex !important;
     background-color: white;
-    top: 54px;
-    right: 4px;
+    top: 0px;
+    right: 0px;
     border-radius: 1px;
+    transform: translate3d(100%, 0, 0);
+    height: 100vh;
+    box-shadow: 4px 0px 11px 0px rgba(0,0,0,0.24);
   }
 
   .smm\:blurb-middle-item:nth-child(2) {
     padding-right: 2rem;
     padding-left: 2rem;
+  }
+
+  .smm\:scroll-nav {
+    background-color: white;
+    color: black;
+    transition: background-color 200ms ease-in-out;
+    box-shadow: 0px -5px 6px 5px rgba(0,0,0,0.1);
+  }
+
+  .smm\:top-nav {
+    color: white;
+    transition: background-color 200ms ease-in-out;
+  }
+
+  .smm\:menu-hover:hover {
+    transition: 44ms linear;
+    background-color: rgba(0, 0, 0, 0.05);
   }
 
   .smm\:z-0 {
@@ -11746,6 +11781,24 @@ typ som min egna nav här och nu*/
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .smm\:float-right {
+    float: right;
+  }
+
+  .smm\:float-left {
+    float: left;
+  }
+
+  .smm\:float-none {
+    float: none;
+  }
+
+  .smm\:clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
   .smm\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -14655,24 +14708,6 @@ typ som min egna nav här och nu*/
   .smm\:order-none {
     order: 0;
   }
-
-  .smm\:float-right {
-    float: right;
-  }
-
-  .smm\:float-left {
-    float: left;
-  }
-
-  .smm\:float-none {
-    float: none;
-  }
-
-  .smm\:clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 }
 
 @media (max-width: 767px) {
@@ -14687,14 +14722,34 @@ typ som min egna nav här och nu*/
   .mdm\:navbar-menu {
     display: flex !important;
     background-color: white;
-    top: 54px;
-    right: 4px;
+    top: 0px;
+    right: 0px;
     border-radius: 1px;
+    transform: translate3d(100%, 0, 0);
+    height: 100vh;
+    box-shadow: 4px 0px 11px 0px rgba(0,0,0,0.24);
   }
 
   .mdm\:blurb-middle-item:nth-child(2) {
     padding-right: 2rem;
     padding-left: 2rem;
+  }
+
+  .mdm\:scroll-nav {
+    background-color: white;
+    color: black;
+    transition: background-color 200ms ease-in-out;
+    box-shadow: 0px -5px 6px 5px rgba(0,0,0,0.1);
+  }
+
+  .mdm\:top-nav {
+    color: white;
+    transition: background-color 200ms ease-in-out;
+  }
+
+  .mdm\:menu-hover:hover {
+    transition: 44ms linear;
+    background-color: rgba(0, 0, 0, 0.05);
   }
 
   .mdm\:z-0 {
@@ -18693,6 +18748,24 @@ typ som min egna nav här och nu*/
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .mdm\:float-right {
+    float: right;
+  }
+
+  .mdm\:float-left {
+    float: left;
+  }
+
+  .mdm\:float-none {
+    float: none;
+  }
+
+  .mdm\:clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
   .mdm\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -21602,24 +21675,6 @@ typ som min egna nav här och nu*/
   .mdm\:order-none {
     order: 0;
   }
-
-  .mdm\:float-right {
-    float: right;
-  }
-
-  .mdm\:float-left {
-    float: left;
-  }
-
-  .mdm\:float-none {
-    float: none;
-  }
-
-  .mdm\:clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 }
 
 @media (max-width: 1023px) {
@@ -21634,14 +21689,34 @@ typ som min egna nav här och nu*/
   .lgm\:navbar-menu {
     display: flex !important;
     background-color: white;
-    top: 54px;
-    right: 4px;
+    top: 0px;
+    right: 0px;
     border-radius: 1px;
+    transform: translate3d(100%, 0, 0);
+    height: 100vh;
+    box-shadow: 4px 0px 11px 0px rgba(0,0,0,0.24);
   }
 
   .lgm\:blurb-middle-item:nth-child(2) {
     padding-right: 2rem;
     padding-left: 2rem;
+  }
+
+  .lgm\:scroll-nav {
+    background-color: white;
+    color: black;
+    transition: background-color 200ms ease-in-out;
+    box-shadow: 0px -5px 6px 5px rgba(0,0,0,0.1);
+  }
+
+  .lgm\:top-nav {
+    color: white;
+    transition: background-color 200ms ease-in-out;
+  }
+
+  .lgm\:menu-hover:hover {
+    transition: 44ms linear;
+    background-color: rgba(0, 0, 0, 0.05);
   }
 
   .lgm\:z-0 {
@@ -25640,6 +25715,24 @@ typ som min egna nav här och nu*/
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .lgm\:float-right {
+    float: right;
+  }
+
+  .lgm\:float-left {
+    float: left;
+  }
+
+  .lgm\:float-none {
+    float: none;
+  }
+
+  .lgm\:clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
   .lgm\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -28549,24 +28642,6 @@ typ som min egna nav här och nu*/
   .lgm\:order-none {
     order: 0;
   }
-
-  .lgm\:float-right {
-    float: right;
-  }
-
-  .lgm\:float-left {
-    float: left;
-  }
-
-  .lgm\:float-none {
-    float: none;
-  }
-
-  .lgm\:clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 }
 
 @media (max-width: 1279px) {
@@ -28581,14 +28656,34 @@ typ som min egna nav här och nu*/
   .xlm\:navbar-menu {
     display: flex !important;
     background-color: white;
-    top: 54px;
-    right: 4px;
+    top: 0px;
+    right: 0px;
     border-radius: 1px;
+    transform: translate3d(100%, 0, 0);
+    height: 100vh;
+    box-shadow: 4px 0px 11px 0px rgba(0,0,0,0.24);
   }
 
   .xlm\:blurb-middle-item:nth-child(2) {
     padding-right: 2rem;
     padding-left: 2rem;
+  }
+
+  .xlm\:scroll-nav {
+    background-color: white;
+    color: black;
+    transition: background-color 200ms ease-in-out;
+    box-shadow: 0px -5px 6px 5px rgba(0,0,0,0.1);
+  }
+
+  .xlm\:top-nav {
+    color: white;
+    transition: background-color 200ms ease-in-out;
+  }
+
+  .xlm\:menu-hover:hover {
+    transition: 44ms linear;
+    background-color: rgba(0, 0, 0, 0.05);
   }
 
   .xlm\:z-0 {
@@ -32587,6 +32682,24 @@ typ som min egna nav här och nu*/
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .xlm\:float-right {
+    float: right;
+  }
+
+  .xlm\:float-left {
+    float: left;
+  }
+
+  .xlm\:float-none {
+    float: none;
+  }
+
+  .xlm\:clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
   .xlm\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -35496,24 +35609,6 @@ typ som min egna nav här och nu*/
   .xlm\:order-none {
     order: 0;
   }
-
-  .xlm\:float-right {
-    float: right;
-  }
-
-  .xlm\:float-left {
-    float: left;
-  }
-
-  .xlm\:float-none {
-    float: none;
-  }
-
-  .xlm\:clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 }
 
 @media (min-width: 639px) {
@@ -35528,14 +35623,34 @@ typ som min egna nav här och nu*/
   .sm\:navbar-menu {
     display: flex !important;
     background-color: white;
-    top: 54px;
-    right: 4px;
+    top: 0px;
+    right: 0px;
     border-radius: 1px;
+    transform: translate3d(100%, 0, 0);
+    height: 100vh;
+    box-shadow: 4px 0px 11px 0px rgba(0,0,0,0.24);
   }
 
   .sm\:blurb-middle-item:nth-child(2) {
     padding-right: 2rem;
     padding-left: 2rem;
+  }
+
+  .sm\:scroll-nav {
+    background-color: white;
+    color: black;
+    transition: background-color 200ms ease-in-out;
+    box-shadow: 0px -5px 6px 5px rgba(0,0,0,0.1);
+  }
+
+  .sm\:top-nav {
+    color: white;
+    transition: background-color 200ms ease-in-out;
+  }
+
+  .sm\:menu-hover:hover {
+    transition: 44ms linear;
+    background-color: rgba(0, 0, 0, 0.05);
   }
 
   .sm\:z-0 {
@@ -39534,6 +39649,24 @@ typ som min egna nav här och nu*/
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .sm\:float-right {
+    float: right;
+  }
+
+  .sm\:float-left {
+    float: left;
+  }
+
+  .sm\:float-none {
+    float: none;
+  }
+
+  .sm\:clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
   .sm\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -42443,24 +42576,6 @@ typ som min egna nav här och nu*/
   .sm\:order-none {
     order: 0;
   }
-
-  .sm\:float-right {
-    float: right;
-  }
-
-  .sm\:float-left {
-    float: left;
-  }
-
-  .sm\:float-none {
-    float: none;
-  }
-
-  .sm\:clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 }
 
 @media (min-width: 767px) {
@@ -42475,14 +42590,34 @@ typ som min egna nav här och nu*/
   .md\:navbar-menu {
     display: flex !important;
     background-color: white;
-    top: 54px;
-    right: 4px;
+    top: 0px;
+    right: 0px;
     border-radius: 1px;
+    transform: translate3d(100%, 0, 0);
+    height: 100vh;
+    box-shadow: 4px 0px 11px 0px rgba(0,0,0,0.24);
   }
 
   .md\:blurb-middle-item:nth-child(2) {
     padding-right: 2rem;
     padding-left: 2rem;
+  }
+
+  .md\:scroll-nav {
+    background-color: white;
+    color: black;
+    transition: background-color 200ms ease-in-out;
+    box-shadow: 0px -5px 6px 5px rgba(0,0,0,0.1);
+  }
+
+  .md\:top-nav {
+    color: white;
+    transition: background-color 200ms ease-in-out;
+  }
+
+  .md\:menu-hover:hover {
+    transition: 44ms linear;
+    background-color: rgba(0, 0, 0, 0.05);
   }
 
   .md\:z-0 {
@@ -46481,6 +46616,24 @@ typ som min egna nav här och nu*/
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .md\:float-right {
+    float: right;
+  }
+
+  .md\:float-left {
+    float: left;
+  }
+
+  .md\:float-none {
+    float: none;
+  }
+
+  .md\:clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
   .md\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -49390,24 +49543,6 @@ typ som min egna nav här och nu*/
   .md\:order-none {
     order: 0;
   }
-
-  .md\:float-right {
-    float: right;
-  }
-
-  .md\:float-left {
-    float: left;
-  }
-
-  .md\:float-none {
-    float: none;
-  }
-
-  .md\:clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 }
 
 @media (min-width: 1023px) {
@@ -49422,14 +49557,34 @@ typ som min egna nav här och nu*/
   .lg\:navbar-menu {
     display: flex !important;
     background-color: white;
-    top: 54px;
-    right: 4px;
+    top: 0px;
+    right: 0px;
     border-radius: 1px;
+    transform: translate3d(100%, 0, 0);
+    height: 100vh;
+    box-shadow: 4px 0px 11px 0px rgba(0,0,0,0.24);
   }
 
   .lg\:blurb-middle-item:nth-child(2) {
     padding-right: 2rem;
     padding-left: 2rem;
+  }
+
+  .lg\:scroll-nav {
+    background-color: white;
+    color: black;
+    transition: background-color 200ms ease-in-out;
+    box-shadow: 0px -5px 6px 5px rgba(0,0,0,0.1);
+  }
+
+  .lg\:top-nav {
+    color: white;
+    transition: background-color 200ms ease-in-out;
+  }
+
+  .lg\:menu-hover:hover {
+    transition: 44ms linear;
+    background-color: rgba(0, 0, 0, 0.05);
   }
 
   .lg\:z-0 {
@@ -53428,6 +53583,24 @@ typ som min egna nav här och nu*/
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .lg\:float-right {
+    float: right;
+  }
+
+  .lg\:float-left {
+    float: left;
+  }
+
+  .lg\:float-none {
+    float: none;
+  }
+
+  .lg\:clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
   .lg\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -56337,24 +56510,6 @@ typ som min egna nav här och nu*/
   .lg\:order-none {
     order: 0;
   }
-
-  .lg\:float-right {
-    float: right;
-  }
-
-  .lg\:float-left {
-    float: left;
-  }
-
-  .lg\:float-none {
-    float: none;
-  }
-
-  .lg\:clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 }
 
 @media (min-width: 1279px) {
@@ -56369,14 +56524,34 @@ typ som min egna nav här och nu*/
   .xl\:navbar-menu {
     display: flex !important;
     background-color: white;
-    top: 54px;
-    right: 4px;
+    top: 0px;
+    right: 0px;
     border-radius: 1px;
+    transform: translate3d(100%, 0, 0);
+    height: 100vh;
+    box-shadow: 4px 0px 11px 0px rgba(0,0,0,0.24);
   }
 
   .xl\:blurb-middle-item:nth-child(2) {
     padding-right: 2rem;
     padding-left: 2rem;
+  }
+
+  .xl\:scroll-nav {
+    background-color: white;
+    color: black;
+    transition: background-color 200ms ease-in-out;
+    box-shadow: 0px -5px 6px 5px rgba(0,0,0,0.1);
+  }
+
+  .xl\:top-nav {
+    color: white;
+    transition: background-color 200ms ease-in-out;
+  }
+
+  .xl\:menu-hover:hover {
+    transition: 44ms linear;
+    background-color: rgba(0, 0, 0, 0.05);
   }
 
   .xl\:z-0 {
@@ -60375,6 +60550,24 @@ typ som min egna nav här och nu*/
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .xl\:float-right {
+    float: right;
+  }
+
+  .xl\:float-left {
+    float: left;
+  }
+
+  .xl\:float-none {
+    float: none;
+  }
+
+  .xl\:clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
   .xl\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -63283,24 +63476,6 @@ typ som min egna nav här och nu*/
 
   .xl\:order-none {
     order: 0;
-  }
-
-  .xl\:float-right {
-    float: right;
-  }
-
-  .xl\:float-left {
-    float: left;
-  }
-
-  .xl\:float-none {
-    float: none;
-  }
-
-  .xl\:clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
   }
 }
   
