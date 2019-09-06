@@ -60,6 +60,18 @@ h3 {
         background-color: rgba(0, 0, 0, 0.05);
     }
 
+    .blog-list-container {
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 7px 16px 0px;
+        border-radius: 0px 0px 4px 4px;
+        background-color: #FFFFFF;
+        transition: transform ease 150ms;
+    }
+
+    .md-blog-list-container:hover {
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 17px 22px 0px;
+        transform: scale(1.05);
+    }
+
 }
 
 .index-sections::after {

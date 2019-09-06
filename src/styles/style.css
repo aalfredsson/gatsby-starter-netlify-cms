@@ -680,6 +680,18 @@ h3 {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
+.blog-list-container {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 7px 16px 0px;
+  border-radius: 0px 0px 4px 4px;
+  background-color: #FFFFFF;
+  transition: transform ease 150ms;
+}
+
+.md-blog-list-container:hover {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 17px 22px 0px;
+  transform: scale(1.05);
+}
+
 .index-sections::after {
   content: '';
   width: 50%;
@@ -7785,6 +7797,18 @@ typ som min egna nav här och nu*/
     background-color: rgba(0, 0, 0, 0.05);
   }
 
+  .smm\:blog-list-container {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 7px 16px 0px;
+    border-radius: 0px 0px 4px 4px;
+    background-color: #FFFFFF;
+    transition: transform ease 150ms;
+  }
+
+  .smm\:md-blog-list-container:hover {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 17px 22px 0px;
+    transform: scale(1.05);
+  }
+
   .smm\:z-0 {
     z-index: 0;
   }
@@ -14750,6 +14774,18 @@ typ som min egna nav här och nu*/
   .mdm\:menu-hover:hover {
     transition: 44ms linear;
     background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .mdm\:blog-list-container {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 7px 16px 0px;
+    border-radius: 0px 0px 4px 4px;
+    background-color: #FFFFFF;
+    transition: transform ease 150ms;
+  }
+
+  .mdm\:md-blog-list-container:hover {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 17px 22px 0px;
+    transform: scale(1.05);
   }
 
   .mdm\:z-0 {
@@ -21719,6 +21755,18 @@ typ som min egna nav här och nu*/
     background-color: rgba(0, 0, 0, 0.05);
   }
 
+  .lgm\:blog-list-container {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 7px 16px 0px;
+    border-radius: 0px 0px 4px 4px;
+    background-color: #FFFFFF;
+    transition: transform ease 150ms;
+  }
+
+  .lgm\:md-blog-list-container:hover {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 17px 22px 0px;
+    transform: scale(1.05);
+  }
+
   .lgm\:z-0 {
     z-index: 0;
   }
@@ -28684,6 +28732,18 @@ typ som min egna nav här och nu*/
   .xlm\:menu-hover:hover {
     transition: 44ms linear;
     background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .xlm\:blog-list-container {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 7px 16px 0px;
+    border-radius: 0px 0px 4px 4px;
+    background-color: #FFFFFF;
+    transition: transform ease 150ms;
+  }
+
+  .xlm\:md-blog-list-container:hover {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 17px 22px 0px;
+    transform: scale(1.05);
   }
 
   .xlm\:z-0 {
@@ -35653,6 +35713,18 @@ typ som min egna nav här och nu*/
     background-color: rgba(0, 0, 0, 0.05);
   }
 
+  .sm\:blog-list-container {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 7px 16px 0px;
+    border-radius: 0px 0px 4px 4px;
+    background-color: #FFFFFF;
+    transition: transform ease 150ms;
+  }
+
+  .sm\:md-blog-list-container:hover {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 17px 22px 0px;
+    transform: scale(1.05);
+  }
+
   .sm\:z-0 {
     z-index: 0;
   }
@@ -42618,6 +42690,18 @@ typ som min egna nav här och nu*/
   .md\:menu-hover:hover {
     transition: 44ms linear;
     background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .md\:blog-list-container {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 7px 16px 0px;
+    border-radius: 0px 0px 4px 4px;
+    background-color: #FFFFFF;
+    transition: transform ease 150ms;
+  }
+
+  .md\:md-blog-list-container:hover {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 17px 22px 0px;
+    transform: scale(1.05);
   }
 
   .md\:z-0 {
@@ -49587,6 +49671,18 @@ typ som min egna nav här och nu*/
     background-color: rgba(0, 0, 0, 0.05);
   }
 
+  .lg\:blog-list-container {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 7px 16px 0px;
+    border-radius: 0px 0px 4px 4px;
+    background-color: #FFFFFF;
+    transition: transform ease 150ms;
+  }
+
+  .lg\:md-blog-list-container:hover {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 17px 22px 0px;
+    transform: scale(1.05);
+  }
+
   .lg\:z-0 {
     z-index: 0;
   }
@@ -56552,6 +56648,18 @@ typ som min egna nav här och nu*/
   .xl\:menu-hover:hover {
     transition: 44ms linear;
     background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .xl\:blog-list-container {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 7px 16px 0px;
+    border-radius: 0px 0px 4px 4px;
+    background-color: #FFFFFF;
+    transition: transform ease 150ms;
+  }
+
+  .xl\:md-blog-list-container:hover {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 17px 22px 0px;
+    transform: scale(1.05);
   }
 
   .xl\:z-0 {

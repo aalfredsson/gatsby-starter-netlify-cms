@@ -12,27 +12,26 @@ class BlogRoll extends React.Component {
       <div className="flex flex-col md:flex-row">
         {posts &&
           posts.map(({ node: post }) => (
-            <div className="flex-1 md:mr-6 md:mb-0 mb-6" style={{boxShadow: '0px 0px 11px 0px rgba(0,0,0,0.1)', borderRadius: '2px', backgroundColor: '#FFFFFF'}} key={post.id}>
+            <Link to={post.fields.slug} className="flex-1 md:mr-6 md:mb-0 mb-6 blog-list-container md:md-blog-list-container" key={post.id}>
               <article
-                className={`blog-list-item tile is-child box notification p-8 ${
+                className={`blog-list-item tile is-child box notification p-8 h-full flex flex-col ${
                   post.frontmatter.featuredpost ? 'is-featured' : ''
                 }`}
               >
                 <header className="pb-2">
                   
                   <p className="post-meta flex flex-col">
-                    <Link
+                    <span
                       className=" font-semibold"
-                      to={post.fields.slug}
                     >
                       {post.frontmatter.title}
-                    </Link>
+                    </span>
                     <span className="text-sm italic">
                         {post.frontmatter.date}
                     </span>
                   </p>
                 </header>
-                <p>
+                <div>
                     <span>
                         {post.excerpt}
                     </span>
@@ -49,12 +48,13 @@ class BlogRoll extends React.Component {
                     </div>
                   ) : null}
                   <br />
-                  <Link className="button" to={post.fields.slug}>
+                  
+                </div>
+                <div className="button mt-auto">
                     Keep Reading →
-                  </Link>
-                </p>
+                </div>
               </article>
-            </div>
+            </Link>
           ))}
       </div>
     )
