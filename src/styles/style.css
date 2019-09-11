@@ -659,7 +659,7 @@ h3 {
   border-radius: 1px;
   transform: translate3d(100%, 0, 0);
   height: 100vh;
-  box-shadow: 2px 1px 21px rgba(0,0,0,0.4);
+  box-shadow: 4px 0px 11px 0px rgba(0,0,0,0.24);
 }
 
 .blurb-middle-item:nth-child(2) {
@@ -7789,7 +7789,7 @@ typ som min egna nav här och nu*/
     border-radius: 1px;
     transform: translate3d(100%, 0, 0);
     height: 100vh;
-    box-shadow: 2px 1px 21px rgba(0,0,0,0.4);
+    box-shadow: 4px 0px 11px 0px rgba(0,0,0,0.24);
   }
 
   .smm\:blurb-middle-item:nth-child(2) {
@@ -14772,7 +14772,7 @@ typ som min egna nav här och nu*/
     border-radius: 1px;
     transform: translate3d(100%, 0, 0);
     height: 100vh;
-    box-shadow: 2px 1px 21px rgba(0,0,0,0.4);
+    box-shadow: 4px 0px 11px 0px rgba(0,0,0,0.24);
   }
 
   .mdm\:blurb-middle-item:nth-child(2) {
@@ -21755,7 +21755,7 @@ typ som min egna nav här och nu*/
     border-radius: 1px;
     transform: translate3d(100%, 0, 0);
     height: 100vh;
-    box-shadow: 2px 1px 21px rgba(0,0,0,0.4);
+    box-shadow: 4px 0px 11px 0px rgba(0,0,0,0.24);
   }
 
   .lgm\:blurb-middle-item:nth-child(2) {
@@ -28738,7 +28738,7 @@ typ som min egna nav här och nu*/
     border-radius: 1px;
     transform: translate3d(100%, 0, 0);
     height: 100vh;
-    box-shadow: 2px 1px 21px rgba(0,0,0,0.4);
+    box-shadow: 4px 0px 11px 0px rgba(0,0,0,0.24);
   }
 
   .xlm\:blurb-middle-item:nth-child(2) {
@@ -35721,7 +35721,7 @@ typ som min egna nav här och nu*/
     border-radius: 1px;
     transform: translate3d(100%, 0, 0);
     height: 100vh;
-    box-shadow: 2px 1px 21px rgba(0,0,0,0.4);
+    box-shadow: 4px 0px 11px 0px rgba(0,0,0,0.24);
   }
 
   .sm\:blurb-middle-item:nth-child(2) {
@@ -42704,7 +42704,7 @@ typ som min egna nav här och nu*/
     border-radius: 1px;
     transform: translate3d(100%, 0, 0);
     height: 100vh;
-    box-shadow: 2px 1px 21px rgba(0,0,0,0.4);
+    box-shadow: 4px 0px 11px 0px rgba(0,0,0,0.24);
   }
 
   .md\:blurb-middle-item:nth-child(2) {
@@ -49687,7 +49687,7 @@ typ som min egna nav här och nu*/
     border-radius: 1px;
     transform: translate3d(100%, 0, 0);
     height: 100vh;
-    box-shadow: 2px 1px 21px rgba(0,0,0,0.4);
+    box-shadow: 4px 0px 11px 0px rgba(0,0,0,0.24);
   }
 
   .lg\:blurb-middle-item:nth-child(2) {
@@ -56670,7 +56670,7 @@ typ som min egna nav här och nu*/
     border-radius: 1px;
     transform: translate3d(100%, 0, 0);
     height: 100vh;
-    box-shadow: 2px 1px 21px rgba(0,0,0,0.4);
+    box-shadow: 4px 0px 11px 0px rgba(0,0,0,0.24);
   }
 
   .xl\:blurb-middle-item:nth-child(2) {

@@ -9,10 +9,10 @@ class BlogRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col md:flex-row md:flex-wrap justify-around">
         {posts &&
           posts.map(({ node: post }) => (
-            <Link to={post.fields.slug} className="flex-1 md:mr-6 md:mb-0 mb-6 blog-list-container md:md-blog-list-container" key={post.id}>
+            <Link to={post.fields.slug} className="w-full md:w-2/5 lg:w-1/5 md:mx-3 mb-6 blog-list-container md:md-blog-list-container" key={post.id}>
               <article
                 className={`blog-list-item tile is-child box notification p-8 h-full flex flex-col ${
                   post.frontmatter.featuredpost ? 'is-featured' : ''
