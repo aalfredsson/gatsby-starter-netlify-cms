@@ -84,61 +84,64 @@ const Navbar = class extends React.Component {
     render() {
         const alu = this.state.theposition === 0 ? 'top-nav' : 'scroll-nav'
         return (
-            <nav
-                className={` md:scroll-nav flex md:fixed md:justify-center`}
-                role="navigation"
-                aria-label="main-navigation"
-                style={{
-                    right: '0',
-                    width: '100%',
-                    zIndex: '999'
-                }}>
-                <div className="flex flex-grow justify-between container">
-                    <div className="flex mdm:hidden">
-                        <Link className="relative hover:text-blue-500 p-3 lg:p-4" to="/">
-                            <h2>BRF Sandbacken</h2>
-                        </Link>
-                    </div>
-                    <div className="flex md:hidden fixed right-0" style={{ zIndex: '9999' }}>
-                        {/* Hamburger menu */}
-                        <div
-                            className={`navbar-burger menu-hover burger ${this.state.navBarActiveClass}`}
-                            data-target="navMenu"
-                            onClick={() => this.toggleHamburger()}>
-                            <span />
-                            <span />
-                            <span />
-                        </div>
-                    </div>
-                    <div
-                        id="navMenu"
-                        className={`mdm:navbar-menu mdm:fixed md:flex mdm:w-3/5 ${this.state.navBarActiveClass} `}>
-                        <div className="md:justify-end overflow-hidden flex flex-col md:flex-row mdm:w-full">
-                            <Link className="relative md:hidden hover:text-blue-500 p-3 lg:p-4 mdm:menu-hover" style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}
-                                activeClassName="text-blue-500" to="/">
+            <nav>
+                <div className={`overlay mdm:${this.state.navBarActiveClass}`}></div>
+                <div
+                    className={` md:scroll-nav flex md:fixed md:justify-center`}
+                    role="navigation"
+                    aria-label="main-navigation"
+                    style={{
+                        right: '0',
+                        width: '100%',
+                        zIndex: '999'
+                    }}>
+                    <div className="flex flex-grow justify-between container">
+                        <div className="flex mdm:hidden">
+                            <Link className="relative hover:text-blue-500 p-3 lg:p-4" to="/">
                                 <h2>BRF Sandbacken</h2>
                             </Link>
-                            <Link className="relative hover:text-blue-500 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-hover"
-                                activeClassName="text-blue-500" to="/about">
-                                Om Föreningen
-                            </Link>
-                            <Link onMouseEnter={this.handleHover} onMouseLeave={this.handleHover} onClick={(e) => this.redirect}
-                                className={`relative hover:text-blue-500 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-hover`}
-                                activeClassName="text-blue-500" partiallyActive={true} to="/lists/test-list/">
-                                {/* Fix partially active for test list. to=/lists and redirect lists to lists/test-list/ */}
-                                Bo i BRF
-                            </Link>
-                            <Link className="relative hover:text-blue-500 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-hover"
-                                activeClassName="text-blue-500" to="/blog">
-                                Anslagstavla
-                            </Link>
-                            <Link className="relative hover:text-blue-500 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-hover"
-                                activeClassName="text-blue-500" to="/contact">
-                                Närområde
-                            </Link>
-                            <Link className="relative hover:text-blue-500 p-3 lg:p-4 mdm:menu-hover" activeClassName="text-blue-500" to="/contact/examples">
-                                Tvätt
-                            </Link>
+                        </div>
+                        <div className="flex md:hidden fixed right-0" style={{ zIndex: '9999' }}>
+                            {/* Hamburger menu */}
+                            <div
+                                className={`navbar-burger menu-hover burger ${this.state.navBarActiveClass}`}
+                                data-target="navMenu"
+                                onClick={() => this.toggleHamburger()}>
+                                <span />
+                                <span />
+                                <span />
+                            </div>
+                        </div>
+                        <div
+                            id="navMenu"
+                            className={`mdm:navbar-menu mdm:fixed md:flex mdm:w-3/5 text-center z-10 ${this.state.navBarActiveClass} `}>
+                            <div className="md:justify-end overflow-hidden flex flex-col md:flex-row mdm:w-full">
+                                <Link className="relative md:hidden hover:text-blue-500 p-3 lg:p-4 mdm:menu-hover" style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}
+                                    activeClassName="text-blue-500" to="/">
+                                    <h2>BRF Sandbacken</h2>
+                                </Link>
+                                <Link className="relative hover:text-blue-500 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-hover"
+                                    activeClassName="text-blue-500" to="/about">
+                                    Om Föreningen
+                                </Link>
+                                <Link onMouseEnter={this.handleHover} onMouseLeave={this.handleHover} onClick={(e) => this.redirect}
+                                    className={`relative hover:text-blue-500 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-hover`}
+                                    activeClassName="text-blue-500" partiallyActive={true} to="/lists/test-list/">
+                                    {/* Fix partially active for test list. to=/lists and redirect lists to lists/test-list/ */}
+                                    Bo i BRF
+                                </Link>
+                                <Link className="relative hover:text-blue-500 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-hover"
+                                    activeClassName="text-blue-500" to="/blog">
+                                    Anslagstavla
+                                </Link>
+                                <Link className="relative hover:text-blue-500 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-hover"
+                                    activeClassName="text-blue-500" to="/contact">
+                                    Närområde
+                                </Link>
+                                <Link className="relative hover:text-blue-500 p-3 lg:p-4 mdm:menu-hover" activeClassName="text-blue-500" to="/contact/examples">
+                                    Tvätt
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>

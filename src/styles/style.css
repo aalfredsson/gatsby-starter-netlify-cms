@@ -639,6 +639,10 @@ h3 {
   }
 }
 
+.is-active {
+  display: flex !important;
+}
+
 .menu-border-mobile::after {
   display: none;
 }
@@ -655,7 +659,7 @@ h3 {
   border-radius: 1px;
   transform: translate3d(100%, 0, 0);
   height: 100vh;
-  box-shadow: 4px 0px 11px 0px rgba(0,0,0,0.24);
+  box-shadow: 2px 1px 21px rgba(0,0,0,0.4);
 }
 
 .blurb-middle-item:nth-child(2) {
@@ -695,9 +699,10 @@ h3 {
 .overlay{
   position: fixed;
   background-color:#000;
-  opacity:0.3;
+  opacity:0.5;
   width:100%;
   height:100%;
+  display: none;
 }
 
 .index-sections::after {
@@ -7764,6 +7769,10 @@ typ som min egna nav här och nu*/
 }
 
 @media (max-width: 639px) {
+  .smm\:is-active {
+    display: flex !important;
+  }
+
   .smm\:menu-border-mobile::after {
     display: none;
   }
@@ -7780,7 +7789,7 @@ typ som min egna nav här och nu*/
     border-radius: 1px;
     transform: translate3d(100%, 0, 0);
     height: 100vh;
-    box-shadow: 4px 0px 11px 0px rgba(0,0,0,0.24);
+    box-shadow: 2px 1px 21px rgba(0,0,0,0.4);
   }
 
   .smm\:blurb-middle-item:nth-child(2) {
@@ -14743,6 +14752,10 @@ typ som min egna nav här och nu*/
 }
 
 @media (max-width: 767px) {
+  .mdm\:is-active {
+    display: flex !important;
+  }
+
   .mdm\:menu-border-mobile::after {
     display: none;
   }
@@ -14759,7 +14772,7 @@ typ som min egna nav här och nu*/
     border-radius: 1px;
     transform: translate3d(100%, 0, 0);
     height: 100vh;
-    box-shadow: 4px 0px 11px 0px rgba(0,0,0,0.24);
+    box-shadow: 2px 1px 21px rgba(0,0,0,0.4);
   }
 
   .mdm\:blurb-middle-item:nth-child(2) {
@@ -21722,6 +21735,10 @@ typ som min egna nav här och nu*/
 }
 
 @media (max-width: 1023px) {
+  .lgm\:is-active {
+    display: flex !important;
+  }
+
   .lgm\:menu-border-mobile::after {
     display: none;
   }
@@ -21738,7 +21755,7 @@ typ som min egna nav här och nu*/
     border-radius: 1px;
     transform: translate3d(100%, 0, 0);
     height: 100vh;
-    box-shadow: 4px 0px 11px 0px rgba(0,0,0,0.24);
+    box-shadow: 2px 1px 21px rgba(0,0,0,0.4);
   }
 
   .lgm\:blurb-middle-item:nth-child(2) {
@@ -28701,6 +28718,10 @@ typ som min egna nav här och nu*/
 }
 
 @media (max-width: 1279px) {
+  .xlm\:is-active {
+    display: flex !important;
+  }
+
   .xlm\:menu-border-mobile::after {
     display: none;
   }
@@ -28717,7 +28738,7 @@ typ som min egna nav här och nu*/
     border-radius: 1px;
     transform: translate3d(100%, 0, 0);
     height: 100vh;
-    box-shadow: 4px 0px 11px 0px rgba(0,0,0,0.24);
+    box-shadow: 2px 1px 21px rgba(0,0,0,0.4);
   }
 
   .xlm\:blurb-middle-item:nth-child(2) {
@@ -35680,6 +35701,10 @@ typ som min egna nav här och nu*/
 }
 
 @media (min-width: 639px) {
+  .sm\:is-active {
+    display: flex !important;
+  }
+
   .sm\:menu-border-mobile::after {
     display: none;
   }
@@ -35696,7 +35721,7 @@ typ som min egna nav här och nu*/
     border-radius: 1px;
     transform: translate3d(100%, 0, 0);
     height: 100vh;
-    box-shadow: 4px 0px 11px 0px rgba(0,0,0,0.24);
+    box-shadow: 2px 1px 21px rgba(0,0,0,0.4);
   }
 
   .sm\:blurb-middle-item:nth-child(2) {
@@ -42659,6 +42684,10 @@ typ som min egna nav här och nu*/
 }
 
 @media (min-width: 767px) {
+  .md\:is-active {
+    display: flex !important;
+  }
+
   .md\:menu-border-mobile::after {
     display: none;
   }
@@ -42675,7 +42704,7 @@ typ som min egna nav här och nu*/
     border-radius: 1px;
     transform: translate3d(100%, 0, 0);
     height: 100vh;
-    box-shadow: 4px 0px 11px 0px rgba(0,0,0,0.24);
+    box-shadow: 2px 1px 21px rgba(0,0,0,0.4);
   }
 
   .md\:blurb-middle-item:nth-child(2) {
@@ -49638,6 +49667,10 @@ typ som min egna nav här och nu*/
 }
 
 @media (min-width: 1023px) {
+  .lg\:is-active {
+    display: flex !important;
+  }
+
   .lg\:menu-border-mobile::after {
     display: none;
   }
@@ -49654,7 +49687,7 @@ typ som min egna nav här och nu*/
     border-radius: 1px;
     transform: translate3d(100%, 0, 0);
     height: 100vh;
-    box-shadow: 4px 0px 11px 0px rgba(0,0,0,0.24);
+    box-shadow: 2px 1px 21px rgba(0,0,0,0.4);
   }
 
   .lg\:blurb-middle-item:nth-child(2) {
@@ -56617,6 +56650,10 @@ typ som min egna nav här och nu*/
 }
 
 @media (min-width: 1279px) {
+  .xl\:is-active {
+    display: flex !important;
+  }
+
   .xl\:menu-border-mobile::after {
     display: none;
   }
@@ -56633,7 +56670,7 @@ typ som min egna nav här och nu*/
     border-radius: 1px;
     transform: translate3d(100%, 0, 0);
     height: 100vh;
-    box-shadow: 4px 0px 11px 0px rgba(0,0,0,0.24);
+    box-shadow: 2px 1px 21px rgba(0,0,0,0.4);
   }
 
   .xl\:blurb-middle-item:nth-child(2) {
