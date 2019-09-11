@@ -61,11 +61,11 @@ const Navbar = class extends React.Component {
 
     }
 
-    toggleHamburger = () => {
+    toggleHamburger = (onlyClose) => {
         // toggle the active boolean in the state
         this.setState(
             {
-                active: !this.state.active,
+                active: !this.state.active && onlyClose,
             },
             // after state has been updated,
             () => {
@@ -85,7 +85,7 @@ const Navbar = class extends React.Component {
         const alu = this.state.theposition === 0 ? 'top-nav' : 'scroll-nav'
         return (
             <nav>
-                <div onClick={() => this.toggleHamburger()} className={`overlay mdm:${this.state.navBarActiveClass}`}></div>
+                <div onClick={() => this.toggleHamburger(false)} className={`overlay mdm:${this.state.navBarActiveClass}`}></div>
                 <div
                     className={` md:scroll-nav flex md:fixed md:justify-center`}
                     role="navigation"
@@ -106,7 +106,7 @@ const Navbar = class extends React.Component {
                             <div
                                 className={`navbar-burger navbar-burger-circle burger ${this.state.navBarActiveClass}`}
                                 data-target="navMenu"
-                                onClick={() => this.toggleHamburger()}>
+                                onClick={() => this.toggleHamburger(true)}>
                                 <span />
                                 <span />
                                 <span />
