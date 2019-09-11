@@ -99,6 +99,10 @@ h3 {
     opacity:0.5;
 }
 
+.mdm\:not-active.overlay {
+    display: none;
+}
+
 .index-sections::after {
     content: '';
     width: 50%;

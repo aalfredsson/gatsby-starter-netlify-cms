@@ -9,7 +9,7 @@ class SideNav extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <div className="flex flex-col">
+      <ul>
         {posts &&
         posts.map(({ node: post }) => (
             <li>
@@ -21,7 +21,7 @@ class SideNav extends React.Component {
                 </Link>
           </li>
         ))}
-      </div>
+      </ul>
     )
   }
 }

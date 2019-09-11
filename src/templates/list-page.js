@@ -21,10 +21,7 @@ export const ListsPage = ({
         <div className="flex justify-center pt-12">
             <div className="container flex-row flex">
                 <div className="flex">
-                    <ul>
-                        <SideNav />
-                        
-                    </ul>
+                    <SideNav/>
                 </div>
                 <div className="flex-1 text-center ">
                     {helmet || ''}

@@ -716,6 +716,10 @@ h3 {
   opacity:0.5;
 }
 
+.mdm\:not-active.overlay {
+  display: none;
+}
+
 .index-sections::after {
   content: '';
   width: 50%;
@@ -4735,114 +4739,6 @@ typ som min egna nav här och nu*/
   height: 100vh;
 }
 
-.font-hairline {
-  font-weight: 100;
-}
-
-.font-thin {
-  font-weight: 200;
-}
-
-.font-light {
-  font-weight: 300;
-}
-
-.font-normal {
-  font-weight: 400;
-}
-
-.font-medium {
-  font-weight: 500;
-}
-
-.font-semibold {
-  font-weight: 600;
-}
-
-.font-bold {
-  font-weight: 700;
-}
-
-.font-extrabold {
-  font-weight: 800;
-}
-
-.font-black {
-  font-weight: 900;
-}
-
-.hover\:font-hairline:hover {
-  font-weight: 100;
-}
-
-.hover\:font-thin:hover {
-  font-weight: 200;
-}
-
-.hover\:font-light:hover {
-  font-weight: 300;
-}
-
-.hover\:font-normal:hover {
-  font-weight: 400;
-}
-
-.hover\:font-medium:hover {
-  font-weight: 500;
-}
-
-.hover\:font-semibold:hover {
-  font-weight: 600;
-}
-
-.hover\:font-bold:hover {
-  font-weight: 700;
-}
-
-.hover\:font-extrabold:hover {
-  font-weight: 800;
-}
-
-.hover\:font-black:hover {
-  font-weight: 900;
-}
-
-.focus\:font-hairline:focus {
-  font-weight: 100;
-}
-
-.focus\:font-thin:focus {
-  font-weight: 200;
-}
-
-.focus\:font-light:focus {
-  font-weight: 300;
-}
-
-.focus\:font-normal:focus {
-  font-weight: 400;
-}
-
-.focus\:font-medium:focus {
-  font-weight: 500;
-}
-
-.focus\:font-semibold:focus {
-  font-weight: 600;
-}
-
-.focus\:font-bold:focus {
-  font-weight: 700;
-}
-
-.focus\:font-extrabold:focus {
-  font-weight: 800;
-}
-
-.focus\:font-black:focus {
-  font-weight: 900;
-}
-
 .appearance-none {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -7781,6 +7677,114 @@ typ som min egna nav här och nu*/
 
 .font-mono {
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-hairline {
+  font-weight: 100;
+}
+
+.font-thin {
+  font-weight: 200;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.font-black {
+  font-weight: 900;
+}
+
+.hover\:font-hairline:hover {
+  font-weight: 100;
+}
+
+.hover\:font-thin:hover {
+  font-weight: 200;
+}
+
+.hover\:font-light:hover {
+  font-weight: 300;
+}
+
+.hover\:font-normal:hover {
+  font-weight: 400;
+}
+
+.hover\:font-medium:hover {
+  font-weight: 500;
+}
+
+.hover\:font-semibold:hover {
+  font-weight: 600;
+}
+
+.hover\:font-bold:hover {
+  font-weight: 700;
+}
+
+.hover\:font-extrabold:hover {
+  font-weight: 800;
+}
+
+.hover\:font-black:hover {
+  font-weight: 900;
+}
+
+.focus\:font-hairline:focus {
+  font-weight: 100;
+}
+
+.focus\:font-thin:focus {
+  font-weight: 200;
+}
+
+.focus\:font-light:focus {
+  font-weight: 300;
+}
+
+.focus\:font-normal:focus {
+  font-weight: 400;
+}
+
+.focus\:font-medium:focus {
+  font-weight: 500;
+}
+
+.focus\:font-semibold:focus {
+  font-weight: 600;
+}
+
+.focus\:font-bold:focus {
+  font-weight: 700;
+}
+
+.focus\:font-extrabold:focus {
+  font-weight: 800;
+}
+
+.focus\:font-black:focus {
+  font-weight: 900;
 }
 
 @media (max-width: 639px) {
@@ -11722,114 +11726,6 @@ typ som min egna nav här och nu*/
     height: 100vh;
   }
 
-  .smm\:font-hairline {
-    font-weight: 100;
-  }
-
-  .smm\:font-thin {
-    font-weight: 200;
-  }
-
-  .smm\:font-light {
-    font-weight: 300;
-  }
-
-  .smm\:font-normal {
-    font-weight: 400;
-  }
-
-  .smm\:font-medium {
-    font-weight: 500;
-  }
-
-  .smm\:font-semibold {
-    font-weight: 600;
-  }
-
-  .smm\:font-bold {
-    font-weight: 700;
-  }
-
-  .smm\:font-extrabold {
-    font-weight: 800;
-  }
-
-  .smm\:font-black {
-    font-weight: 900;
-  }
-
-  .smm\:hover\:font-hairline:hover {
-    font-weight: 100;
-  }
-
-  .smm\:hover\:font-thin:hover {
-    font-weight: 200;
-  }
-
-  .smm\:hover\:font-light:hover {
-    font-weight: 300;
-  }
-
-  .smm\:hover\:font-normal:hover {
-    font-weight: 400;
-  }
-
-  .smm\:hover\:font-medium:hover {
-    font-weight: 500;
-  }
-
-  .smm\:hover\:font-semibold:hover {
-    font-weight: 600;
-  }
-
-  .smm\:hover\:font-bold:hover {
-    font-weight: 700;
-  }
-
-  .smm\:hover\:font-extrabold:hover {
-    font-weight: 800;
-  }
-
-  .smm\:hover\:font-black:hover {
-    font-weight: 900;
-  }
-
-  .smm\:focus\:font-hairline:focus {
-    font-weight: 100;
-  }
-
-  .smm\:focus\:font-thin:focus {
-    font-weight: 200;
-  }
-
-  .smm\:focus\:font-light:focus {
-    font-weight: 300;
-  }
-
-  .smm\:focus\:font-normal:focus {
-    font-weight: 400;
-  }
-
-  .smm\:focus\:font-medium:focus {
-    font-weight: 500;
-  }
-
-  .smm\:focus\:font-semibold:focus {
-    font-weight: 600;
-  }
-
-  .smm\:focus\:font-bold:focus {
-    font-weight: 700;
-  }
-
-  .smm\:focus\:font-extrabold:focus {
-    font-weight: 800;
-  }
-
-  .smm\:focus\:font-black:focus {
-    font-weight: 900;
-  }
-
   .smm\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -14768,6 +14664,114 @@ typ som min egna nav här och nu*/
 
   .smm\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .smm\:font-hairline {
+    font-weight: 100;
+  }
+
+  .smm\:font-thin {
+    font-weight: 200;
+  }
+
+  .smm\:font-light {
+    font-weight: 300;
+  }
+
+  .smm\:font-normal {
+    font-weight: 400;
+  }
+
+  .smm\:font-medium {
+    font-weight: 500;
+  }
+
+  .smm\:font-semibold {
+    font-weight: 600;
+  }
+
+  .smm\:font-bold {
+    font-weight: 700;
+  }
+
+  .smm\:font-extrabold {
+    font-weight: 800;
+  }
+
+  .smm\:font-black {
+    font-weight: 900;
+  }
+
+  .smm\:hover\:font-hairline:hover {
+    font-weight: 100;
+  }
+
+  .smm\:hover\:font-thin:hover {
+    font-weight: 200;
+  }
+
+  .smm\:hover\:font-light:hover {
+    font-weight: 300;
+  }
+
+  .smm\:hover\:font-normal:hover {
+    font-weight: 400;
+  }
+
+  .smm\:hover\:font-medium:hover {
+    font-weight: 500;
+  }
+
+  .smm\:hover\:font-semibold:hover {
+    font-weight: 600;
+  }
+
+  .smm\:hover\:font-bold:hover {
+    font-weight: 700;
+  }
+
+  .smm\:hover\:font-extrabold:hover {
+    font-weight: 800;
+  }
+
+  .smm\:hover\:font-black:hover {
+    font-weight: 900;
+  }
+
+  .smm\:focus\:font-hairline:focus {
+    font-weight: 100;
+  }
+
+  .smm\:focus\:font-thin:focus {
+    font-weight: 200;
+  }
+
+  .smm\:focus\:font-light:focus {
+    font-weight: 300;
+  }
+
+  .smm\:focus\:font-normal:focus {
+    font-weight: 400;
+  }
+
+  .smm\:focus\:font-medium:focus {
+    font-weight: 500;
+  }
+
+  .smm\:focus\:font-semibold:focus {
+    font-weight: 600;
+  }
+
+  .smm\:focus\:font-bold:focus {
+    font-weight: 700;
+  }
+
+  .smm\:focus\:font-extrabold:focus {
+    font-weight: 800;
+  }
+
+  .smm\:focus\:font-black:focus {
+    font-weight: 900;
   }
 }
 
@@ -18710,114 +18714,6 @@ typ som min egna nav här och nu*/
     height: 100vh;
   }
 
-  .mdm\:font-hairline {
-    font-weight: 100;
-  }
-
-  .mdm\:font-thin {
-    font-weight: 200;
-  }
-
-  .mdm\:font-light {
-    font-weight: 300;
-  }
-
-  .mdm\:font-normal {
-    font-weight: 400;
-  }
-
-  .mdm\:font-medium {
-    font-weight: 500;
-  }
-
-  .mdm\:font-semibold {
-    font-weight: 600;
-  }
-
-  .mdm\:font-bold {
-    font-weight: 700;
-  }
-
-  .mdm\:font-extrabold {
-    font-weight: 800;
-  }
-
-  .mdm\:font-black {
-    font-weight: 900;
-  }
-
-  .mdm\:hover\:font-hairline:hover {
-    font-weight: 100;
-  }
-
-  .mdm\:hover\:font-thin:hover {
-    font-weight: 200;
-  }
-
-  .mdm\:hover\:font-light:hover {
-    font-weight: 300;
-  }
-
-  .mdm\:hover\:font-normal:hover {
-    font-weight: 400;
-  }
-
-  .mdm\:hover\:font-medium:hover {
-    font-weight: 500;
-  }
-
-  .mdm\:hover\:font-semibold:hover {
-    font-weight: 600;
-  }
-
-  .mdm\:hover\:font-bold:hover {
-    font-weight: 700;
-  }
-
-  .mdm\:hover\:font-extrabold:hover {
-    font-weight: 800;
-  }
-
-  .mdm\:hover\:font-black:hover {
-    font-weight: 900;
-  }
-
-  .mdm\:focus\:font-hairline:focus {
-    font-weight: 100;
-  }
-
-  .mdm\:focus\:font-thin:focus {
-    font-weight: 200;
-  }
-
-  .mdm\:focus\:font-light:focus {
-    font-weight: 300;
-  }
-
-  .mdm\:focus\:font-normal:focus {
-    font-weight: 400;
-  }
-
-  .mdm\:focus\:font-medium:focus {
-    font-weight: 500;
-  }
-
-  .mdm\:focus\:font-semibold:focus {
-    font-weight: 600;
-  }
-
-  .mdm\:focus\:font-bold:focus {
-    font-weight: 700;
-  }
-
-  .mdm\:focus\:font-extrabold:focus {
-    font-weight: 800;
-  }
-
-  .mdm\:focus\:font-black:focus {
-    font-weight: 900;
-  }
-
   .mdm\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -21756,6 +21652,114 @@ typ som min egna nav här och nu*/
 
   .mdm\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .mdm\:font-hairline {
+    font-weight: 100;
+  }
+
+  .mdm\:font-thin {
+    font-weight: 200;
+  }
+
+  .mdm\:font-light {
+    font-weight: 300;
+  }
+
+  .mdm\:font-normal {
+    font-weight: 400;
+  }
+
+  .mdm\:font-medium {
+    font-weight: 500;
+  }
+
+  .mdm\:font-semibold {
+    font-weight: 600;
+  }
+
+  .mdm\:font-bold {
+    font-weight: 700;
+  }
+
+  .mdm\:font-extrabold {
+    font-weight: 800;
+  }
+
+  .mdm\:font-black {
+    font-weight: 900;
+  }
+
+  .mdm\:hover\:font-hairline:hover {
+    font-weight: 100;
+  }
+
+  .mdm\:hover\:font-thin:hover {
+    font-weight: 200;
+  }
+
+  .mdm\:hover\:font-light:hover {
+    font-weight: 300;
+  }
+
+  .mdm\:hover\:font-normal:hover {
+    font-weight: 400;
+  }
+
+  .mdm\:hover\:font-medium:hover {
+    font-weight: 500;
+  }
+
+  .mdm\:hover\:font-semibold:hover {
+    font-weight: 600;
+  }
+
+  .mdm\:hover\:font-bold:hover {
+    font-weight: 700;
+  }
+
+  .mdm\:hover\:font-extrabold:hover {
+    font-weight: 800;
+  }
+
+  .mdm\:hover\:font-black:hover {
+    font-weight: 900;
+  }
+
+  .mdm\:focus\:font-hairline:focus {
+    font-weight: 100;
+  }
+
+  .mdm\:focus\:font-thin:focus {
+    font-weight: 200;
+  }
+
+  .mdm\:focus\:font-light:focus {
+    font-weight: 300;
+  }
+
+  .mdm\:focus\:font-normal:focus {
+    font-weight: 400;
+  }
+
+  .mdm\:focus\:font-medium:focus {
+    font-weight: 500;
+  }
+
+  .mdm\:focus\:font-semibold:focus {
+    font-weight: 600;
+  }
+
+  .mdm\:focus\:font-bold:focus {
+    font-weight: 700;
+  }
+
+  .mdm\:focus\:font-extrabold:focus {
+    font-weight: 800;
+  }
+
+  .mdm\:focus\:font-black:focus {
+    font-weight: 900;
   }
 }
 
@@ -25698,114 +25702,6 @@ typ som min egna nav här och nu*/
     height: 100vh;
   }
 
-  .lgm\:font-hairline {
-    font-weight: 100;
-  }
-
-  .lgm\:font-thin {
-    font-weight: 200;
-  }
-
-  .lgm\:font-light {
-    font-weight: 300;
-  }
-
-  .lgm\:font-normal {
-    font-weight: 400;
-  }
-
-  .lgm\:font-medium {
-    font-weight: 500;
-  }
-
-  .lgm\:font-semibold {
-    font-weight: 600;
-  }
-
-  .lgm\:font-bold {
-    font-weight: 700;
-  }
-
-  .lgm\:font-extrabold {
-    font-weight: 800;
-  }
-
-  .lgm\:font-black {
-    font-weight: 900;
-  }
-
-  .lgm\:hover\:font-hairline:hover {
-    font-weight: 100;
-  }
-
-  .lgm\:hover\:font-thin:hover {
-    font-weight: 200;
-  }
-
-  .lgm\:hover\:font-light:hover {
-    font-weight: 300;
-  }
-
-  .lgm\:hover\:font-normal:hover {
-    font-weight: 400;
-  }
-
-  .lgm\:hover\:font-medium:hover {
-    font-weight: 500;
-  }
-
-  .lgm\:hover\:font-semibold:hover {
-    font-weight: 600;
-  }
-
-  .lgm\:hover\:font-bold:hover {
-    font-weight: 700;
-  }
-
-  .lgm\:hover\:font-extrabold:hover {
-    font-weight: 800;
-  }
-
-  .lgm\:hover\:font-black:hover {
-    font-weight: 900;
-  }
-
-  .lgm\:focus\:font-hairline:focus {
-    font-weight: 100;
-  }
-
-  .lgm\:focus\:font-thin:focus {
-    font-weight: 200;
-  }
-
-  .lgm\:focus\:font-light:focus {
-    font-weight: 300;
-  }
-
-  .lgm\:focus\:font-normal:focus {
-    font-weight: 400;
-  }
-
-  .lgm\:focus\:font-medium:focus {
-    font-weight: 500;
-  }
-
-  .lgm\:focus\:font-semibold:focus {
-    font-weight: 600;
-  }
-
-  .lgm\:focus\:font-bold:focus {
-    font-weight: 700;
-  }
-
-  .lgm\:focus\:font-extrabold:focus {
-    font-weight: 800;
-  }
-
-  .lgm\:focus\:font-black:focus {
-    font-weight: 900;
-  }
-
   .lgm\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -28744,6 +28640,114 @@ typ som min egna nav här och nu*/
 
   .lgm\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .lgm\:font-hairline {
+    font-weight: 100;
+  }
+
+  .lgm\:font-thin {
+    font-weight: 200;
+  }
+
+  .lgm\:font-light {
+    font-weight: 300;
+  }
+
+  .lgm\:font-normal {
+    font-weight: 400;
+  }
+
+  .lgm\:font-medium {
+    font-weight: 500;
+  }
+
+  .lgm\:font-semibold {
+    font-weight: 600;
+  }
+
+  .lgm\:font-bold {
+    font-weight: 700;
+  }
+
+  .lgm\:font-extrabold {
+    font-weight: 800;
+  }
+
+  .lgm\:font-black {
+    font-weight: 900;
+  }
+
+  .lgm\:hover\:font-hairline:hover {
+    font-weight: 100;
+  }
+
+  .lgm\:hover\:font-thin:hover {
+    font-weight: 200;
+  }
+
+  .lgm\:hover\:font-light:hover {
+    font-weight: 300;
+  }
+
+  .lgm\:hover\:font-normal:hover {
+    font-weight: 400;
+  }
+
+  .lgm\:hover\:font-medium:hover {
+    font-weight: 500;
+  }
+
+  .lgm\:hover\:font-semibold:hover {
+    font-weight: 600;
+  }
+
+  .lgm\:hover\:font-bold:hover {
+    font-weight: 700;
+  }
+
+  .lgm\:hover\:font-extrabold:hover {
+    font-weight: 800;
+  }
+
+  .lgm\:hover\:font-black:hover {
+    font-weight: 900;
+  }
+
+  .lgm\:focus\:font-hairline:focus {
+    font-weight: 100;
+  }
+
+  .lgm\:focus\:font-thin:focus {
+    font-weight: 200;
+  }
+
+  .lgm\:focus\:font-light:focus {
+    font-weight: 300;
+  }
+
+  .lgm\:focus\:font-normal:focus {
+    font-weight: 400;
+  }
+
+  .lgm\:focus\:font-medium:focus {
+    font-weight: 500;
+  }
+
+  .lgm\:focus\:font-semibold:focus {
+    font-weight: 600;
+  }
+
+  .lgm\:focus\:font-bold:focus {
+    font-weight: 700;
+  }
+
+  .lgm\:focus\:font-extrabold:focus {
+    font-weight: 800;
+  }
+
+  .lgm\:focus\:font-black:focus {
+    font-weight: 900;
   }
 }
 
@@ -32686,114 +32690,6 @@ typ som min egna nav här och nu*/
     height: 100vh;
   }
 
-  .xlm\:font-hairline {
-    font-weight: 100;
-  }
-
-  .xlm\:font-thin {
-    font-weight: 200;
-  }
-
-  .xlm\:font-light {
-    font-weight: 300;
-  }
-
-  .xlm\:font-normal {
-    font-weight: 400;
-  }
-
-  .xlm\:font-medium {
-    font-weight: 500;
-  }
-
-  .xlm\:font-semibold {
-    font-weight: 600;
-  }
-
-  .xlm\:font-bold {
-    font-weight: 700;
-  }
-
-  .xlm\:font-extrabold {
-    font-weight: 800;
-  }
-
-  .xlm\:font-black {
-    font-weight: 900;
-  }
-
-  .xlm\:hover\:font-hairline:hover {
-    font-weight: 100;
-  }
-
-  .xlm\:hover\:font-thin:hover {
-    font-weight: 200;
-  }
-
-  .xlm\:hover\:font-light:hover {
-    font-weight: 300;
-  }
-
-  .xlm\:hover\:font-normal:hover {
-    font-weight: 400;
-  }
-
-  .xlm\:hover\:font-medium:hover {
-    font-weight: 500;
-  }
-
-  .xlm\:hover\:font-semibold:hover {
-    font-weight: 600;
-  }
-
-  .xlm\:hover\:font-bold:hover {
-    font-weight: 700;
-  }
-
-  .xlm\:hover\:font-extrabold:hover {
-    font-weight: 800;
-  }
-
-  .xlm\:hover\:font-black:hover {
-    font-weight: 900;
-  }
-
-  .xlm\:focus\:font-hairline:focus {
-    font-weight: 100;
-  }
-
-  .xlm\:focus\:font-thin:focus {
-    font-weight: 200;
-  }
-
-  .xlm\:focus\:font-light:focus {
-    font-weight: 300;
-  }
-
-  .xlm\:focus\:font-normal:focus {
-    font-weight: 400;
-  }
-
-  .xlm\:focus\:font-medium:focus {
-    font-weight: 500;
-  }
-
-  .xlm\:focus\:font-semibold:focus {
-    font-weight: 600;
-  }
-
-  .xlm\:focus\:font-bold:focus {
-    font-weight: 700;
-  }
-
-  .xlm\:focus\:font-extrabold:focus {
-    font-weight: 800;
-  }
-
-  .xlm\:focus\:font-black:focus {
-    font-weight: 900;
-  }
-
   .xlm\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -35732,6 +35628,114 @@ typ som min egna nav här och nu*/
 
   .xlm\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .xlm\:font-hairline {
+    font-weight: 100;
+  }
+
+  .xlm\:font-thin {
+    font-weight: 200;
+  }
+
+  .xlm\:font-light {
+    font-weight: 300;
+  }
+
+  .xlm\:font-normal {
+    font-weight: 400;
+  }
+
+  .xlm\:font-medium {
+    font-weight: 500;
+  }
+
+  .xlm\:font-semibold {
+    font-weight: 600;
+  }
+
+  .xlm\:font-bold {
+    font-weight: 700;
+  }
+
+  .xlm\:font-extrabold {
+    font-weight: 800;
+  }
+
+  .xlm\:font-black {
+    font-weight: 900;
+  }
+
+  .xlm\:hover\:font-hairline:hover {
+    font-weight: 100;
+  }
+
+  .xlm\:hover\:font-thin:hover {
+    font-weight: 200;
+  }
+
+  .xlm\:hover\:font-light:hover {
+    font-weight: 300;
+  }
+
+  .xlm\:hover\:font-normal:hover {
+    font-weight: 400;
+  }
+
+  .xlm\:hover\:font-medium:hover {
+    font-weight: 500;
+  }
+
+  .xlm\:hover\:font-semibold:hover {
+    font-weight: 600;
+  }
+
+  .xlm\:hover\:font-bold:hover {
+    font-weight: 700;
+  }
+
+  .xlm\:hover\:font-extrabold:hover {
+    font-weight: 800;
+  }
+
+  .xlm\:hover\:font-black:hover {
+    font-weight: 900;
+  }
+
+  .xlm\:focus\:font-hairline:focus {
+    font-weight: 100;
+  }
+
+  .xlm\:focus\:font-thin:focus {
+    font-weight: 200;
+  }
+
+  .xlm\:focus\:font-light:focus {
+    font-weight: 300;
+  }
+
+  .xlm\:focus\:font-normal:focus {
+    font-weight: 400;
+  }
+
+  .xlm\:focus\:font-medium:focus {
+    font-weight: 500;
+  }
+
+  .xlm\:focus\:font-semibold:focus {
+    font-weight: 600;
+  }
+
+  .xlm\:focus\:font-bold:focus {
+    font-weight: 700;
+  }
+
+  .xlm\:focus\:font-extrabold:focus {
+    font-weight: 800;
+  }
+
+  .xlm\:focus\:font-black:focus {
+    font-weight: 900;
   }
 }
 
@@ -39674,114 +39678,6 @@ typ som min egna nav här och nu*/
     height: 100vh;
   }
 
-  .sm\:font-hairline {
-    font-weight: 100;
-  }
-
-  .sm\:font-thin {
-    font-weight: 200;
-  }
-
-  .sm\:font-light {
-    font-weight: 300;
-  }
-
-  .sm\:font-normal {
-    font-weight: 400;
-  }
-
-  .sm\:font-medium {
-    font-weight: 500;
-  }
-
-  .sm\:font-semibold {
-    font-weight: 600;
-  }
-
-  .sm\:font-bold {
-    font-weight: 700;
-  }
-
-  .sm\:font-extrabold {
-    font-weight: 800;
-  }
-
-  .sm\:font-black {
-    font-weight: 900;
-  }
-
-  .sm\:hover\:font-hairline:hover {
-    font-weight: 100;
-  }
-
-  .sm\:hover\:font-thin:hover {
-    font-weight: 200;
-  }
-
-  .sm\:hover\:font-light:hover {
-    font-weight: 300;
-  }
-
-  .sm\:hover\:font-normal:hover {
-    font-weight: 400;
-  }
-
-  .sm\:hover\:font-medium:hover {
-    font-weight: 500;
-  }
-
-  .sm\:hover\:font-semibold:hover {
-    font-weight: 600;
-  }
-
-  .sm\:hover\:font-bold:hover {
-    font-weight: 700;
-  }
-
-  .sm\:hover\:font-extrabold:hover {
-    font-weight: 800;
-  }
-
-  .sm\:hover\:font-black:hover {
-    font-weight: 900;
-  }
-
-  .sm\:focus\:font-hairline:focus {
-    font-weight: 100;
-  }
-
-  .sm\:focus\:font-thin:focus {
-    font-weight: 200;
-  }
-
-  .sm\:focus\:font-light:focus {
-    font-weight: 300;
-  }
-
-  .sm\:focus\:font-normal:focus {
-    font-weight: 400;
-  }
-
-  .sm\:focus\:font-medium:focus {
-    font-weight: 500;
-  }
-
-  .sm\:focus\:font-semibold:focus {
-    font-weight: 600;
-  }
-
-  .sm\:focus\:font-bold:focus {
-    font-weight: 700;
-  }
-
-  .sm\:focus\:font-extrabold:focus {
-    font-weight: 800;
-  }
-
-  .sm\:focus\:font-black:focus {
-    font-weight: 900;
-  }
-
   .sm\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -42720,6 +42616,114 @@ typ som min egna nav här och nu*/
 
   .sm\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .sm\:font-hairline {
+    font-weight: 100;
+  }
+
+  .sm\:font-thin {
+    font-weight: 200;
+  }
+
+  .sm\:font-light {
+    font-weight: 300;
+  }
+
+  .sm\:font-normal {
+    font-weight: 400;
+  }
+
+  .sm\:font-medium {
+    font-weight: 500;
+  }
+
+  .sm\:font-semibold {
+    font-weight: 600;
+  }
+
+  .sm\:font-bold {
+    font-weight: 700;
+  }
+
+  .sm\:font-extrabold {
+    font-weight: 800;
+  }
+
+  .sm\:font-black {
+    font-weight: 900;
+  }
+
+  .sm\:hover\:font-hairline:hover {
+    font-weight: 100;
+  }
+
+  .sm\:hover\:font-thin:hover {
+    font-weight: 200;
+  }
+
+  .sm\:hover\:font-light:hover {
+    font-weight: 300;
+  }
+
+  .sm\:hover\:font-normal:hover {
+    font-weight: 400;
+  }
+
+  .sm\:hover\:font-medium:hover {
+    font-weight: 500;
+  }
+
+  .sm\:hover\:font-semibold:hover {
+    font-weight: 600;
+  }
+
+  .sm\:hover\:font-bold:hover {
+    font-weight: 700;
+  }
+
+  .sm\:hover\:font-extrabold:hover {
+    font-weight: 800;
+  }
+
+  .sm\:hover\:font-black:hover {
+    font-weight: 900;
+  }
+
+  .sm\:focus\:font-hairline:focus {
+    font-weight: 100;
+  }
+
+  .sm\:focus\:font-thin:focus {
+    font-weight: 200;
+  }
+
+  .sm\:focus\:font-light:focus {
+    font-weight: 300;
+  }
+
+  .sm\:focus\:font-normal:focus {
+    font-weight: 400;
+  }
+
+  .sm\:focus\:font-medium:focus {
+    font-weight: 500;
+  }
+
+  .sm\:focus\:font-semibold:focus {
+    font-weight: 600;
+  }
+
+  .sm\:focus\:font-bold:focus {
+    font-weight: 700;
+  }
+
+  .sm\:focus\:font-extrabold:focus {
+    font-weight: 800;
+  }
+
+  .sm\:focus\:font-black:focus {
+    font-weight: 900;
   }
 }
 
@@ -46662,114 +46666,6 @@ typ som min egna nav här och nu*/
     height: 100vh;
   }
 
-  .md\:font-hairline {
-    font-weight: 100;
-  }
-
-  .md\:font-thin {
-    font-weight: 200;
-  }
-
-  .md\:font-light {
-    font-weight: 300;
-  }
-
-  .md\:font-normal {
-    font-weight: 400;
-  }
-
-  .md\:font-medium {
-    font-weight: 500;
-  }
-
-  .md\:font-semibold {
-    font-weight: 600;
-  }
-
-  .md\:font-bold {
-    font-weight: 700;
-  }
-
-  .md\:font-extrabold {
-    font-weight: 800;
-  }
-
-  .md\:font-black {
-    font-weight: 900;
-  }
-
-  .md\:hover\:font-hairline:hover {
-    font-weight: 100;
-  }
-
-  .md\:hover\:font-thin:hover {
-    font-weight: 200;
-  }
-
-  .md\:hover\:font-light:hover {
-    font-weight: 300;
-  }
-
-  .md\:hover\:font-normal:hover {
-    font-weight: 400;
-  }
-
-  .md\:hover\:font-medium:hover {
-    font-weight: 500;
-  }
-
-  .md\:hover\:font-semibold:hover {
-    font-weight: 600;
-  }
-
-  .md\:hover\:font-bold:hover {
-    font-weight: 700;
-  }
-
-  .md\:hover\:font-extrabold:hover {
-    font-weight: 800;
-  }
-
-  .md\:hover\:font-black:hover {
-    font-weight: 900;
-  }
-
-  .md\:focus\:font-hairline:focus {
-    font-weight: 100;
-  }
-
-  .md\:focus\:font-thin:focus {
-    font-weight: 200;
-  }
-
-  .md\:focus\:font-light:focus {
-    font-weight: 300;
-  }
-
-  .md\:focus\:font-normal:focus {
-    font-weight: 400;
-  }
-
-  .md\:focus\:font-medium:focus {
-    font-weight: 500;
-  }
-
-  .md\:focus\:font-semibold:focus {
-    font-weight: 600;
-  }
-
-  .md\:focus\:font-bold:focus {
-    font-weight: 700;
-  }
-
-  .md\:focus\:font-extrabold:focus {
-    font-weight: 800;
-  }
-
-  .md\:focus\:font-black:focus {
-    font-weight: 900;
-  }
-
   .md\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -49708,6 +49604,114 @@ typ som min egna nav här och nu*/
 
   .md\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .md\:font-hairline {
+    font-weight: 100;
+  }
+
+  .md\:font-thin {
+    font-weight: 200;
+  }
+
+  .md\:font-light {
+    font-weight: 300;
+  }
+
+  .md\:font-normal {
+    font-weight: 400;
+  }
+
+  .md\:font-medium {
+    font-weight: 500;
+  }
+
+  .md\:font-semibold {
+    font-weight: 600;
+  }
+
+  .md\:font-bold {
+    font-weight: 700;
+  }
+
+  .md\:font-extrabold {
+    font-weight: 800;
+  }
+
+  .md\:font-black {
+    font-weight: 900;
+  }
+
+  .md\:hover\:font-hairline:hover {
+    font-weight: 100;
+  }
+
+  .md\:hover\:font-thin:hover {
+    font-weight: 200;
+  }
+
+  .md\:hover\:font-light:hover {
+    font-weight: 300;
+  }
+
+  .md\:hover\:font-normal:hover {
+    font-weight: 400;
+  }
+
+  .md\:hover\:font-medium:hover {
+    font-weight: 500;
+  }
+
+  .md\:hover\:font-semibold:hover {
+    font-weight: 600;
+  }
+
+  .md\:hover\:font-bold:hover {
+    font-weight: 700;
+  }
+
+  .md\:hover\:font-extrabold:hover {
+    font-weight: 800;
+  }
+
+  .md\:hover\:font-black:hover {
+    font-weight: 900;
+  }
+
+  .md\:focus\:font-hairline:focus {
+    font-weight: 100;
+  }
+
+  .md\:focus\:font-thin:focus {
+    font-weight: 200;
+  }
+
+  .md\:focus\:font-light:focus {
+    font-weight: 300;
+  }
+
+  .md\:focus\:font-normal:focus {
+    font-weight: 400;
+  }
+
+  .md\:focus\:font-medium:focus {
+    font-weight: 500;
+  }
+
+  .md\:focus\:font-semibold:focus {
+    font-weight: 600;
+  }
+
+  .md\:focus\:font-bold:focus {
+    font-weight: 700;
+  }
+
+  .md\:focus\:font-extrabold:focus {
+    font-weight: 800;
+  }
+
+  .md\:focus\:font-black:focus {
+    font-weight: 900;
   }
 }
 
@@ -53650,114 +53654,6 @@ typ som min egna nav här och nu*/
     height: 100vh;
   }
 
-  .lg\:font-hairline {
-    font-weight: 100;
-  }
-
-  .lg\:font-thin {
-    font-weight: 200;
-  }
-
-  .lg\:font-light {
-    font-weight: 300;
-  }
-
-  .lg\:font-normal {
-    font-weight: 400;
-  }
-
-  .lg\:font-medium {
-    font-weight: 500;
-  }
-
-  .lg\:font-semibold {
-    font-weight: 600;
-  }
-
-  .lg\:font-bold {
-    font-weight: 700;
-  }
-
-  .lg\:font-extrabold {
-    font-weight: 800;
-  }
-
-  .lg\:font-black {
-    font-weight: 900;
-  }
-
-  .lg\:hover\:font-hairline:hover {
-    font-weight: 100;
-  }
-
-  .lg\:hover\:font-thin:hover {
-    font-weight: 200;
-  }
-
-  .lg\:hover\:font-light:hover {
-    font-weight: 300;
-  }
-
-  .lg\:hover\:font-normal:hover {
-    font-weight: 400;
-  }
-
-  .lg\:hover\:font-medium:hover {
-    font-weight: 500;
-  }
-
-  .lg\:hover\:font-semibold:hover {
-    font-weight: 600;
-  }
-
-  .lg\:hover\:font-bold:hover {
-    font-weight: 700;
-  }
-
-  .lg\:hover\:font-extrabold:hover {
-    font-weight: 800;
-  }
-
-  .lg\:hover\:font-black:hover {
-    font-weight: 900;
-  }
-
-  .lg\:focus\:font-hairline:focus {
-    font-weight: 100;
-  }
-
-  .lg\:focus\:font-thin:focus {
-    font-weight: 200;
-  }
-
-  .lg\:focus\:font-light:focus {
-    font-weight: 300;
-  }
-
-  .lg\:focus\:font-normal:focus {
-    font-weight: 400;
-  }
-
-  .lg\:focus\:font-medium:focus {
-    font-weight: 500;
-  }
-
-  .lg\:focus\:font-semibold:focus {
-    font-weight: 600;
-  }
-
-  .lg\:focus\:font-bold:focus {
-    font-weight: 700;
-  }
-
-  .lg\:focus\:font-extrabold:focus {
-    font-weight: 800;
-  }
-
-  .lg\:focus\:font-black:focus {
-    font-weight: 900;
-  }
-
   .lg\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -56696,6 +56592,114 @@ typ som min egna nav här och nu*/
 
   .lg\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .lg\:font-hairline {
+    font-weight: 100;
+  }
+
+  .lg\:font-thin {
+    font-weight: 200;
+  }
+
+  .lg\:font-light {
+    font-weight: 300;
+  }
+
+  .lg\:font-normal {
+    font-weight: 400;
+  }
+
+  .lg\:font-medium {
+    font-weight: 500;
+  }
+
+  .lg\:font-semibold {
+    font-weight: 600;
+  }
+
+  .lg\:font-bold {
+    font-weight: 700;
+  }
+
+  .lg\:font-extrabold {
+    font-weight: 800;
+  }
+
+  .lg\:font-black {
+    font-weight: 900;
+  }
+
+  .lg\:hover\:font-hairline:hover {
+    font-weight: 100;
+  }
+
+  .lg\:hover\:font-thin:hover {
+    font-weight: 200;
+  }
+
+  .lg\:hover\:font-light:hover {
+    font-weight: 300;
+  }
+
+  .lg\:hover\:font-normal:hover {
+    font-weight: 400;
+  }
+
+  .lg\:hover\:font-medium:hover {
+    font-weight: 500;
+  }
+
+  .lg\:hover\:font-semibold:hover {
+    font-weight: 600;
+  }
+
+  .lg\:hover\:font-bold:hover {
+    font-weight: 700;
+  }
+
+  .lg\:hover\:font-extrabold:hover {
+    font-weight: 800;
+  }
+
+  .lg\:hover\:font-black:hover {
+    font-weight: 900;
+  }
+
+  .lg\:focus\:font-hairline:focus {
+    font-weight: 100;
+  }
+
+  .lg\:focus\:font-thin:focus {
+    font-weight: 200;
+  }
+
+  .lg\:focus\:font-light:focus {
+    font-weight: 300;
+  }
+
+  .lg\:focus\:font-normal:focus {
+    font-weight: 400;
+  }
+
+  .lg\:focus\:font-medium:focus {
+    font-weight: 500;
+  }
+
+  .lg\:focus\:font-semibold:focus {
+    font-weight: 600;
+  }
+
+  .lg\:focus\:font-bold:focus {
+    font-weight: 700;
+  }
+
+  .lg\:focus\:font-extrabold:focus {
+    font-weight: 800;
+  }
+
+  .lg\:focus\:font-black:focus {
+    font-weight: 900;
   }
 }
 
@@ -60638,114 +60642,6 @@ typ som min egna nav här och nu*/
     height: 100vh;
   }
 
-  .xl\:font-hairline {
-    font-weight: 100;
-  }
-
-  .xl\:font-thin {
-    font-weight: 200;
-  }
-
-  .xl\:font-light {
-    font-weight: 300;
-  }
-
-  .xl\:font-normal {
-    font-weight: 400;
-  }
-
-  .xl\:font-medium {
-    font-weight: 500;
-  }
-
-  .xl\:font-semibold {
-    font-weight: 600;
-  }
-
-  .xl\:font-bold {
-    font-weight: 700;
-  }
-
-  .xl\:font-extrabold {
-    font-weight: 800;
-  }
-
-  .xl\:font-black {
-    font-weight: 900;
-  }
-
-  .xl\:hover\:font-hairline:hover {
-    font-weight: 100;
-  }
-
-  .xl\:hover\:font-thin:hover {
-    font-weight: 200;
-  }
-
-  .xl\:hover\:font-light:hover {
-    font-weight: 300;
-  }
-
-  .xl\:hover\:font-normal:hover {
-    font-weight: 400;
-  }
-
-  .xl\:hover\:font-medium:hover {
-    font-weight: 500;
-  }
-
-  .xl\:hover\:font-semibold:hover {
-    font-weight: 600;
-  }
-
-  .xl\:hover\:font-bold:hover {
-    font-weight: 700;
-  }
-
-  .xl\:hover\:font-extrabold:hover {
-    font-weight: 800;
-  }
-
-  .xl\:hover\:font-black:hover {
-    font-weight: 900;
-  }
-
-  .xl\:focus\:font-hairline:focus {
-    font-weight: 100;
-  }
-
-  .xl\:focus\:font-thin:focus {
-    font-weight: 200;
-  }
-
-  .xl\:focus\:font-light:focus {
-    font-weight: 300;
-  }
-
-  .xl\:focus\:font-normal:focus {
-    font-weight: 400;
-  }
-
-  .xl\:focus\:font-medium:focus {
-    font-weight: 500;
-  }
-
-  .xl\:focus\:font-semibold:focus {
-    font-weight: 600;
-  }
-
-  .xl\:focus\:font-bold:focus {
-    font-weight: 700;
-  }
-
-  .xl\:focus\:font-extrabold:focus {
-    font-weight: 800;
-  }
-
-  .xl\:focus\:font-black:focus {
-    font-weight: 900;
-  }
-
   .xl\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -63684,6 +63580,114 @@ typ som min egna nav här och nu*/
 
   .xl\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .xl\:font-hairline {
+    font-weight: 100;
+  }
+
+  .xl\:font-thin {
+    font-weight: 200;
+  }
+
+  .xl\:font-light {
+    font-weight: 300;
+  }
+
+  .xl\:font-normal {
+    font-weight: 400;
+  }
+
+  .xl\:font-medium {
+    font-weight: 500;
+  }
+
+  .xl\:font-semibold {
+    font-weight: 600;
+  }
+
+  .xl\:font-bold {
+    font-weight: 700;
+  }
+
+  .xl\:font-extrabold {
+    font-weight: 800;
+  }
+
+  .xl\:font-black {
+    font-weight: 900;
+  }
+
+  .xl\:hover\:font-hairline:hover {
+    font-weight: 100;
+  }
+
+  .xl\:hover\:font-thin:hover {
+    font-weight: 200;
+  }
+
+  .xl\:hover\:font-light:hover {
+    font-weight: 300;
+  }
+
+  .xl\:hover\:font-normal:hover {
+    font-weight: 400;
+  }
+
+  .xl\:hover\:font-medium:hover {
+    font-weight: 500;
+  }
+
+  .xl\:hover\:font-semibold:hover {
+    font-weight: 600;
+  }
+
+  .xl\:hover\:font-bold:hover {
+    font-weight: 700;
+  }
+
+  .xl\:hover\:font-extrabold:hover {
+    font-weight: 800;
+  }
+
+  .xl\:hover\:font-black:hover {
+    font-weight: 900;
+  }
+
+  .xl\:focus\:font-hairline:focus {
+    font-weight: 100;
+  }
+
+  .xl\:focus\:font-thin:focus {
+    font-weight: 200;
+  }
+
+  .xl\:focus\:font-light:focus {
+    font-weight: 300;
+  }
+
+  .xl\:focus\:font-normal:focus {
+    font-weight: 400;
+  }
+
+  .xl\:focus\:font-medium:focus {
+    font-weight: 500;
+  }
+
+  .xl\:focus\:font-semibold:focus {
+    font-weight: 600;
+  }
+
+  .xl\:focus\:font-bold:focus {
+    font-weight: 700;
+  }
+
+  .xl\:focus\:font-extrabold:focus {
+    font-weight: 800;
+  }
+
+  .xl\:focus\:font-black:focus {
+    font-weight: 900;
   }
 }
   
