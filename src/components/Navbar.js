@@ -114,7 +114,7 @@ const Navbar = class extends React.Component {
                         </div>
                         <div
                             id="navMenu"
-                            className={`mdm:navbar-menu mdm:fixed md:flex mdm:w-3/5 text-center z-10 ${this.state.navBarActiveClass} `}>
+                            className={`mdm:navbar-menu mdm:fixed md:flex mdm:w-9/12 text-center z-10 ${this.state.navBarActiveClass} `}>
                             <div className="md:justify-end overflow-hidden flex flex-col md:flex-row mdm:w-full">
                                 <Link className="relative md:hidden hover:text-blue-500 p-3 pt-6 lg:p-4 mdm:menu-item" style={{ lineHeight:'1.4',borderBottom: '1px solid rgba(0,0,0,0.1)' }}
                                     activeClassName="text-blue-500 mdm:menu-item-active" to="/">
