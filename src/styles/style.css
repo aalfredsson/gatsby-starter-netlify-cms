@@ -692,6 +692,14 @@ h3 {
   transform: scale(1.05);
 }
 
+.overlay{
+  position: fixed;
+  background-color:#000;
+  opacity:0.3;
+  width:100%;
+  height:100%;
+}
+
 .index-sections::after {
   content: '';
   width: 50%;
@@ -4827,24 +4835,6 @@ typ som min egna nav här och nu*/
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-.float-right {
-  float: right;
-}
-
-.float-left {
-  float: left;
-}
-
-.float-none {
-  float: none;
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .appearance-none {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -7753,6 +7743,24 @@ typ som min egna nav här och nu*/
 
 .order-none {
   order: 0;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-none {
+  float: none;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 @media (max-width: 639px) {
@@ -11805,24 +11813,6 @@ typ som min egna nav här och nu*/
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  .smm\:float-right {
-    float: right;
-  }
-
-  .smm\:float-left {
-    float: left;
-  }
-
-  .smm\:float-none {
-    float: none;
-  }
-
-  .smm\:clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
   .smm\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -14731,6 +14721,24 @@ typ som min egna nav här och nu*/
 
   .smm\:order-none {
     order: 0;
+  }
+
+  .smm\:float-right {
+    float: right;
+  }
+
+  .smm\:float-left {
+    float: left;
+  }
+
+  .smm\:float-none {
+    float: none;
+  }
+
+  .smm\:clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }
 
@@ -18784,24 +18792,6 @@ typ som min egna nav här och nu*/
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  .mdm\:float-right {
-    float: right;
-  }
-
-  .mdm\:float-left {
-    float: left;
-  }
-
-  .mdm\:float-none {
-    float: none;
-  }
-
-  .mdm\:clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
   .mdm\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -21710,6 +21700,24 @@ typ som min egna nav här och nu*/
 
   .mdm\:order-none {
     order: 0;
+  }
+
+  .mdm\:float-right {
+    float: right;
+  }
+
+  .mdm\:float-left {
+    float: left;
+  }
+
+  .mdm\:float-none {
+    float: none;
+  }
+
+  .mdm\:clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }
 
@@ -25763,24 +25771,6 @@ typ som min egna nav här och nu*/
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  .lgm\:float-right {
-    float: right;
-  }
-
-  .lgm\:float-left {
-    float: left;
-  }
-
-  .lgm\:float-none {
-    float: none;
-  }
-
-  .lgm\:clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
   .lgm\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -28689,6 +28679,24 @@ typ som min egna nav här och nu*/
 
   .lgm\:order-none {
     order: 0;
+  }
+
+  .lgm\:float-right {
+    float: right;
+  }
+
+  .lgm\:float-left {
+    float: left;
+  }
+
+  .lgm\:float-none {
+    float: none;
+  }
+
+  .lgm\:clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }
 
@@ -32742,24 +32750,6 @@ typ som min egna nav här och nu*/
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  .xlm\:float-right {
-    float: right;
-  }
-
-  .xlm\:float-left {
-    float: left;
-  }
-
-  .xlm\:float-none {
-    float: none;
-  }
-
-  .xlm\:clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
   .xlm\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -35668,6 +35658,24 @@ typ som min egna nav här och nu*/
 
   .xlm\:order-none {
     order: 0;
+  }
+
+  .xlm\:float-right {
+    float: right;
+  }
+
+  .xlm\:float-left {
+    float: left;
+  }
+
+  .xlm\:float-none {
+    float: none;
+  }
+
+  .xlm\:clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }
 
@@ -39721,24 +39729,6 @@ typ som min egna nav här och nu*/
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  .sm\:float-right {
-    float: right;
-  }
-
-  .sm\:float-left {
-    float: left;
-  }
-
-  .sm\:float-none {
-    float: none;
-  }
-
-  .sm\:clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
   .sm\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -42647,6 +42637,24 @@ typ som min egna nav här och nu*/
 
   .sm\:order-none {
     order: 0;
+  }
+
+  .sm\:float-right {
+    float: right;
+  }
+
+  .sm\:float-left {
+    float: left;
+  }
+
+  .sm\:float-none {
+    float: none;
+  }
+
+  .sm\:clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }
 
@@ -46700,24 +46708,6 @@ typ som min egna nav här och nu*/
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  .md\:float-right {
-    float: right;
-  }
-
-  .md\:float-left {
-    float: left;
-  }
-
-  .md\:float-none {
-    float: none;
-  }
-
-  .md\:clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
   .md\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -49626,6 +49616,24 @@ typ som min egna nav här och nu*/
 
   .md\:order-none {
     order: 0;
+  }
+
+  .md\:float-right {
+    float: right;
+  }
+
+  .md\:float-left {
+    float: left;
+  }
+
+  .md\:float-none {
+    float: none;
+  }
+
+  .md\:clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }
 
@@ -53679,24 +53687,6 @@ typ som min egna nav här och nu*/
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  .lg\:float-right {
-    float: right;
-  }
-
-  .lg\:float-left {
-    float: left;
-  }
-
-  .lg\:float-none {
-    float: none;
-  }
-
-  .lg\:clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
   .lg\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -56605,6 +56595,24 @@ typ som min egna nav här och nu*/
 
   .lg\:order-none {
     order: 0;
+  }
+
+  .lg\:float-right {
+    float: right;
+  }
+
+  .lg\:float-left {
+    float: left;
+  }
+
+  .lg\:float-none {
+    float: none;
+  }
+
+  .lg\:clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }
 
@@ -60658,24 +60666,6 @@ typ som min egna nav här och nu*/
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  .xl\:float-right {
-    float: right;
-  }
-
-  .xl\:float-left {
-    float: left;
-  }
-
-  .xl\:float-none {
-    float: none;
-  }
-
-  .xl\:clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
   .xl\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -63584,6 +63574,24 @@ typ som min egna nav här och nu*/
 
   .xl\:order-none {
     order: 0;
+  }
+
+  .xl\:float-right {
+    float: right;
+  }
+
+  .xl\:float-left {
+    float: left;
+  }
+
+  .xl\:float-none {
+    float: none;
+  }
+
+  .xl\:clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }
   

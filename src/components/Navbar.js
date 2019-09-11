@@ -85,7 +85,7 @@ const Navbar = class extends React.Component {
         const alu = this.state.theposition === 0 ? 'top-nav' : 'scroll-nav'
         return (
             <nav
-                className={` md:scroll-nav flex md:fixed`}
+                className={` md:scroll-nav flex md:fixed md:justify-center`}
                 role="navigation"
                 aria-label="main-navigation"
                 style={{
@@ -93,7 +93,7 @@ const Navbar = class extends React.Component {
                     width: '100%',
                     zIndex: '999'
                 }}>
-                <div className="flex flex-grow justify-around">
+                <div className="flex flex-grow justify-between container">
                     <div className="flex mdm:hidden">
                         <Link className="relative hover:text-blue-500 p-3 lg:p-4" to="/">
                             <h2>BRF Sandbacken</h2>
