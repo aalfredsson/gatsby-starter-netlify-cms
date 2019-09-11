@@ -60,7 +60,12 @@ h3 {
         transition: background-color 200ms ease-in-out;
     }
 
-    .menu-hover:hover {
+    .menu-item:hover {
+        transition: 44ms linear;
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    .menu-item-active {
         transition: 44ms linear;
         background-color: rgba(0, 0, 0, 0.05);
     }
@@ -196,7 +201,14 @@ typ som min egna nav här och nu*/
     height: 3.25rem;
     position: relative;
     width: 3.25rem;
-    margin-left: auto; }
+    margin-left: auto;
+    margin-right: 0.75rem;
+    margin-top: 0.75rem; }
+.not-active.navbar-burger-circle {
+    border-radius: 50%;
+    background-color: rgba(255,255,255,3);
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
 .navbar-burger span {
     background-color: currentColor;
     display: block;
@@ -220,8 +232,6 @@ top: calc(50% - 6px); }
 top: calc(50% - 1px); }
 .navbar-burger span:nth-child(3) {
 top: calc(50% + 4px); }
-.navbar-burger:hover {
-background-color: rgba(0, 0, 0, 0.05); }
 .navbar-burger.is-active span:nth-child(1) {
 -webkit-transform: translateY(5px) rotate(45deg);
         transform: translateY(5px) rotate(45deg); }

@@ -679,7 +679,12 @@ h3 {
   transition: background-color 200ms ease-in-out;
 }
 
-.menu-hover:hover {
+.menu-item:hover {
+  transition: 44ms linear;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.menu-item-active {
   transition: 44ms linear;
   background-color: rgba(0, 0, 0, 0.05);
 }
@@ -801,6 +806,14 @@ typ som min egna nav här och nu*/
   position: relative;
   width: 3.25rem;
   margin-left: auto;
+  margin-right: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.not-active.navbar-burger-circle {
+  border-radius: 50%;
+  background-color: rgba(255,255,255,3);
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
 }
 
 .navbar-burger span {
@@ -826,10 +839,6 @@ typ som min egna nav här och nu*/
 
 .navbar-burger span:nth-child(3) {
   top: calc(50% + 4px);
-}
-
-.navbar-burger:hover {
-  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .navbar-burger.is-active span:nth-child(1) {
@@ -7809,7 +7818,12 @@ typ som min egna nav här och nu*/
     transition: background-color 200ms ease-in-out;
   }
 
-  .smm\:menu-hover:hover {
+  .smm\:menu-item:hover {
+    transition: 44ms linear;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .smm\:menu-item-active {
     transition: 44ms linear;
     background-color: rgba(0, 0, 0, 0.05);
   }
@@ -14792,7 +14806,12 @@ typ som min egna nav här och nu*/
     transition: background-color 200ms ease-in-out;
   }
 
-  .mdm\:menu-hover:hover {
+  .mdm\:menu-item:hover {
+    transition: 44ms linear;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .mdm\:menu-item-active {
     transition: 44ms linear;
     background-color: rgba(0, 0, 0, 0.05);
   }
@@ -21775,7 +21794,12 @@ typ som min egna nav här och nu*/
     transition: background-color 200ms ease-in-out;
   }
 
-  .lgm\:menu-hover:hover {
+  .lgm\:menu-item:hover {
+    transition: 44ms linear;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .lgm\:menu-item-active {
     transition: 44ms linear;
     background-color: rgba(0, 0, 0, 0.05);
   }
@@ -28758,7 +28782,12 @@ typ som min egna nav här och nu*/
     transition: background-color 200ms ease-in-out;
   }
 
-  .xlm\:menu-hover:hover {
+  .xlm\:menu-item:hover {
+    transition: 44ms linear;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .xlm\:menu-item-active {
     transition: 44ms linear;
     background-color: rgba(0, 0, 0, 0.05);
   }
@@ -35741,7 +35770,12 @@ typ som min egna nav här och nu*/
     transition: background-color 200ms ease-in-out;
   }
 
-  .sm\:menu-hover:hover {
+  .sm\:menu-item:hover {
+    transition: 44ms linear;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .sm\:menu-item-active {
     transition: 44ms linear;
     background-color: rgba(0, 0, 0, 0.05);
   }
@@ -42724,7 +42758,12 @@ typ som min egna nav här och nu*/
     transition: background-color 200ms ease-in-out;
   }
 
-  .md\:menu-hover:hover {
+  .md\:menu-item:hover {
+    transition: 44ms linear;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .md\:menu-item-active {
     transition: 44ms linear;
     background-color: rgba(0, 0, 0, 0.05);
   }
@@ -49707,7 +49746,12 @@ typ som min egna nav här och nu*/
     transition: background-color 200ms ease-in-out;
   }
 
-  .lg\:menu-hover:hover {
+  .lg\:menu-item:hover {
+    transition: 44ms linear;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .lg\:menu-item-active {
     transition: 44ms linear;
     background-color: rgba(0, 0, 0, 0.05);
   }
@@ -56690,7 +56734,12 @@ typ som min egna nav här och nu*/
     transition: background-color 200ms ease-in-out;
   }
 
-  .xl\:menu-hover:hover {
+  .xl\:menu-item:hover {
+    transition: 44ms linear;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .xl\:menu-item-active {
     transition: 44ms linear;
     background-color: rgba(0, 0, 0, 0.05);
   }
