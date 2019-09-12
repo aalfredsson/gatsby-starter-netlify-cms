@@ -9,17 +9,17 @@ export const AboutPageTemplate = ({ title, content, contentComponent, firstImage
 
   return (
     <section className="">
-        <h2 className="text-center text-2xl pb-12 pt-24 bg-page-header">
+        <h1 className="text-center pb-12 pt-24 bg-page-header">
             {title}
-        </h2>
+        </h1>
         <div className=" flex justify-center">
             
             <div className="container">
                 <div className="">
-                    <div className="flex flex-col md:flex-row pt-12 ">
-                        <PageContent className="flex flex-col flex-1 px-8 justify-center" content={content} />
+                    <div className="flex flex-col lg:flex-row pt-12 ">
+                        <PageContent className="flex flex-col flex-1 pl-3 pr-8 lgm:pb-12 justify-center" content={content} />
                         <div
-                            className="flex text-white justify-center px-8 flex-1">
+                            className="flex text-white justify-center pr-3 pl-8 flex-1">
                                 <img src={!!firstImage && !!firstImage.childImageSharp ? firstImage.childImageSharp.fluid.src : firstImage}></img>
                         </div>
                     </div>

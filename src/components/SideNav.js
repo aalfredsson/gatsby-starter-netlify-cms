@@ -12,10 +12,11 @@ class SideNav extends React.Component {
       <ul>
         {posts &&
         posts.map(({ node: post }) => (
-            <li>
+            <li className="">
                 <Link
-                    className=" font-semibold"
+                    className="hover:translate-r-2px transition-fast hover:text-gray-900 text-gray-600 font-medium px-2 -mx-2 py-1 block"
                     to={post.fields.slug}
+                    activeClassName="translate-r-2px text-gray-900"
                 >
                     {post.frontmatter.menuitem}
                 </Link>

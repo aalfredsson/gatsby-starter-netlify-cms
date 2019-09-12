@@ -14,18 +14,12 @@ export default class BlogIndexPage extends React.Component {
           }}
         >
           <h1
-            className="has-text-weight-bold is-size-1"
-            style={{
-              boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-              backgroundColor: '#f40',
-              color: 'white',
-              padding: '1rem',
-            }}
+            className="text-center text-2xl md:pb-12 mdm:py-12 md:pt-24 bg-page-header"
           >
             Latest Stories
           </h1>
         </div>
-        <section className="section">
+        <section className="section flex justify-center py-6">
           <div className="container">
             <div className="content">
               <BlogRoll />

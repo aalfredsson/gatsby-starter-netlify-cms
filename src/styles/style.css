@@ -639,6 +639,14 @@ h3 {
   }
 }
 
+.translate-r-2px {
+  transform: translateX(2px)!important;
+}
+
+.hover\:translate-r-2px:hover {
+  transform: translateX(2px)!important;
+}
+
 .is-active {
   display: flex !important;
 }
@@ -861,6 +869,16 @@ typ som min egna nav här och nu*/
 
 .navbar-burger.is-active span:nth-child(3) {
   transform: translateY(-5px) rotate(-45deg);
+}
+
+/*Tailwind classes*/
+
+.transition-fast {
+  transition: all .2s ease!important;
+}
+
+.transition-super-fast {
+  transition: all .1s ease!important;
 }
 
 .z-0 {
@@ -4607,138 +4625,6 @@ typ som min egna nav här och nu*/
   margin-left: -1px;
 }
 
-.list-none {
-  list-style-type: none;
-}
-
-.list-disc {
-  list-style-type: disc;
-}
-
-.list-decimal {
-  list-style-type: decimal;
-}
-
-.list-inside {
-  list-style-position: inside;
-}
-
-.list-outside {
-  list-style-position: outside;
-}
-
-.leading-none {
-  line-height: 1;
-}
-
-.leading-tight {
-  line-height: 1.25;
-}
-
-.leading-snug {
-  line-height: 1.375;
-}
-
-.leading-normal {
-  line-height: 1.5;
-}
-
-.leading-relaxed {
-  line-height: 1.625;
-}
-
-.leading-loose {
-  line-height: 2;
-}
-
-.h-0 {
-  height: 0;
-}
-
-.h-1 {
-  height: 0.25rem;
-}
-
-.h-2 {
-  height: 0.5rem;
-}
-
-.h-3 {
-  height: 0.75rem;
-}
-
-.h-4 {
-  height: 1rem;
-}
-
-.h-5 {
-  height: 1.25rem;
-}
-
-.h-6 {
-  height: 1.5rem;
-}
-
-.h-8 {
-  height: 2rem;
-}
-
-.h-10 {
-  height: 2.5rem;
-}
-
-.h-12 {
-  height: 3rem;
-}
-
-.h-16 {
-  height: 4rem;
-}
-
-.h-20 {
-  height: 5rem;
-}
-
-.h-24 {
-  height: 6rem;
-}
-
-.h-32 {
-  height: 8rem;
-}
-
-.h-40 {
-  height: 10rem;
-}
-
-.h-48 {
-  height: 12rem;
-}
-
-.h-56 {
-  height: 14rem;
-}
-
-.h-64 {
-  height: 16rem;
-}
-
-.h-auto {
-  height: auto;
-}
-
-.h-px {
-  height: 1px;
-}
-
-.h-full {
-  height: 100%;
-}
-
-.h-screen {
-  height: 100vh;
-}
-
 .appearance-none {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -7785,6 +7671,138 @@ typ som min egna nav här och nu*/
 
 .focus\:font-black:focus {
   font-weight: 900;
+}
+
+.h-0 {
+  height: 0;
+}
+
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-2 {
+  height: 0.5rem;
+}
+
+.h-3 {
+  height: 0.75rem;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
+.h-48 {
+  height: 12rem;
+}
+
+.h-56 {
+  height: 14rem;
+}
+
+.h-64 {
+  height: 16rem;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-px {
+  height: 1px;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.leading-none {
+  line-height: 1;
+}
+
+.leading-tight {
+  line-height: 1.25;
+}
+
+.leading-snug {
+  line-height: 1.375;
+}
+
+.leading-normal {
+  line-height: 1.5;
+}
+
+.leading-relaxed {
+  line-height: 1.625;
+}
+
+.leading-loose {
+  line-height: 2;
+}
+
+.list-inside {
+  list-style-position: inside;
+}
+
+.list-outside {
+  list-style-position: outside;
+}
+
+.list-none {
+  list-style-type: none;
+}
+
+.list-disc {
+  list-style-type: disc;
+}
+
+.list-decimal {
+  list-style-type: decimal;
 }
 
 @media (max-width: 639px) {
@@ -11594,138 +11612,6 @@ typ som min egna nav här och nu*/
     margin-left: -1px;
   }
 
-  .smm\:list-none {
-    list-style-type: none;
-  }
-
-  .smm\:list-disc {
-    list-style-type: disc;
-  }
-
-  .smm\:list-decimal {
-    list-style-type: decimal;
-  }
-
-  .smm\:list-inside {
-    list-style-position: inside;
-  }
-
-  .smm\:list-outside {
-    list-style-position: outside;
-  }
-
-  .smm\:leading-none {
-    line-height: 1;
-  }
-
-  .smm\:leading-tight {
-    line-height: 1.25;
-  }
-
-  .smm\:leading-snug {
-    line-height: 1.375;
-  }
-
-  .smm\:leading-normal {
-    line-height: 1.5;
-  }
-
-  .smm\:leading-relaxed {
-    line-height: 1.625;
-  }
-
-  .smm\:leading-loose {
-    line-height: 2;
-  }
-
-  .smm\:h-0 {
-    height: 0;
-  }
-
-  .smm\:h-1 {
-    height: 0.25rem;
-  }
-
-  .smm\:h-2 {
-    height: 0.5rem;
-  }
-
-  .smm\:h-3 {
-    height: 0.75rem;
-  }
-
-  .smm\:h-4 {
-    height: 1rem;
-  }
-
-  .smm\:h-5 {
-    height: 1.25rem;
-  }
-
-  .smm\:h-6 {
-    height: 1.5rem;
-  }
-
-  .smm\:h-8 {
-    height: 2rem;
-  }
-
-  .smm\:h-10 {
-    height: 2.5rem;
-  }
-
-  .smm\:h-12 {
-    height: 3rem;
-  }
-
-  .smm\:h-16 {
-    height: 4rem;
-  }
-
-  .smm\:h-20 {
-    height: 5rem;
-  }
-
-  .smm\:h-24 {
-    height: 6rem;
-  }
-
-  .smm\:h-32 {
-    height: 8rem;
-  }
-
-  .smm\:h-40 {
-    height: 10rem;
-  }
-
-  .smm\:h-48 {
-    height: 12rem;
-  }
-
-  .smm\:h-56 {
-    height: 14rem;
-  }
-
-  .smm\:h-64 {
-    height: 16rem;
-  }
-
-  .smm\:h-auto {
-    height: auto;
-  }
-
-  .smm\:h-px {
-    height: 1px;
-  }
-
-  .smm\:h-full {
-    height: 100%;
-  }
-
-  .smm\:h-screen {
-    height: 100vh;
-  }
-
   .smm\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -14772,6 +14658,138 @@ typ som min egna nav här och nu*/
 
   .smm\:focus\:font-black:focus {
     font-weight: 900;
+  }
+
+  .smm\:h-0 {
+    height: 0;
+  }
+
+  .smm\:h-1 {
+    height: 0.25rem;
+  }
+
+  .smm\:h-2 {
+    height: 0.5rem;
+  }
+
+  .smm\:h-3 {
+    height: 0.75rem;
+  }
+
+  .smm\:h-4 {
+    height: 1rem;
+  }
+
+  .smm\:h-5 {
+    height: 1.25rem;
+  }
+
+  .smm\:h-6 {
+    height: 1.5rem;
+  }
+
+  .smm\:h-8 {
+    height: 2rem;
+  }
+
+  .smm\:h-10 {
+    height: 2.5rem;
+  }
+
+  .smm\:h-12 {
+    height: 3rem;
+  }
+
+  .smm\:h-16 {
+    height: 4rem;
+  }
+
+  .smm\:h-20 {
+    height: 5rem;
+  }
+
+  .smm\:h-24 {
+    height: 6rem;
+  }
+
+  .smm\:h-32 {
+    height: 8rem;
+  }
+
+  .smm\:h-40 {
+    height: 10rem;
+  }
+
+  .smm\:h-48 {
+    height: 12rem;
+  }
+
+  .smm\:h-56 {
+    height: 14rem;
+  }
+
+  .smm\:h-64 {
+    height: 16rem;
+  }
+
+  .smm\:h-auto {
+    height: auto;
+  }
+
+  .smm\:h-px {
+    height: 1px;
+  }
+
+  .smm\:h-full {
+    height: 100%;
+  }
+
+  .smm\:h-screen {
+    height: 100vh;
+  }
+
+  .smm\:leading-none {
+    line-height: 1;
+  }
+
+  .smm\:leading-tight {
+    line-height: 1.25;
+  }
+
+  .smm\:leading-snug {
+    line-height: 1.375;
+  }
+
+  .smm\:leading-normal {
+    line-height: 1.5;
+  }
+
+  .smm\:leading-relaxed {
+    line-height: 1.625;
+  }
+
+  .smm\:leading-loose {
+    line-height: 2;
+  }
+
+  .smm\:list-inside {
+    list-style-position: inside;
+  }
+
+  .smm\:list-outside {
+    list-style-position: outside;
+  }
+
+  .smm\:list-none {
+    list-style-type: none;
+  }
+
+  .smm\:list-disc {
+    list-style-type: disc;
+  }
+
+  .smm\:list-decimal {
+    list-style-type: decimal;
   }
 }
 
@@ -18582,138 +18600,6 @@ typ som min egna nav här och nu*/
     margin-left: -1px;
   }
 
-  .mdm\:list-none {
-    list-style-type: none;
-  }
-
-  .mdm\:list-disc {
-    list-style-type: disc;
-  }
-
-  .mdm\:list-decimal {
-    list-style-type: decimal;
-  }
-
-  .mdm\:list-inside {
-    list-style-position: inside;
-  }
-
-  .mdm\:list-outside {
-    list-style-position: outside;
-  }
-
-  .mdm\:leading-none {
-    line-height: 1;
-  }
-
-  .mdm\:leading-tight {
-    line-height: 1.25;
-  }
-
-  .mdm\:leading-snug {
-    line-height: 1.375;
-  }
-
-  .mdm\:leading-normal {
-    line-height: 1.5;
-  }
-
-  .mdm\:leading-relaxed {
-    line-height: 1.625;
-  }
-
-  .mdm\:leading-loose {
-    line-height: 2;
-  }
-
-  .mdm\:h-0 {
-    height: 0;
-  }
-
-  .mdm\:h-1 {
-    height: 0.25rem;
-  }
-
-  .mdm\:h-2 {
-    height: 0.5rem;
-  }
-
-  .mdm\:h-3 {
-    height: 0.75rem;
-  }
-
-  .mdm\:h-4 {
-    height: 1rem;
-  }
-
-  .mdm\:h-5 {
-    height: 1.25rem;
-  }
-
-  .mdm\:h-6 {
-    height: 1.5rem;
-  }
-
-  .mdm\:h-8 {
-    height: 2rem;
-  }
-
-  .mdm\:h-10 {
-    height: 2.5rem;
-  }
-
-  .mdm\:h-12 {
-    height: 3rem;
-  }
-
-  .mdm\:h-16 {
-    height: 4rem;
-  }
-
-  .mdm\:h-20 {
-    height: 5rem;
-  }
-
-  .mdm\:h-24 {
-    height: 6rem;
-  }
-
-  .mdm\:h-32 {
-    height: 8rem;
-  }
-
-  .mdm\:h-40 {
-    height: 10rem;
-  }
-
-  .mdm\:h-48 {
-    height: 12rem;
-  }
-
-  .mdm\:h-56 {
-    height: 14rem;
-  }
-
-  .mdm\:h-64 {
-    height: 16rem;
-  }
-
-  .mdm\:h-auto {
-    height: auto;
-  }
-
-  .mdm\:h-px {
-    height: 1px;
-  }
-
-  .mdm\:h-full {
-    height: 100%;
-  }
-
-  .mdm\:h-screen {
-    height: 100vh;
-  }
-
   .mdm\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -21760,6 +21646,138 @@ typ som min egna nav här och nu*/
 
   .mdm\:focus\:font-black:focus {
     font-weight: 900;
+  }
+
+  .mdm\:h-0 {
+    height: 0;
+  }
+
+  .mdm\:h-1 {
+    height: 0.25rem;
+  }
+
+  .mdm\:h-2 {
+    height: 0.5rem;
+  }
+
+  .mdm\:h-3 {
+    height: 0.75rem;
+  }
+
+  .mdm\:h-4 {
+    height: 1rem;
+  }
+
+  .mdm\:h-5 {
+    height: 1.25rem;
+  }
+
+  .mdm\:h-6 {
+    height: 1.5rem;
+  }
+
+  .mdm\:h-8 {
+    height: 2rem;
+  }
+
+  .mdm\:h-10 {
+    height: 2.5rem;
+  }
+
+  .mdm\:h-12 {
+    height: 3rem;
+  }
+
+  .mdm\:h-16 {
+    height: 4rem;
+  }
+
+  .mdm\:h-20 {
+    height: 5rem;
+  }
+
+  .mdm\:h-24 {
+    height: 6rem;
+  }
+
+  .mdm\:h-32 {
+    height: 8rem;
+  }
+
+  .mdm\:h-40 {
+    height: 10rem;
+  }
+
+  .mdm\:h-48 {
+    height: 12rem;
+  }
+
+  .mdm\:h-56 {
+    height: 14rem;
+  }
+
+  .mdm\:h-64 {
+    height: 16rem;
+  }
+
+  .mdm\:h-auto {
+    height: auto;
+  }
+
+  .mdm\:h-px {
+    height: 1px;
+  }
+
+  .mdm\:h-full {
+    height: 100%;
+  }
+
+  .mdm\:h-screen {
+    height: 100vh;
+  }
+
+  .mdm\:leading-none {
+    line-height: 1;
+  }
+
+  .mdm\:leading-tight {
+    line-height: 1.25;
+  }
+
+  .mdm\:leading-snug {
+    line-height: 1.375;
+  }
+
+  .mdm\:leading-normal {
+    line-height: 1.5;
+  }
+
+  .mdm\:leading-relaxed {
+    line-height: 1.625;
+  }
+
+  .mdm\:leading-loose {
+    line-height: 2;
+  }
+
+  .mdm\:list-inside {
+    list-style-position: inside;
+  }
+
+  .mdm\:list-outside {
+    list-style-position: outside;
+  }
+
+  .mdm\:list-none {
+    list-style-type: none;
+  }
+
+  .mdm\:list-disc {
+    list-style-type: disc;
+  }
+
+  .mdm\:list-decimal {
+    list-style-type: decimal;
   }
 }
 
@@ -25570,138 +25588,6 @@ typ som min egna nav här och nu*/
     margin-left: -1px;
   }
 
-  .lgm\:list-none {
-    list-style-type: none;
-  }
-
-  .lgm\:list-disc {
-    list-style-type: disc;
-  }
-
-  .lgm\:list-decimal {
-    list-style-type: decimal;
-  }
-
-  .lgm\:list-inside {
-    list-style-position: inside;
-  }
-
-  .lgm\:list-outside {
-    list-style-position: outside;
-  }
-
-  .lgm\:leading-none {
-    line-height: 1;
-  }
-
-  .lgm\:leading-tight {
-    line-height: 1.25;
-  }
-
-  .lgm\:leading-snug {
-    line-height: 1.375;
-  }
-
-  .lgm\:leading-normal {
-    line-height: 1.5;
-  }
-
-  .lgm\:leading-relaxed {
-    line-height: 1.625;
-  }
-
-  .lgm\:leading-loose {
-    line-height: 2;
-  }
-
-  .lgm\:h-0 {
-    height: 0;
-  }
-
-  .lgm\:h-1 {
-    height: 0.25rem;
-  }
-
-  .lgm\:h-2 {
-    height: 0.5rem;
-  }
-
-  .lgm\:h-3 {
-    height: 0.75rem;
-  }
-
-  .lgm\:h-4 {
-    height: 1rem;
-  }
-
-  .lgm\:h-5 {
-    height: 1.25rem;
-  }
-
-  .lgm\:h-6 {
-    height: 1.5rem;
-  }
-
-  .lgm\:h-8 {
-    height: 2rem;
-  }
-
-  .lgm\:h-10 {
-    height: 2.5rem;
-  }
-
-  .lgm\:h-12 {
-    height: 3rem;
-  }
-
-  .lgm\:h-16 {
-    height: 4rem;
-  }
-
-  .lgm\:h-20 {
-    height: 5rem;
-  }
-
-  .lgm\:h-24 {
-    height: 6rem;
-  }
-
-  .lgm\:h-32 {
-    height: 8rem;
-  }
-
-  .lgm\:h-40 {
-    height: 10rem;
-  }
-
-  .lgm\:h-48 {
-    height: 12rem;
-  }
-
-  .lgm\:h-56 {
-    height: 14rem;
-  }
-
-  .lgm\:h-64 {
-    height: 16rem;
-  }
-
-  .lgm\:h-auto {
-    height: auto;
-  }
-
-  .lgm\:h-px {
-    height: 1px;
-  }
-
-  .lgm\:h-full {
-    height: 100%;
-  }
-
-  .lgm\:h-screen {
-    height: 100vh;
-  }
-
   .lgm\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -28748,6 +28634,138 @@ typ som min egna nav här och nu*/
 
   .lgm\:focus\:font-black:focus {
     font-weight: 900;
+  }
+
+  .lgm\:h-0 {
+    height: 0;
+  }
+
+  .lgm\:h-1 {
+    height: 0.25rem;
+  }
+
+  .lgm\:h-2 {
+    height: 0.5rem;
+  }
+
+  .lgm\:h-3 {
+    height: 0.75rem;
+  }
+
+  .lgm\:h-4 {
+    height: 1rem;
+  }
+
+  .lgm\:h-5 {
+    height: 1.25rem;
+  }
+
+  .lgm\:h-6 {
+    height: 1.5rem;
+  }
+
+  .lgm\:h-8 {
+    height: 2rem;
+  }
+
+  .lgm\:h-10 {
+    height: 2.5rem;
+  }
+
+  .lgm\:h-12 {
+    height: 3rem;
+  }
+
+  .lgm\:h-16 {
+    height: 4rem;
+  }
+
+  .lgm\:h-20 {
+    height: 5rem;
+  }
+
+  .lgm\:h-24 {
+    height: 6rem;
+  }
+
+  .lgm\:h-32 {
+    height: 8rem;
+  }
+
+  .lgm\:h-40 {
+    height: 10rem;
+  }
+
+  .lgm\:h-48 {
+    height: 12rem;
+  }
+
+  .lgm\:h-56 {
+    height: 14rem;
+  }
+
+  .lgm\:h-64 {
+    height: 16rem;
+  }
+
+  .lgm\:h-auto {
+    height: auto;
+  }
+
+  .lgm\:h-px {
+    height: 1px;
+  }
+
+  .lgm\:h-full {
+    height: 100%;
+  }
+
+  .lgm\:h-screen {
+    height: 100vh;
+  }
+
+  .lgm\:leading-none {
+    line-height: 1;
+  }
+
+  .lgm\:leading-tight {
+    line-height: 1.25;
+  }
+
+  .lgm\:leading-snug {
+    line-height: 1.375;
+  }
+
+  .lgm\:leading-normal {
+    line-height: 1.5;
+  }
+
+  .lgm\:leading-relaxed {
+    line-height: 1.625;
+  }
+
+  .lgm\:leading-loose {
+    line-height: 2;
+  }
+
+  .lgm\:list-inside {
+    list-style-position: inside;
+  }
+
+  .lgm\:list-outside {
+    list-style-position: outside;
+  }
+
+  .lgm\:list-none {
+    list-style-type: none;
+  }
+
+  .lgm\:list-disc {
+    list-style-type: disc;
+  }
+
+  .lgm\:list-decimal {
+    list-style-type: decimal;
   }
 }
 
@@ -32558,138 +32576,6 @@ typ som min egna nav här och nu*/
     margin-left: -1px;
   }
 
-  .xlm\:list-none {
-    list-style-type: none;
-  }
-
-  .xlm\:list-disc {
-    list-style-type: disc;
-  }
-
-  .xlm\:list-decimal {
-    list-style-type: decimal;
-  }
-
-  .xlm\:list-inside {
-    list-style-position: inside;
-  }
-
-  .xlm\:list-outside {
-    list-style-position: outside;
-  }
-
-  .xlm\:leading-none {
-    line-height: 1;
-  }
-
-  .xlm\:leading-tight {
-    line-height: 1.25;
-  }
-
-  .xlm\:leading-snug {
-    line-height: 1.375;
-  }
-
-  .xlm\:leading-normal {
-    line-height: 1.5;
-  }
-
-  .xlm\:leading-relaxed {
-    line-height: 1.625;
-  }
-
-  .xlm\:leading-loose {
-    line-height: 2;
-  }
-
-  .xlm\:h-0 {
-    height: 0;
-  }
-
-  .xlm\:h-1 {
-    height: 0.25rem;
-  }
-
-  .xlm\:h-2 {
-    height: 0.5rem;
-  }
-
-  .xlm\:h-3 {
-    height: 0.75rem;
-  }
-
-  .xlm\:h-4 {
-    height: 1rem;
-  }
-
-  .xlm\:h-5 {
-    height: 1.25rem;
-  }
-
-  .xlm\:h-6 {
-    height: 1.5rem;
-  }
-
-  .xlm\:h-8 {
-    height: 2rem;
-  }
-
-  .xlm\:h-10 {
-    height: 2.5rem;
-  }
-
-  .xlm\:h-12 {
-    height: 3rem;
-  }
-
-  .xlm\:h-16 {
-    height: 4rem;
-  }
-
-  .xlm\:h-20 {
-    height: 5rem;
-  }
-
-  .xlm\:h-24 {
-    height: 6rem;
-  }
-
-  .xlm\:h-32 {
-    height: 8rem;
-  }
-
-  .xlm\:h-40 {
-    height: 10rem;
-  }
-
-  .xlm\:h-48 {
-    height: 12rem;
-  }
-
-  .xlm\:h-56 {
-    height: 14rem;
-  }
-
-  .xlm\:h-64 {
-    height: 16rem;
-  }
-
-  .xlm\:h-auto {
-    height: auto;
-  }
-
-  .xlm\:h-px {
-    height: 1px;
-  }
-
-  .xlm\:h-full {
-    height: 100%;
-  }
-
-  .xlm\:h-screen {
-    height: 100vh;
-  }
-
   .xlm\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -35736,6 +35622,138 @@ typ som min egna nav här och nu*/
 
   .xlm\:focus\:font-black:focus {
     font-weight: 900;
+  }
+
+  .xlm\:h-0 {
+    height: 0;
+  }
+
+  .xlm\:h-1 {
+    height: 0.25rem;
+  }
+
+  .xlm\:h-2 {
+    height: 0.5rem;
+  }
+
+  .xlm\:h-3 {
+    height: 0.75rem;
+  }
+
+  .xlm\:h-4 {
+    height: 1rem;
+  }
+
+  .xlm\:h-5 {
+    height: 1.25rem;
+  }
+
+  .xlm\:h-6 {
+    height: 1.5rem;
+  }
+
+  .xlm\:h-8 {
+    height: 2rem;
+  }
+
+  .xlm\:h-10 {
+    height: 2.5rem;
+  }
+
+  .xlm\:h-12 {
+    height: 3rem;
+  }
+
+  .xlm\:h-16 {
+    height: 4rem;
+  }
+
+  .xlm\:h-20 {
+    height: 5rem;
+  }
+
+  .xlm\:h-24 {
+    height: 6rem;
+  }
+
+  .xlm\:h-32 {
+    height: 8rem;
+  }
+
+  .xlm\:h-40 {
+    height: 10rem;
+  }
+
+  .xlm\:h-48 {
+    height: 12rem;
+  }
+
+  .xlm\:h-56 {
+    height: 14rem;
+  }
+
+  .xlm\:h-64 {
+    height: 16rem;
+  }
+
+  .xlm\:h-auto {
+    height: auto;
+  }
+
+  .xlm\:h-px {
+    height: 1px;
+  }
+
+  .xlm\:h-full {
+    height: 100%;
+  }
+
+  .xlm\:h-screen {
+    height: 100vh;
+  }
+
+  .xlm\:leading-none {
+    line-height: 1;
+  }
+
+  .xlm\:leading-tight {
+    line-height: 1.25;
+  }
+
+  .xlm\:leading-snug {
+    line-height: 1.375;
+  }
+
+  .xlm\:leading-normal {
+    line-height: 1.5;
+  }
+
+  .xlm\:leading-relaxed {
+    line-height: 1.625;
+  }
+
+  .xlm\:leading-loose {
+    line-height: 2;
+  }
+
+  .xlm\:list-inside {
+    list-style-position: inside;
+  }
+
+  .xlm\:list-outside {
+    list-style-position: outside;
+  }
+
+  .xlm\:list-none {
+    list-style-type: none;
+  }
+
+  .xlm\:list-disc {
+    list-style-type: disc;
+  }
+
+  .xlm\:list-decimal {
+    list-style-type: decimal;
   }
 }
 
@@ -39546,138 +39564,6 @@ typ som min egna nav här och nu*/
     margin-left: -1px;
   }
 
-  .sm\:list-none {
-    list-style-type: none;
-  }
-
-  .sm\:list-disc {
-    list-style-type: disc;
-  }
-
-  .sm\:list-decimal {
-    list-style-type: decimal;
-  }
-
-  .sm\:list-inside {
-    list-style-position: inside;
-  }
-
-  .sm\:list-outside {
-    list-style-position: outside;
-  }
-
-  .sm\:leading-none {
-    line-height: 1;
-  }
-
-  .sm\:leading-tight {
-    line-height: 1.25;
-  }
-
-  .sm\:leading-snug {
-    line-height: 1.375;
-  }
-
-  .sm\:leading-normal {
-    line-height: 1.5;
-  }
-
-  .sm\:leading-relaxed {
-    line-height: 1.625;
-  }
-
-  .sm\:leading-loose {
-    line-height: 2;
-  }
-
-  .sm\:h-0 {
-    height: 0;
-  }
-
-  .sm\:h-1 {
-    height: 0.25rem;
-  }
-
-  .sm\:h-2 {
-    height: 0.5rem;
-  }
-
-  .sm\:h-3 {
-    height: 0.75rem;
-  }
-
-  .sm\:h-4 {
-    height: 1rem;
-  }
-
-  .sm\:h-5 {
-    height: 1.25rem;
-  }
-
-  .sm\:h-6 {
-    height: 1.5rem;
-  }
-
-  .sm\:h-8 {
-    height: 2rem;
-  }
-
-  .sm\:h-10 {
-    height: 2.5rem;
-  }
-
-  .sm\:h-12 {
-    height: 3rem;
-  }
-
-  .sm\:h-16 {
-    height: 4rem;
-  }
-
-  .sm\:h-20 {
-    height: 5rem;
-  }
-
-  .sm\:h-24 {
-    height: 6rem;
-  }
-
-  .sm\:h-32 {
-    height: 8rem;
-  }
-
-  .sm\:h-40 {
-    height: 10rem;
-  }
-
-  .sm\:h-48 {
-    height: 12rem;
-  }
-
-  .sm\:h-56 {
-    height: 14rem;
-  }
-
-  .sm\:h-64 {
-    height: 16rem;
-  }
-
-  .sm\:h-auto {
-    height: auto;
-  }
-
-  .sm\:h-px {
-    height: 1px;
-  }
-
-  .sm\:h-full {
-    height: 100%;
-  }
-
-  .sm\:h-screen {
-    height: 100vh;
-  }
-
   .sm\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -42724,6 +42610,138 @@ typ som min egna nav här och nu*/
 
   .sm\:focus\:font-black:focus {
     font-weight: 900;
+  }
+
+  .sm\:h-0 {
+    height: 0;
+  }
+
+  .sm\:h-1 {
+    height: 0.25rem;
+  }
+
+  .sm\:h-2 {
+    height: 0.5rem;
+  }
+
+  .sm\:h-3 {
+    height: 0.75rem;
+  }
+
+  .sm\:h-4 {
+    height: 1rem;
+  }
+
+  .sm\:h-5 {
+    height: 1.25rem;
+  }
+
+  .sm\:h-6 {
+    height: 1.5rem;
+  }
+
+  .sm\:h-8 {
+    height: 2rem;
+  }
+
+  .sm\:h-10 {
+    height: 2.5rem;
+  }
+
+  .sm\:h-12 {
+    height: 3rem;
+  }
+
+  .sm\:h-16 {
+    height: 4rem;
+  }
+
+  .sm\:h-20 {
+    height: 5rem;
+  }
+
+  .sm\:h-24 {
+    height: 6rem;
+  }
+
+  .sm\:h-32 {
+    height: 8rem;
+  }
+
+  .sm\:h-40 {
+    height: 10rem;
+  }
+
+  .sm\:h-48 {
+    height: 12rem;
+  }
+
+  .sm\:h-56 {
+    height: 14rem;
+  }
+
+  .sm\:h-64 {
+    height: 16rem;
+  }
+
+  .sm\:h-auto {
+    height: auto;
+  }
+
+  .sm\:h-px {
+    height: 1px;
+  }
+
+  .sm\:h-full {
+    height: 100%;
+  }
+
+  .sm\:h-screen {
+    height: 100vh;
+  }
+
+  .sm\:leading-none {
+    line-height: 1;
+  }
+
+  .sm\:leading-tight {
+    line-height: 1.25;
+  }
+
+  .sm\:leading-snug {
+    line-height: 1.375;
+  }
+
+  .sm\:leading-normal {
+    line-height: 1.5;
+  }
+
+  .sm\:leading-relaxed {
+    line-height: 1.625;
+  }
+
+  .sm\:leading-loose {
+    line-height: 2;
+  }
+
+  .sm\:list-inside {
+    list-style-position: inside;
+  }
+
+  .sm\:list-outside {
+    list-style-position: outside;
+  }
+
+  .sm\:list-none {
+    list-style-type: none;
+  }
+
+  .sm\:list-disc {
+    list-style-type: disc;
+  }
+
+  .sm\:list-decimal {
+    list-style-type: decimal;
   }
 }
 
@@ -46534,138 +46552,6 @@ typ som min egna nav här och nu*/
     margin-left: -1px;
   }
 
-  .md\:list-none {
-    list-style-type: none;
-  }
-
-  .md\:list-disc {
-    list-style-type: disc;
-  }
-
-  .md\:list-decimal {
-    list-style-type: decimal;
-  }
-
-  .md\:list-inside {
-    list-style-position: inside;
-  }
-
-  .md\:list-outside {
-    list-style-position: outside;
-  }
-
-  .md\:leading-none {
-    line-height: 1;
-  }
-
-  .md\:leading-tight {
-    line-height: 1.25;
-  }
-
-  .md\:leading-snug {
-    line-height: 1.375;
-  }
-
-  .md\:leading-normal {
-    line-height: 1.5;
-  }
-
-  .md\:leading-relaxed {
-    line-height: 1.625;
-  }
-
-  .md\:leading-loose {
-    line-height: 2;
-  }
-
-  .md\:h-0 {
-    height: 0;
-  }
-
-  .md\:h-1 {
-    height: 0.25rem;
-  }
-
-  .md\:h-2 {
-    height: 0.5rem;
-  }
-
-  .md\:h-3 {
-    height: 0.75rem;
-  }
-
-  .md\:h-4 {
-    height: 1rem;
-  }
-
-  .md\:h-5 {
-    height: 1.25rem;
-  }
-
-  .md\:h-6 {
-    height: 1.5rem;
-  }
-
-  .md\:h-8 {
-    height: 2rem;
-  }
-
-  .md\:h-10 {
-    height: 2.5rem;
-  }
-
-  .md\:h-12 {
-    height: 3rem;
-  }
-
-  .md\:h-16 {
-    height: 4rem;
-  }
-
-  .md\:h-20 {
-    height: 5rem;
-  }
-
-  .md\:h-24 {
-    height: 6rem;
-  }
-
-  .md\:h-32 {
-    height: 8rem;
-  }
-
-  .md\:h-40 {
-    height: 10rem;
-  }
-
-  .md\:h-48 {
-    height: 12rem;
-  }
-
-  .md\:h-56 {
-    height: 14rem;
-  }
-
-  .md\:h-64 {
-    height: 16rem;
-  }
-
-  .md\:h-auto {
-    height: auto;
-  }
-
-  .md\:h-px {
-    height: 1px;
-  }
-
-  .md\:h-full {
-    height: 100%;
-  }
-
-  .md\:h-screen {
-    height: 100vh;
-  }
-
   .md\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -49712,6 +49598,138 @@ typ som min egna nav här och nu*/
 
   .md\:focus\:font-black:focus {
     font-weight: 900;
+  }
+
+  .md\:h-0 {
+    height: 0;
+  }
+
+  .md\:h-1 {
+    height: 0.25rem;
+  }
+
+  .md\:h-2 {
+    height: 0.5rem;
+  }
+
+  .md\:h-3 {
+    height: 0.75rem;
+  }
+
+  .md\:h-4 {
+    height: 1rem;
+  }
+
+  .md\:h-5 {
+    height: 1.25rem;
+  }
+
+  .md\:h-6 {
+    height: 1.5rem;
+  }
+
+  .md\:h-8 {
+    height: 2rem;
+  }
+
+  .md\:h-10 {
+    height: 2.5rem;
+  }
+
+  .md\:h-12 {
+    height: 3rem;
+  }
+
+  .md\:h-16 {
+    height: 4rem;
+  }
+
+  .md\:h-20 {
+    height: 5rem;
+  }
+
+  .md\:h-24 {
+    height: 6rem;
+  }
+
+  .md\:h-32 {
+    height: 8rem;
+  }
+
+  .md\:h-40 {
+    height: 10rem;
+  }
+
+  .md\:h-48 {
+    height: 12rem;
+  }
+
+  .md\:h-56 {
+    height: 14rem;
+  }
+
+  .md\:h-64 {
+    height: 16rem;
+  }
+
+  .md\:h-auto {
+    height: auto;
+  }
+
+  .md\:h-px {
+    height: 1px;
+  }
+
+  .md\:h-full {
+    height: 100%;
+  }
+
+  .md\:h-screen {
+    height: 100vh;
+  }
+
+  .md\:leading-none {
+    line-height: 1;
+  }
+
+  .md\:leading-tight {
+    line-height: 1.25;
+  }
+
+  .md\:leading-snug {
+    line-height: 1.375;
+  }
+
+  .md\:leading-normal {
+    line-height: 1.5;
+  }
+
+  .md\:leading-relaxed {
+    line-height: 1.625;
+  }
+
+  .md\:leading-loose {
+    line-height: 2;
+  }
+
+  .md\:list-inside {
+    list-style-position: inside;
+  }
+
+  .md\:list-outside {
+    list-style-position: outside;
+  }
+
+  .md\:list-none {
+    list-style-type: none;
+  }
+
+  .md\:list-disc {
+    list-style-type: disc;
+  }
+
+  .md\:list-decimal {
+    list-style-type: decimal;
   }
 }
 
@@ -53522,138 +53540,6 @@ typ som min egna nav här och nu*/
     margin-left: -1px;
   }
 
-  .lg\:list-none {
-    list-style-type: none;
-  }
-
-  .lg\:list-disc {
-    list-style-type: disc;
-  }
-
-  .lg\:list-decimal {
-    list-style-type: decimal;
-  }
-
-  .lg\:list-inside {
-    list-style-position: inside;
-  }
-
-  .lg\:list-outside {
-    list-style-position: outside;
-  }
-
-  .lg\:leading-none {
-    line-height: 1;
-  }
-
-  .lg\:leading-tight {
-    line-height: 1.25;
-  }
-
-  .lg\:leading-snug {
-    line-height: 1.375;
-  }
-
-  .lg\:leading-normal {
-    line-height: 1.5;
-  }
-
-  .lg\:leading-relaxed {
-    line-height: 1.625;
-  }
-
-  .lg\:leading-loose {
-    line-height: 2;
-  }
-
-  .lg\:h-0 {
-    height: 0;
-  }
-
-  .lg\:h-1 {
-    height: 0.25rem;
-  }
-
-  .lg\:h-2 {
-    height: 0.5rem;
-  }
-
-  .lg\:h-3 {
-    height: 0.75rem;
-  }
-
-  .lg\:h-4 {
-    height: 1rem;
-  }
-
-  .lg\:h-5 {
-    height: 1.25rem;
-  }
-
-  .lg\:h-6 {
-    height: 1.5rem;
-  }
-
-  .lg\:h-8 {
-    height: 2rem;
-  }
-
-  .lg\:h-10 {
-    height: 2.5rem;
-  }
-
-  .lg\:h-12 {
-    height: 3rem;
-  }
-
-  .lg\:h-16 {
-    height: 4rem;
-  }
-
-  .lg\:h-20 {
-    height: 5rem;
-  }
-
-  .lg\:h-24 {
-    height: 6rem;
-  }
-
-  .lg\:h-32 {
-    height: 8rem;
-  }
-
-  .lg\:h-40 {
-    height: 10rem;
-  }
-
-  .lg\:h-48 {
-    height: 12rem;
-  }
-
-  .lg\:h-56 {
-    height: 14rem;
-  }
-
-  .lg\:h-64 {
-    height: 16rem;
-  }
-
-  .lg\:h-auto {
-    height: auto;
-  }
-
-  .lg\:h-px {
-    height: 1px;
-  }
-
-  .lg\:h-full {
-    height: 100%;
-  }
-
-  .lg\:h-screen {
-    height: 100vh;
-  }
-
   .lg\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -56700,6 +56586,138 @@ typ som min egna nav här och nu*/
 
   .lg\:focus\:font-black:focus {
     font-weight: 900;
+  }
+
+  .lg\:h-0 {
+    height: 0;
+  }
+
+  .lg\:h-1 {
+    height: 0.25rem;
+  }
+
+  .lg\:h-2 {
+    height: 0.5rem;
+  }
+
+  .lg\:h-3 {
+    height: 0.75rem;
+  }
+
+  .lg\:h-4 {
+    height: 1rem;
+  }
+
+  .lg\:h-5 {
+    height: 1.25rem;
+  }
+
+  .lg\:h-6 {
+    height: 1.5rem;
+  }
+
+  .lg\:h-8 {
+    height: 2rem;
+  }
+
+  .lg\:h-10 {
+    height: 2.5rem;
+  }
+
+  .lg\:h-12 {
+    height: 3rem;
+  }
+
+  .lg\:h-16 {
+    height: 4rem;
+  }
+
+  .lg\:h-20 {
+    height: 5rem;
+  }
+
+  .lg\:h-24 {
+    height: 6rem;
+  }
+
+  .lg\:h-32 {
+    height: 8rem;
+  }
+
+  .lg\:h-40 {
+    height: 10rem;
+  }
+
+  .lg\:h-48 {
+    height: 12rem;
+  }
+
+  .lg\:h-56 {
+    height: 14rem;
+  }
+
+  .lg\:h-64 {
+    height: 16rem;
+  }
+
+  .lg\:h-auto {
+    height: auto;
+  }
+
+  .lg\:h-px {
+    height: 1px;
+  }
+
+  .lg\:h-full {
+    height: 100%;
+  }
+
+  .lg\:h-screen {
+    height: 100vh;
+  }
+
+  .lg\:leading-none {
+    line-height: 1;
+  }
+
+  .lg\:leading-tight {
+    line-height: 1.25;
+  }
+
+  .lg\:leading-snug {
+    line-height: 1.375;
+  }
+
+  .lg\:leading-normal {
+    line-height: 1.5;
+  }
+
+  .lg\:leading-relaxed {
+    line-height: 1.625;
+  }
+
+  .lg\:leading-loose {
+    line-height: 2;
+  }
+
+  .lg\:list-inside {
+    list-style-position: inside;
+  }
+
+  .lg\:list-outside {
+    list-style-position: outside;
+  }
+
+  .lg\:list-none {
+    list-style-type: none;
+  }
+
+  .lg\:list-disc {
+    list-style-type: disc;
+  }
+
+  .lg\:list-decimal {
+    list-style-type: decimal;
   }
 }
 
@@ -60510,138 +60528,6 @@ typ som min egna nav här och nu*/
     margin-left: -1px;
   }
 
-  .xl\:list-none {
-    list-style-type: none;
-  }
-
-  .xl\:list-disc {
-    list-style-type: disc;
-  }
-
-  .xl\:list-decimal {
-    list-style-type: decimal;
-  }
-
-  .xl\:list-inside {
-    list-style-position: inside;
-  }
-
-  .xl\:list-outside {
-    list-style-position: outside;
-  }
-
-  .xl\:leading-none {
-    line-height: 1;
-  }
-
-  .xl\:leading-tight {
-    line-height: 1.25;
-  }
-
-  .xl\:leading-snug {
-    line-height: 1.375;
-  }
-
-  .xl\:leading-normal {
-    line-height: 1.5;
-  }
-
-  .xl\:leading-relaxed {
-    line-height: 1.625;
-  }
-
-  .xl\:leading-loose {
-    line-height: 2;
-  }
-
-  .xl\:h-0 {
-    height: 0;
-  }
-
-  .xl\:h-1 {
-    height: 0.25rem;
-  }
-
-  .xl\:h-2 {
-    height: 0.5rem;
-  }
-
-  .xl\:h-3 {
-    height: 0.75rem;
-  }
-
-  .xl\:h-4 {
-    height: 1rem;
-  }
-
-  .xl\:h-5 {
-    height: 1.25rem;
-  }
-
-  .xl\:h-6 {
-    height: 1.5rem;
-  }
-
-  .xl\:h-8 {
-    height: 2rem;
-  }
-
-  .xl\:h-10 {
-    height: 2.5rem;
-  }
-
-  .xl\:h-12 {
-    height: 3rem;
-  }
-
-  .xl\:h-16 {
-    height: 4rem;
-  }
-
-  .xl\:h-20 {
-    height: 5rem;
-  }
-
-  .xl\:h-24 {
-    height: 6rem;
-  }
-
-  .xl\:h-32 {
-    height: 8rem;
-  }
-
-  .xl\:h-40 {
-    height: 10rem;
-  }
-
-  .xl\:h-48 {
-    height: 12rem;
-  }
-
-  .xl\:h-56 {
-    height: 14rem;
-  }
-
-  .xl\:h-64 {
-    height: 16rem;
-  }
-
-  .xl\:h-auto {
-    height: auto;
-  }
-
-  .xl\:h-px {
-    height: 1px;
-  }
-
-  .xl\:h-full {
-    height: 100%;
-  }
-
-  .xl\:h-screen {
-    height: 100vh;
-  }
-
   .xl\:appearance-none {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -63689,5 +63575,136 @@ typ som min egna nav här och nu*/
   .xl\:focus\:font-black:focus {
     font-weight: 900;
   }
+
+  .xl\:h-0 {
+    height: 0;
+  }
+
+  .xl\:h-1 {
+    height: 0.25rem;
+  }
+
+  .xl\:h-2 {
+    height: 0.5rem;
+  }
+
+  .xl\:h-3 {
+    height: 0.75rem;
+  }
+
+  .xl\:h-4 {
+    height: 1rem;
+  }
+
+  .xl\:h-5 {
+    height: 1.25rem;
+  }
+
+  .xl\:h-6 {
+    height: 1.5rem;
+  }
+
+  .xl\:h-8 {
+    height: 2rem;
+  }
+
+  .xl\:h-10 {
+    height: 2.5rem;
+  }
+
+  .xl\:h-12 {
+    height: 3rem;
+  }
+
+  .xl\:h-16 {
+    height: 4rem;
+  }
+
+  .xl\:h-20 {
+    height: 5rem;
+  }
+
+  .xl\:h-24 {
+    height: 6rem;
+  }
+
+  .xl\:h-32 {
+    height: 8rem;
+  }
+
+  .xl\:h-40 {
+    height: 10rem;
+  }
+
+  .xl\:h-48 {
+    height: 12rem;
+  }
+
+  .xl\:h-56 {
+    height: 14rem;
+  }
+
+  .xl\:h-64 {
+    height: 16rem;
+  }
+
+  .xl\:h-auto {
+    height: auto;
+  }
+
+  .xl\:h-px {
+    height: 1px;
+  }
+
+  .xl\:h-full {
+    height: 100%;
+  }
+
+  .xl\:h-screen {
+    height: 100vh;
+  }
+
+  .xl\:leading-none {
+    line-height: 1;
+  }
+
+  .xl\:leading-tight {
+    line-height: 1.25;
+  }
+
+  .xl\:leading-snug {
+    line-height: 1.375;
+  }
+
+  .xl\:leading-normal {
+    line-height: 1.5;
+  }
+
+  .xl\:leading-relaxed {
+    line-height: 1.625;
+  }
+
+  .xl\:leading-loose {
+    line-height: 2;
+  }
+
+  .xl\:list-inside {
+    list-style-position: inside;
+  }
+
+  .xl\:list-outside {
+    list-style-position: outside;
+  }
+
+  .xl\:list-none {
+    list-style-type: none;
+  }
+
+  .xl\:list-disc {
+    list-style-type: disc;
+  }
+
+  .xl\:list-decimal {
+    list-style-type: decimal;
+  }
 }
-  

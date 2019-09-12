@@ -14,6 +14,12 @@ h3 {
 
 @tailwind utilities;
 
+@variants hover {
+    .translate-r-2px {
+        transform: translateX(2px)!important;
+    }
+  }
+
 @responsive {
     
     .is-active {
@@ -251,3 +257,11 @@ opacity: 0; }
 -webkit-transform: translateY(-5px) rotate(-45deg);
         transform: translateY(-5px) rotate(-45deg); }
   
+
+/*Tailwind classes*/
+.transition-fast {
+    transition: all .2s ease!important;
+}
+.transition-super-fast {
+    transition: all .1s ease!important;
+}

@@ -93,11 +93,12 @@ const Navbar = class extends React.Component {
                     style={{
                         right: '0',
                         width: '100%',
-                        zIndex: '999'
+                        zIndex: '999',
+                        borderBottom: '1px solid rgba(0,0,0,0.08)'
                     }}>
                     <div className="flex flex-grow justify-between container">
                         <div className="flex mdm:hidden">
-                            <Link className="relative hover:text-blue-500 p-3 lg:p-4" to="/">
+                            <Link className="relative transition-super-fast hover:text-blue-500 p-3 lg:p-4" to="/">
                                 <h2>BRF Sandbacken</h2>
                             </Link>
                         </div>
@@ -116,29 +117,29 @@ const Navbar = class extends React.Component {
                             id="navMenu"
                             className={`mdm:navbar-menu mdm:fixed md:flex mdm:w-9/12 text-center z-10 ${this.state.navBarActiveClass} `}>
                             <div className="md:justify-end overflow-hidden flex flex-col md:flex-row mdm:w-full">
-                                <Link className="relative md:hidden hover:text-blue-500 p-3 pt-6 lg:p-4 mdm:menu-item" style={{ lineHeight:'1.4',borderBottom: '1px solid rgba(0,0,0,0.1)' }}
+                                <Link className="relative md:hidden transition-super-fast hover:text-blue-500 p-3 pt-6 lg:p-4 mdm:menu-item" style={{ lineHeight:'1.4',borderBottom: '1px solid rgba(0,0,0,0.1)' }}
                                     activeClassName="text-blue-500 mdm:menu-item-active" to="/">
                                     <h2>BRF Sandbacken</h2>
                                 </Link>
-                                <Link className="relative hover:text-blue-500 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-item"
+                                <Link className="relative transition-super-fast hover:text-blue-500 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-item"
                                     activeClassName="text-blue-500 mdm:menu-item-active" to="/about">
                                     Om Föreningen
                                 </Link>
                                 <Link onMouseEnter={this.handleHover} onMouseLeave={this.handleHover} onClick={(e) => this.redirect}
-                                    className={`relative hover:text-blue-500 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-item`}
+                                    className={`relative transition-super-fast hover:text-blue-500 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-item`}
                                     activeClassName="text-blue-500 mdm:menu-item-active" partiallyActive={true} to="/lists/test-list/">
                                     {/* Fix partially active for test list. to=/lists and redirect lists to lists/test-list/ */}
                                     Bo i BRF
                                 </Link>
-                                <Link className="relative hover:text-blue-500 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-item"
+                                <Link className="relative transition-super-fast hover:text-blue-500 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-item"
                                     activeClassName="text-blue-500 mdm:menu-item-active" to="/blog">
                                     Anslagstavla
                                 </Link>
-                                <Link className="relative hover:text-blue-500 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-item"
+                                <Link className="relative transition-super-fast hover:text-blue-500 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-item"
                                     activeClassName="text-blue-500 mdm:menu-item-active" to="/contact">
                                     Närområde
                                 </Link>
-                                <Link className="relative hover:text-blue-500 p-3 lg:p-4 mdm:menu-item" activeClassName="text-blue-500 mdm:menu-item-active" to="/contact/examples">
+                                <Link className="relative transition-super-fast hover:text-blue-500 p-3 lg:p-4 mdm:menu-item" activeClassName="text-blue-500 mdm:menu-item-active" to="/contact/examples">
                                     Tvätt
                                 </Link>
                             </div>

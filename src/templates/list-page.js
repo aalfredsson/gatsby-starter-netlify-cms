@@ -20,10 +20,10 @@ export const ListsPage = ({
         <h2 className="text-center text-2xl pb-12 pt-24 bg-page-header">{title}</h2>
         <div className="flex justify-center pt-12">
             <div className="container flex-row flex">
-                <div className="flex">
+                <div className="flex pl-3 pr-12 pb-12">
                     <SideNav/>
                 </div>
-                <div className="flex-1 text-center ">
+                <div className="flex-1 px-3">
                     {helmet || ''}
                     <p>{description}</p>
                     <PageContent content={content} />
