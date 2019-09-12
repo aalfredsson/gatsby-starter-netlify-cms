@@ -689,12 +689,10 @@ h3 {
 
 .menu-item:hover {
   transition: 44ms linear;
-  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .menu-item-active {
   transition: 44ms linear;
-  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .blog-list-container {
@@ -7848,12 +7846,10 @@ typ som min egna nav här och nu*/
 
   .smm\:menu-item:hover {
     transition: 44ms linear;
-    background-color: rgba(0, 0, 0, 0.05);
   }
 
   .smm\:menu-item-active {
     transition: 44ms linear;
-    background-color: rgba(0, 0, 0, 0.05);
   }
 
   .smm\:blog-list-container {
@@ -14836,12 +14832,10 @@ typ som min egna nav här och nu*/
 
   .mdm\:menu-item:hover {
     transition: 44ms linear;
-    background-color: rgba(0, 0, 0, 0.05);
   }
 
   .mdm\:menu-item-active {
     transition: 44ms linear;
-    background-color: rgba(0, 0, 0, 0.05);
   }
 
   .mdm\:blog-list-container {
@@ -21824,12 +21818,10 @@ typ som min egna nav här och nu*/
 
   .lgm\:menu-item:hover {
     transition: 44ms linear;
-    background-color: rgba(0, 0, 0, 0.05);
   }
 
   .lgm\:menu-item-active {
     transition: 44ms linear;
-    background-color: rgba(0, 0, 0, 0.05);
   }
 
   .lgm\:blog-list-container {
@@ -28812,12 +28804,10 @@ typ som min egna nav här och nu*/
 
   .xlm\:menu-item:hover {
     transition: 44ms linear;
-    background-color: rgba(0, 0, 0, 0.05);
   }
 
   .xlm\:menu-item-active {
     transition: 44ms linear;
-    background-color: rgba(0, 0, 0, 0.05);
   }
 
   .xlm\:blog-list-container {
@@ -35800,12 +35790,10 @@ typ som min egna nav här och nu*/
 
   .sm\:menu-item:hover {
     transition: 44ms linear;
-    background-color: rgba(0, 0, 0, 0.05);
   }
 
   .sm\:menu-item-active {
     transition: 44ms linear;
-    background-color: rgba(0, 0, 0, 0.05);
   }
 
   .sm\:blog-list-container {
@@ -42788,12 +42776,10 @@ typ som min egna nav här och nu*/
 
   .md\:menu-item:hover {
     transition: 44ms linear;
-    background-color: rgba(0, 0, 0, 0.05);
   }
 
   .md\:menu-item-active {
     transition: 44ms linear;
-    background-color: rgba(0, 0, 0, 0.05);
   }
 
   .md\:blog-list-container {
@@ -49776,12 +49762,10 @@ typ som min egna nav här och nu*/
 
   .lg\:menu-item:hover {
     transition: 44ms linear;
-    background-color: rgba(0, 0, 0, 0.05);
   }
 
   .lg\:menu-item-active {
     transition: 44ms linear;
-    background-color: rgba(0, 0, 0, 0.05);
   }
 
   .lg\:blog-list-container {
@@ -56764,12 +56748,10 @@ typ som min egna nav här och nu*/
 
   .xl\:menu-item:hover {
     transition: 44ms linear;
-    background-color: rgba(0, 0, 0, 0.05);
   }
 
   .xl\:menu-item-active {
     transition: 44ms linear;
-    background-color: rgba(0, 0, 0, 0.05);
   }
 
   .xl\:blog-list-container {

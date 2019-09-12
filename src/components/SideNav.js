@@ -9,7 +9,7 @@ class SideNav extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <ul>
+      <ul className="w-full">
         {posts &&
         posts.map(({ node: post }) => (
             <li className="">
