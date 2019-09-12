@@ -9,7 +9,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent, firstImage
 
   return (
     <section className="">
-        <h1 className="text-center pb-12 pt-24 bg-page-header">
+        <h1 className="text-center md:pb-12 mdm:py-12 md:pt-24 bg-page-header">
             {title}
         </h1>
         <div className=" flex justify-center">

@@ -17,7 +17,7 @@ export const ListsPage = ({
     const PageContent = contentComponent || Content
     return(
     <section className="flex flex-col">
-        <h2 className="text-center text-2xl pb-12 pt-24 bg-page-header">{title}</h2>
+        <h2 className="text-center text-2xl md:pb-12 mdm:py-12 md:pt-24 bg-page-header">{title}</h2>
         <div className="flex justify-center pt-12">
             <div className="container flex-row flex">
                 <div className="flex pl-3 pr-12 pb-12">
