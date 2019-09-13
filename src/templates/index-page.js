@@ -20,7 +20,10 @@ export const IndexPageTemplate = ({
             <div
                 className="flex text-white justify-center pt-12 page-img"
                 style={{
-                    backgroundImage: `url(${
+                    backgroundImage: `linear-gradient(
+                        rgba(0, 0, 0, 0.5),
+                        rgba(0, 0, 0, 0.5)
+                      ),url(${
                         !!image.childImageSharp ? image.childImageSharp.fluid.src : image
                     })`,
                     backgroundPosition: `top left`,
