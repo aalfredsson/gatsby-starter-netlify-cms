@@ -7,10 +7,10 @@ subheading: En hemtrevlig förening i mysiga Kirseberg
 mainpitch:
   title: BRF Sandbacken i Malmö
   description: >
-    Vår förening grundades 1946 och består av Solgatan 28 A-J och
-    Vattenverksvägen 17 A-D. Husen byggdes i etapper med start 1946 och stod
-    helt färdigt 1950. Här finns totalt 117 lägenheter där de flesta är
-    tvårumslägenheter, men även en- och trerumslägenheter finns.
+    På Solgatan 28 A-J och Vattenverksvägen 17 A-D hittar du vår förening som
+    grundades 1946. Husen byggdes i etapper med start 1946 och stod helt färdigt
+    1950. Här finns totalt 117 lägenheter där de flesta är tvårumslägenheter,
+    men även en- och trerumslägenheter finns.
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
