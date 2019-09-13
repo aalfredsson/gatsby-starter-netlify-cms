@@ -8,13 +8,10 @@ export default class BlogIndexPage extends React.Component {
     return (
       <Layout>
         <div
-          className="full-width-image-container margin-top-0"
-          style={{
-            backgroundImage: `url('/img/blog-index.jpg')`,
-          }}
+          className="full-width-image-container margin-top-0 pb-12"
         >
           <h1
-            className="text-center text-2xl md:pb-12 mdm:py-12 md:pt-24 bg-page-header"
+            className="text-center text-2xl md:pb-4 mdm:py-4 md:pt-18 bg-page-header bg-blue-200"
           >
             Latest Stories
           </h1>

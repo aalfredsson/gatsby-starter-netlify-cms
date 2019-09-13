@@ -707,6 +707,12 @@ h3 {
   transform: scale(1.05);
 }
 
+/*Tailwind styles*/
+
+.pt-18 {
+  padding-top: 4.75rem;
+}
+
 .overlay{
   position: fixed;
   background-color:#000;
@@ -735,16 +741,11 @@ h3 {
   left: 25%;
 }
 
-.bc-lightgrey {
-  background-color: #EDF1F4;
-}
-
 .blurb-heading {
   text-align: center;
   font-size: 22px;
   margin-bottom: 36px;
   position: relative;
-  background-color: #3296E1; /*#2a62ffe0*/
   width: auto;
   color: white;
   padding: 3px;
@@ -752,6 +753,7 @@ h3 {
   justify-content: center;
   align-self: center;
   z-index: -1;
+  text-shadow: 0px 0px 2px rgba(0,0,0,0.2);
 }
 
 .blurb-heading::after {
@@ -759,8 +761,8 @@ h3 {
   position: absolute;
   top: 100%;
   left: 40%;
-  border-top: 18px solid #3296E1; /*#2a62ffe0*/
-  border-top-color: #3296E1; /*#2a62ffe0*/
+  border-top: 18px solid #bee3f8; /*#2a62ffe0*/
+  border-top-color: #bee3f8; /*#2a62ffe0*/
   border-left: 18px solid transparent;
   border-right: 18px solid transparent;
 }
@@ -798,8 +800,10 @@ h3 {
 }
 
 .bg-page-header {
-  background-color: #3296E1; /*2a89ffe0*/
+  text-shadow: 0px 0px 2px rgba(0,0,0,0.2);
   color: white;
+  padding-left: 3.75rem;
+  padding-right: 3.75rem;
 }
 
 /*Fixa react bootstrap, ibland får man fatksitk använda egen byggda komponenter som inte liknar bootstraps egna
@@ -867,6 +871,11 @@ typ som min egna nav här och nu*/
 
 .navbar-burger.is-active span:nth-child(3) {
   transform: translateY(-5px) rotate(-45deg);
+}
+
+footer {
+  text-shadow: 0px 0px 2px rgba(0,0,0,0.2);
+  color: white;
 }
 
 /*Tailwind classes*/
@@ -7864,6 +7873,12 @@ typ som min egna nav här och nu*/
     transform: scale(1.05);
   }
 
+  /*Tailwind styles*/
+
+  .smm\:pt-18 {
+    padding-top: 4.75rem;
+  }
+
   .smm\:z-0 {
     z-index: 0;
   }
@@ -14848,6 +14863,12 @@ typ som min egna nav här och nu*/
   .mdm\:md-blog-list-container:hover {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 17px 22px 0px;
     transform: scale(1.05);
+  }
+
+  /*Tailwind styles*/
+
+  .mdm\:pt-18 {
+    padding-top: 4.75rem;
   }
 
   .mdm\:z-0 {
@@ -21836,6 +21857,12 @@ typ som min egna nav här och nu*/
     transform: scale(1.05);
   }
 
+  /*Tailwind styles*/
+
+  .lgm\:pt-18 {
+    padding-top: 4.75rem;
+  }
+
   .lgm\:z-0 {
     z-index: 0;
   }
@@ -28820,6 +28847,12 @@ typ som min egna nav här och nu*/
   .xlm\:md-blog-list-container:hover {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 17px 22px 0px;
     transform: scale(1.05);
+  }
+
+  /*Tailwind styles*/
+
+  .xlm\:pt-18 {
+    padding-top: 4.75rem;
   }
 
   .xlm\:z-0 {
@@ -35808,6 +35841,12 @@ typ som min egna nav här och nu*/
     transform: scale(1.05);
   }
 
+  /*Tailwind styles*/
+
+  .sm\:pt-18 {
+    padding-top: 4.75rem;
+  }
+
   .sm\:z-0 {
     z-index: 0;
   }
@@ -42792,6 +42831,12 @@ typ som min egna nav här och nu*/
   .md\:md-blog-list-container:hover {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 17px 22px 0px;
     transform: scale(1.05);
+  }
+
+  /*Tailwind styles*/
+
+  .md\:pt-18 {
+    padding-top: 4.75rem;
   }
 
   .md\:z-0 {
@@ -49780,6 +49825,12 @@ typ som min egna nav här och nu*/
     transform: scale(1.05);
   }
 
+  /*Tailwind styles*/
+
+  .lg\:pt-18 {
+    padding-top: 4.75rem;
+  }
+
   .lg\:z-0 {
     z-index: 0;
   }
@@ -56764,6 +56815,12 @@ typ som min egna nav här och nu*/
   .xl\:md-blog-list-container:hover {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 17px 22px 0px;
     transform: scale(1.05);
+  }
+
+  /*Tailwind styles*/
+
+  .xl\:pt-18 {
+    padding-top: 4.75rem;
   }
 
   .xl\:z-0 {

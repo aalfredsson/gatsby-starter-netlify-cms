@@ -18,12 +18,12 @@ export const BlogPostTemplate = ({
   const PostContent = contentComponent || Content
 
   return (
-    <section className="section">
+    <section className="section pb-12">
       {helmet || ''}
       <div className="">
         <div className="">
           <div className="">
-            <h1 className="text-center md:pb-12 mdm:py-12 md:pt-24 bg-page-header">
+            <h1 className="text-center md:pb-4 mdm:py-4 md:pt-18 bg-page-header bg-blue-200">
               {title}
             </h1>
             <div className="flex justify-center">

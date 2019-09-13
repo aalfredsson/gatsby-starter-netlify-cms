@@ -18,7 +18,7 @@ export const IndexPageTemplate = ({
 }) => (
         <div>
             <div
-                className="flex text-white justify-center pt-12"
+                className="flex text-white justify-center pt-12 page-img"
                 style={{
                     backgroundImage: `url(${
                         !!image.childImageSharp ? image.childImageSharp.fluid.src : image
@@ -83,7 +83,7 @@ export const IndexPageTemplate = ({
                                             </div>
                                         </div>  
                                     </div>
-                                    <div className="flex justify-center px-3 bc-lightgrey">
+                                    <div className="flex justify-center px-3 bg-gray-100 pb-12">
                                         <div className="container mdm:px-4">
                                             <h1 className="text-center py-12">
                                                 Latest stories

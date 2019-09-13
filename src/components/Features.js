@@ -7,7 +7,7 @@ const FeatureGrid = ({ gridItems }) => (
         {gridItems.slice(0, 3).map(item => (
             <div key={item.text} className="lgm:pb-12 flex-1 lg:blurb-middle-item">
                 <section className="flex flex-col">
-                    <div className="blurb-heading"><span>{item.textheading}</span></div>
+                    <div className="blurb-heading bg-blue-200"><span>{item.textheading}</span></div>
                     <div className="flex flex-row">
                         
                         <div className="">

@@ -8,8 +8,8 @@ export const AboutPageTemplate = ({ title, content, contentComponent, firstImage
   const PageContent = contentComponent || Content
 
   return (
-    <section className="">
-        <h1 className="text-center md:pb-12 mdm:py-12 md:pt-24 bg-page-header">
+    <section className="pb-12">
+        <h1 className="text-center md:pb-4 mdm:py-4 md:pt-18 bg-page-header bg-blue-200">
             {title}
         </h1>
         <div className=" flex justify-center">
@@ -19,7 +19,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent, firstImage
                     <div className="flex flex-col lg:flex-row pt-12 ">
                         <PageContent className="flex flex-col flex-1 pl-3 pr-8 lgm:pb-12 justify-center" content={content} />
                         <div
-                            className="flex text-white justify-center pr-3 pl-8 flex-1">
+                            className="flex text-white justify-center pr-3 pl-8 flex-1 page-img">
                                 <img src={!!firstImage && !!firstImage.childImageSharp ? firstImage.childImageSharp.fluid.src : firstImage}></img>
                         </div>
                     </div>

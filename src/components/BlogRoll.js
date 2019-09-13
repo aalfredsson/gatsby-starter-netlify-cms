@@ -9,7 +9,7 @@ class BlogRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <div className="flex flex-col md:flex-row md:flex-wrap justify-around">
+      <div className="flex flex-col md:flex-row md:flex-wrap justify-around mdm:px-6">
         {posts &&
           posts.map(({ node: post }) => (
             <Link to={post.fields.slug} className="w-full md:w-2/5 lg:w-1/5 md:mx-3 mb-6 blog-list-container md:md-blog-list-container" key={post.id}>

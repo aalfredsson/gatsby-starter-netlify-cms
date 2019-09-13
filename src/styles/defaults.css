@@ -49,3 +49,23 @@
 .blog-post p a:visited:active	{
     color: (internal value);
 }
+
+.blog-post p {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.blog-post p .gatsby-resp-image-link {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-img img {
+    display: flex;
+    align-self: center;
+    flex: 0 0 auto;
+}

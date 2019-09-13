@@ -86,6 +86,11 @@ h3 {
         transform: scale(1.05);
     }
 
+    /*Tailwind styles*/
+    .pt-18 {
+        padding-top: 4.75rem;
+    }
+
 }
 
 .overlay{
@@ -116,16 +121,11 @@ h3 {
     left: 25%;
 }
 
-.bc-lightgrey {
-    background-color: #EDF1F4;
-}
-
 .blurb-heading {
     text-align: center;
     font-size: 22px;
     margin-bottom: 36px;
     position: relative;
-    background-color: #3296E1; /*#2a62ffe0*/
     width: auto;
     color: white;
     padding: 3px;
@@ -133,6 +133,7 @@ h3 {
     justify-content: center;
     align-self: center;
     z-index: -1;
+    text-shadow: 0px 0px 2px rgba(0,0,0,0.2);
 }
 
 .blurb-heading::after {
@@ -140,8 +141,8 @@ h3 {
     position: absolute;
     top: 100%;
     left: 40%;
-    border-top: 18px solid #3296E1; /*#2a62ffe0*/
-    border-top-color: #3296E1; /*#2a62ffe0*/
+    border-top: 18px solid #bee3f8; /*#2a62ffe0*/
+    border-top-color: #bee3f8; /*#2a62ffe0*/
     border-left: 18px solid transparent;
     border-right: 18px solid transparent;
 }
@@ -191,8 +192,10 @@ h3 {
 }
 
 .bg-page-header {
-    background-color: #3296E1; /*2a89ffe0*/
+    text-shadow: 0px 0px 2px rgba(0,0,0,0.2);
     color: white;
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
 }
 
 
@@ -254,6 +257,11 @@ opacity: 0; }
 .navbar-burger.is-active span:nth-child(3) {
 -webkit-transform: translateY(-5px) rotate(-45deg);
         transform: translateY(-5px) rotate(-45deg); }
+
+footer {
+    text-shadow: 0px 0px 2px rgba(0,0,0,0.2);
+    color: white;
+}
   
 
 /*Tailwind classes*/
