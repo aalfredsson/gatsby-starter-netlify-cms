@@ -139,7 +139,7 @@ const Navbar = class extends React.Component {
                                     activeClassName="text-blue-500 mdm:bg-blue-100" to="/contact">
                                     Närområde
                                 </Link>
-                                <Link className="relative transition-super-fast hover:text-blue-500 mdm:hover:bg-blue-100 p-3 lg:p-4 mdm:menu-item" activeClassName="text-blue-500 mdm:bg-blue-100" to="/contact/examples">
+                                <Link className="relative transition-super-fast hover:text-blue-500 mdm:hover:bg-blue-100 p-3 lg:p-4 mdm:menu-item" activeClassName="text-blue-500 mdm:bg-blue-100" to="/laundry">
                                     Tvätt
                                 </Link>
                             </div>

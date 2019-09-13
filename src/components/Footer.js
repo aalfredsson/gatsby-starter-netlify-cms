@@ -14,9 +14,9 @@ const Footer = class extends React.Component {
         <div className="page-img justify-center flex text-center">
           <span className="text-4xl pt-20 pb-8">BRF Sandbacken Malmö</span>
         </div>
-        <div className="px-24">
+        <div className="px-12 md:px-24">
           <div className="">
-            <div className="flex">
+            <div className="flex flex-col md:flex-row">
               <div className="flex-1 p-6">
                 <section className="">
                   <ul className="">
@@ -68,6 +68,9 @@ const Footer = class extends React.Component {
                     </li>
                   </ul>
                 </section>
+              </div>
+              <div className="flex-1 p-6">
+
               </div>
               {/*
               <div className="social flex">
