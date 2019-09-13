@@ -25,6 +25,7 @@ export const IndexPageTemplate = ({
                     })`,
                     backgroundPosition: `top left`,
                     backgroundAttachment: `fixed`,
+                    backgroundSize: 'cover'
                 }}>
                 <div className="flex flex-col text-center py-8 xl:py-48 lg:py-32 sm:py-16">
                     <h1
