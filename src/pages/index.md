@@ -3,14 +3,14 @@ templateKey: index-page
 title: BRF Sandbacken Malmö
 image: /img/home-jumbotron.jpg
 heading: BRF Sandbacken Malmö
-subheading: 'En hemtrevlig förening i mysigt område i Malmö '
+subheading: En hemtrevlig förening i mysiga Kirseberg
 mainpitch:
-  title: Why Kaldi
+  title: BRF Sandbacken i Malmö
   description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    Vår förening grundades 1946 och består av Solgatan 28 A-J och
+    Vattenverksvägen 17 A-D. Husen byggdes i etapper med start 1946 och stod
+    helt färdigt 1950. Här finns totalt 117 lägenheter där de flesta är
+    tvårumslägenheter, men även en- och trerumslägenheter finns.
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
@@ -19,27 +19,22 @@ description: >-
 intro:
   blurbs:
     - image: /img/coffee.png
-      text: >
-        We sell green and roasted coffee beans that are sourced directly from
-        independent farmers and farm cooperatives. We’re proud to offer a
-        variety of coffee beans grown with great care for the environment and
-        local communities. Check our post or contact us directly for current
-        availability.
+      text: >-
+        Med nära till grönområden och cykelavstånd till centrum är Kirseberg en
+        given favorit! Här finns mycket goda bussförbindelser och du tar dig
+        enkel runt inom Malmö men även till Lund. Här finns butiker, pubar och
+        konditori! Som en egen stad i staden. Klicka här för att få veta mer.
       textheading: Att Flytta hit
     - image: /img/coffee-gear.png
-      text: >
-        We offer a small, but carefully curated selection of brewing gear and
-        tools for every taste and experience level. No matter if you roast your
-        own beans or just bought your first french press, you’ll find a gadget
-        to fall in love with in our shop.
+      text: >-
+        Om du som medlem i föreningen har funderingar kring saker som
+        avfallshantering, tvättbokning eller behöver komma i kontakt med
+        styrelsen - klicka dig vidare här.
       textheading: För medlemmar
     - image: /img/tutorials.png
       text: >
-        Love a great cup of coffee, but never knew how to make one? Bought a
-        fancy new Chemex but have no clue how to use it? Don't worry, we’re here
-        to help. You can schedule a custom 1-on-1 consultation with our baristas
-        to learn anything you want to know about coffee roasting and brewing.
-        Email us or call the store for details.
+        För att på ett enkelt och smidigt sätt hantera bostadsförsäljning kan du
+        som mäklare få den information du behöver här!
       textheading: För mäklare
   heading: What we offer
   description: >
