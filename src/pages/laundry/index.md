@@ -1,5 +1,7 @@
 ---
 templateKey: laundry-page
 title: Tvätt
-heading: Great coffee with a conscience
+heading: Ladda ner applikation för tvättrummet
+iosurl: df
+androidurl: df
 ---
