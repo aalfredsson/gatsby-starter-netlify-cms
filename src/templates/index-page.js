@@ -7,6 +7,9 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 
+import ImageGallery from 'react-image-gallery'
+import "../../node_modules/react-image-gallery/styles/css/image-gallery.css";
+
 export const IndexPageTemplate = ({
     image,
     title,
@@ -15,10 +18,11 @@ export const IndexPageTemplate = ({
     mainpitch,
     description,
     intro,
+    test,
 }) => (
         <div>
             <div
-                className="flex text-white justify-center pt-12 page-img"
+                className="flex text-white justify-center page-img"
                 style={{
                     backgroundImage: `linear-gradient(
                         rgba(0, 0, 0, 0.5),
@@ -30,9 +34,10 @@ export const IndexPageTemplate = ({
                     backgroundAttachment: `fixed`,
                     backgroundSize: 'cover'
                 }}>
-                <div className="flex flex-col text-center py-8 xl:py-48 lg:py-32 sm:py-16">
+                <ImageGallery className="pt-12" items={test} showThumbnails={false} showPlayButton={false} showBullets={true} autoPlay={true} slideDuration={1000} />
+                <div className="flex flex-col text-center pb-48 absolute" style={{alignItems: 'center',webkitBoxPack: 'center',msFlexPack: 'center',justifyContent: 'center',height: '100%'}}>
                     <h1
-                        className="text-5xl py-4"
+                        className="text-5xl py-4 px-3"
                         >
                         {title}
                     </h1>
@@ -45,6 +50,7 @@ export const IndexPageTemplate = ({
                         Välkommen!
                     </div>
                 </div>
+                
             </div>
             <section>
                 <div>
@@ -123,10 +129,28 @@ IndexPageTemplate.propTypes = {
 
 const IndexPage = ({ data }) => {
     const { frontmatter } = data.markdownRemark
+    const images = [
+        {
+          original: 'https://picsum.photos/id/1018/1000/600/',
+          thumbnail: 'https://picsum.photos/id/1018/250/150/',
+          sizes: '80vh'
+        },
+        {
+          original: 'https://picsum.photos/id/1015/1000/600/',
+          thumbnail: 'https://picsum.photos/id/1015/250/150/',
+          sizes: '80vh'
+        },
+        {
+          original: 'https://picsum.photos/id/1019/1000/600/',
+          thumbnail: 'https://picsum.photos/id/1019/250/150/',
+          sizes: '80vh'
+        },
+      ]
 
     return (
         <Layout>
             <IndexPageTemplate
+                test={images}
                 image={frontmatter.image}
                 title={frontmatter.title}
                 heading={frontmatter.heading}

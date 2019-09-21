@@ -4,19 +4,30 @@ import { Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 class SideNav extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            subNavActiveClass: props.optional.subNavActiveClass,
+        };
+      }
+
+      componentWillReceiveProps(nextProps) {
+        this.setState({ subNavActiveClass: nextProps.optional.subNavActiveClass });  
+      }
+
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <ul className="w-full">
+      <ul className={`w-full pb-3 sub-nav ${this.state.subNavActiveClass}`}>
         {posts &&
         posts.map(({ node: post }) => (
-            <li className="">
+            <li className="" key={post.id}>
                 <Link
-                    className="hover:translate-r-2px transition-fast hover:text-gray-900 text-gray-600 font-medium px-2 -mx-2 py-1 block"
+                    className="md:hover:translate-r-2px md:transition-fast md:hover:text-gray-900 md:text-gray-600 md:font-medium md:px-2 -mx-2 md:py-1 py-2 px-8 transition-super-fast hover:text-blue-500 mdm:hover:bg-blue-100"
                     to={post.fields.slug}
-                    activeClassName="translate-r-2px text-gray-900"
+                    activeClassName="md:translate-r-2px md:text-gray-900 text-blue-500 mdm:bg-blue-100"
                 >
                     {post.frontmatter.menuitem}
                 </Link>
@@ -35,7 +46,7 @@ SideNav.propTypes = {
   }),
 }
 
-export default () => (
+export default (optional) => (
   <StaticQuery
     query={graphql`
       query SideNavQuery {
@@ -59,7 +70,7 @@ export default () => (
         }
       }
     `}
-    render={(data, count) => <SideNav data={data} count={count} />}
+    render={(data, count) => <SideNav data={data} count={count}  optional={optional} />}
   />
 )
 

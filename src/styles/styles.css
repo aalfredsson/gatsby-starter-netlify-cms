@@ -91,6 +91,15 @@ h3 {
         padding-top: 4.75rem;
     }
 
+    .w-76 {
+        width: 19rem;
+    }
+
+}
+
+.test {
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .overlay{
@@ -196,6 +205,32 @@ h3 {
     color: white;
     padding-left: 3.75rem;
     padding-right: 3.75rem;
+}
+
+.sub-not-active {
+    animation-name: sub-height-close;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
+}
+
+.sub-is-active {
+    animation-name: sub-height-open;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;  
+}
+
+.sub-nav {
+    overflow: hidden;
+}
+
+@keyframes sub-height-open {
+    from {height: 0px; padding: 0px;}
+    to {height: 100%;}
+}
+
+@keyframes sub-height-close {
+    from {height: 100%;}
+    to {height: 0px; padding: 0px;}
 }
 
 

@@ -2,17 +2,22 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
+import Content, { HTMLContent } from '../components/Content'
+
 
 export const LaundryPageTemplate = ({
+    content,
+    contentComponent,
   image,
   title,
   heading,
-  description,
   iosurl,
   androidurl,
   intro,
   main,
-}) => (
+}) => {
+    const LaundryContent = contentComponent || Content
+    return (
   <div className="">
      <div className="">
         <h1 className="text-center md:pb-4 mdm:py-4 md:pt-18 bg-page-header bg-blue-200">
@@ -21,19 +26,20 @@ export const LaundryPageTemplate = ({
         <div className=" flex justify-center">
             
             <div className="container px-3">
-                <p className="px-12 py-6">{description}</p>
+            <LaundryContent content={content} className={''} />
+
                 <br></br>
                 <br></br>
                 <br></br>
-                <Link to="https://apps.apple.com/se/app/electrolux-vision-mobile/id880022671?mt=8"
+                <a href={iosurl}
                 style={{
                     display:'inline-block',
                     overflow:'hidden',
                     background:'url(https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2014-06-12&kind=iossoftware&bubble=apple_music) no-repeat',
                     width:'135px',
                     height:'40px'
-                    }}></Link>
-                <Link to="https://play.google.com/store/apps/details?id=com.electrolux.visionmobile&hl=sv&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" 
+                    }}></a>
+                <a href={androidurl}
                 style={{
                     display:'inline-block',
                     overflow:'hidden',
@@ -42,7 +48,7 @@ export const LaundryPageTemplate = ({
                     backgroundPosition:'center',
                     width:'135px',
                     height:'40px'
-                    }}></Link>
+                    }}></a>
                 
             </div>
 
@@ -50,24 +56,27 @@ export const LaundryPageTemplate = ({
     </div>
   </div>
 )
+}
 
 LaundryPageTemplate.propTypes = {
-  title: PropTypes.string,
-  description: PropTypes.string,
-  iosurl: PropTypes.string,
-  androidurl: PropTypes.string
+    content: PropTypes.node.isRequired,
+    contentComponent: PropTypes.func,
+    title: PropTypes.string,
+    iosurl: PropTypes.string,
+    androidurl: PropTypes.string
 }
 
 const LaundryPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+  const { markdownRemark: laundry } = data
 
   return (
     <Layout>
       <LaundryPageTemplate
-        title={frontmatter.title}
-        description={frontmatter.descriptio}
-        iosurl={frontmatter.iosurl}
-        androidurl={frontmatter.androidurl}
+        content={laundry.html}
+        contentComponent={HTMLContent}
+        title={laundry.frontmatter.title}
+        iosurl={laundry.frontmatter.iosurl}
+        androidurl={laundry.frontmatter.androidurl}
       />
     </Layout>
   )
@@ -75,9 +84,7 @@ const LaundryPage = ({ data }) => {
 
 LaundryPage.propTypes = {
   data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
+    markdownRemark: PropTypes.object
   }),
 }
 
@@ -86,10 +93,13 @@ export default LaundryPage
 export const laundryPageQuery = graphql`
   query LaundryPageTemplate($id: String!) {
     markdownRemark(id: { eq: $id }) {
-      frontmatter {
-        title
-        description
-      }
+        id
+        html
+        frontmatter {
+            title
+            iosurl
+            androidurl
+        }
     }
   }
 `
