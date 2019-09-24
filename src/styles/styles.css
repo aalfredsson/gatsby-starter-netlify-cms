@@ -209,19 +209,14 @@ h3 {
 }
 
 .sub-not-active {
-    animation-name: sub-height-close;
-    animation-duration: 200ms;
-    animation-fill-mode: forwards;
+    display: none;
 }
 
-.sub-is-active {
-    animation-name: sub-height-open;
-    animation-duration: 200ms;
-    animation-fill-mode: forwards;  
+.sub-is-active { 
+    display: block;
 }
 
 .sub-nav {
-    overflow: hidden;
 }
 
 @keyframes sub-height-open {

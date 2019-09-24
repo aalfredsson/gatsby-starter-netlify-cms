@@ -148,7 +148,7 @@ const Navbar = class extends React.Component {
                                     activeClassName="text-blue-500 mdm:bg-blue-100" to="/about">
                                     Om Föreningen
                                 </Link>
-                                    <div className="">
+                                    <div className="cursor-pointer">
                                         <span onMouseEnter={this.handleHover} onMouseLeave={this.handleHover} onClick={() => this.redirect()}
                                             className={`mdm:flex mdm:items-center mdm:justify-between relative transition-super-fast mdm:pl-6 hover:text-blue-500 mdm:hover:bg-blue-100 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-item`}
                                             /*activeClassName="text-blue-500 mdm:bg-blue-100" partiallyActive={true} to="/lists/test-list/"*/>

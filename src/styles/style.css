@@ -816,25 +816,14 @@ h3 {
 }
 
 .sub-not-active {
-  -webkit-animation-name: sub-height-close;
-          animation-name: sub-height-close;
-  -webkit-animation-duration: 200ms;
-          animation-duration: 200ms;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  display: none;
 }
 
 .sub-is-active {
-  -webkit-animation-name: sub-height-open;
-          animation-name: sub-height-open;
-  -webkit-animation-duration: 200ms;
-          animation-duration: 200ms;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  display: block;
 }
 
 .sub-nav {
-  overflow: hidden;
 }
 
 @-webkit-keyframes sub-height-open {
