@@ -31,7 +31,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
-    "react-image-gallery": "https://github.com/aalfredsson/react-image-gallery/tarball/2cb19e1f384f49617fc2b4a01dc3befd7d60c729",
+    "react-image-gallery": "https://github.com/aalfredsson/react-image-gallery.git",
     "reactstrap": "^8.0.1",
     "uuid": "^3.2.1",
     "yarn": "^1.17.3"
@@ -54,7 +54,8 @@
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "postcss src/styles/styles.css -o src/styles/style.css",
-    "watch:css": "postcss src/styles/styles.css -o src/styles/style.css -w"
+    "watch:css": "postcss src/styles/styles.css -o src/styles/style.css -w",
+    "postinstall": "cd ./node_modules/react-image-gallery && npm install && gulp build"
   },
   "devDependencies": {
     "autoprefixer": "^9.6.1",
