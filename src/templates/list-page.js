@@ -20,7 +20,7 @@ export const ListsPage = ({
         <h1 className="text-center md:pb-4 mdm:py-4 md:pt-18 bg-page-header bg-blue-200">{title}</h1>
         <div className="flex justify-center pt-12">
             <div className="container flex-row flex">
-                <div className="flex px-3 pb-12 w-1/4">
+                <div className="hidden md:flex px-3 pb-12 w-1/4">
                     <SideNav/>
                 </div>
                 <div className="flex-1 px-3">

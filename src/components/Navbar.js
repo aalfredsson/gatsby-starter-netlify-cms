@@ -104,6 +104,18 @@ const Navbar = class extends React.Component {
         )
     }
 
+    preventDef = (e) => {
+        e.preventDefault();
+    }
+
+    isPartiallyActive = ({
+        isPartiallyCurrent
+      }) => {
+        return isPartiallyCurrent
+          ? { className: "active" }
+          : null
+      }
+
     render() {
         const alu = this.state.theposition === 0 ? 'top-nav' : 'scroll-nav'
         return (
@@ -145,29 +157,35 @@ const Navbar = class extends React.Component {
                                     <h2>BRF Sandbacken</h2>
                                 </Link>
                                 <Link className="relative transition-super-fast hover:text-blue-500 mdm:hover:bg-blue-100 p-3 mdm:pl-6 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-item"
-                                    activeClassName="text-blue-500 mdm:bg-blue-100" to="/about">
+                                    activeClassName="text-blue-500 mdm:bg-blue-100 mdm:border-l-2 mdm:border-blue-500" to="/about">
                                     Om Föreningen
                                 </Link>
-                                    <div className="cursor-pointer">
-                                        <span onMouseEnter={this.handleHover} onMouseLeave={this.handleHover} onClick={() => this.redirect()}
-                                            className={`mdm:flex mdm:items-center mdm:justify-between relative transition-super-fast mdm:pl-6 hover:text-blue-500 mdm:hover:bg-blue-100 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-item`}
-                                            /*activeClassName="text-blue-500 mdm:bg-blue-100" partiallyActive={true} to="/lists/test-list/"*/>
-                                            {/* Fix partially active for test list. to=/lists and redirect lists to lists/test-list/ */}
-                                            Bo i BRF
-                                            <span><svg aria-hidden="true" className="svg-icon iconArrowRightAlt  native" width="18" height="18" viewBox="0 0 18 18"><path d="M6.41 2L5 3.41 10.59 9 5 14.59 6.41 16l7-7-7-7z"></path></svg></span>
+                                <Link to="/lists" getProps={this.isPartiallyActive} partiallyActive={true} activeClassName="sub-active" onClick={e => this.preventDef(e)}>
+                                    <div >
+                                        <div className={`mdm:flex mdm:items-center mdm:justify-between relative transition-super-fast mdm:pl-6 hover:text-blue-500 mdm:hover:bg-blue-100 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-item cursor-pointer`}>
+                                            <span /*onMouseEnter={() => this.redirect()} onMouseLeave={() => this.redirect()}*/ onClick={() => this.redirect()} className="flex justify-between w-full"
+                                                
+                                                /*activeClassName="text-blue-500 mdm:bg-blue-100" partiallyActive={true} to="/lists/test-list/"*/>
+                                                {/* Fix partially active for test list. to=/lists and redirect lists to lists/test-list/ */}
+                                                Bo i BRF
+                                                <span className="flex items-center md:hidden"><svg aria-hidden="true" className="svg-icon iconArrowRightAlt  native" width="18" height="18" viewBox="0 0 18 18"><path d="M6.41 2L5 3.41 10.59 9 5 14.59 6.41 16l7-7-7-7z"></path></svg></span>
 
-                                        </span>
+                                            </span>
+                                        </div>
+                                        <div className="md:absolute md:bg-white md:shadow">
+                                            <SideNav subNavActiveClass={`${this.state.subNavActiveClass}`}/>
+                                        </div>
                                     </div>
-                                    <SideNav subNavActiveClass={`${this.state.subNavActiveClass}`}/>
+                                </Link>
                                 <Link className="relative transition-super-fast hover:text-blue-500 mdm:hover:bg-blue-100 p-3 mdm:pl-6 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-item"
-                                    activeClassName="text-blue-500 mdm:bg-blue-100" partiallyActive={true} to="/blog">
+                                    activeClassName="text-blue-500 mdm:bg-blue-100 mdm:border-l-2 mdm:border-blue-500" partiallyActive={true} to="/blog">
                                     Anslagstavla
                                 </Link>
                                 <Link className="relative transition-super-fast hover:text-blue-500 mdm:hover:bg-blue-100 p-3 mdm:pl-6 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-item"
-                                    activeClassName="text-blue-500 mdm:bg-blue-100" to="/contact">
+                                    activeClassName="text-blue-500 mdm:bg-blue-100 mdm:border-l-2 mdm:border-blue-500" to="/contact">
                                     Närområde
                                 </Link>
-                                <Link className="relative transition-super-fast hover:text-blue-500 mdm:hover:bg-blue-100 p-3 mdm:pl-6 lg:p-4 mdm:menu-item" activeClassName="text-blue-500 mdm:bg-blue-100" to="/laundry">
+                                <Link className="relative transition-super-fast hover:text-blue-500 mdm:hover:bg-blue-100 p-3 mdm:pl-6 lg:p-4 mdm:menu-item" activeClassName="text-blue-500 mdm:bg-blue-100 mdm:border-l-2 mdm:border-blue-500" to="/laundry">
                                     Tvätt
                                 </Link>
                             </div>
