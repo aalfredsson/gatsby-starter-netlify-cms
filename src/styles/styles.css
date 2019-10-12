@@ -222,27 +222,68 @@ h3 {
     display: block;
 }
 
-.sub-nav {
+
+/*<svg aria-hidden="true" className="svg-icon iconArrowRightAlt  native" width="18" height="18" viewBox="0 0 18 18"><path d="M6.41 2L5 3.41 10.59 9 5 14.59 6.41 16l7-7-7-7z"></path></svg>*/
+
+.chevron {
+    position: relative;
+    text-align: center;
+    padding: 0px;
+    margin-bottom: 0px;
+    height: 4px;
+    width: 20px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    transition: transform 0.1s linear;
+}
+.chevron:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 51%;
+    background: black;
+    -webkit-transform: skew(0deg, 42deg);
+    transform: skew(0deg, 42deg);
+}
+.chevron:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background: black;
+    -webkit-transform: skew(0deg, -42deg);
+    transform: skew(0deg, -42deg);
+}
+
+input:checked + .subnav .chevron {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
 }
 
 @media screen and (min-width: 767px) {
-    
-    .sidenav-mobile  .he .sido {
-        display: none;
-    }
+  .sidenav-mobile  .subnav .sido {
+    display: none;
+  }
 
-    .sidenav-mobile:hover .he .sido {
-        display: block;
-    }
-
+  .sidenav-mobile:hover .subnav .sido {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 767px) {
-    
-    input:checked  + .he .sido {
-        display: block;
-    }
-
+  input:checked  + .subnav .sido {
+    display: block;
+  }
 }
 
 @keyframes sub-height-open {
