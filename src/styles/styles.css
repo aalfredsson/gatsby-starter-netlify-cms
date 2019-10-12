@@ -22,6 +22,8 @@ h3 {
   
 
 @responsive {
+
+    
     
     .is-active {
         display: flex !important;
@@ -96,6 +98,10 @@ h3 {
         width: 19rem;
     }
 
+}
+
+.sido {
+    display: none;
 }
 
 .test {
@@ -217,6 +223,26 @@ h3 {
 }
 
 .sub-nav {
+}
+
+@media screen and (min-width: 767px) {
+    
+    .sidenav-mobile  .he .sido {
+        display: none;
+    }
+
+    .sidenav-mobile:hover .he .sido {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    
+    input:checked  + .he .sido {
+        display: block;
+    }
+
 }
 
 @keyframes sub-height-open {
