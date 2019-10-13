@@ -22,7 +22,7 @@ export const IndexPageTemplate = ({
 }) => (
         <div>
             <div
-                className="flex text-white justify-center page-img"
+                className="flex text-white justify-center page-img relative"
                 style={{
                     backgroundImage: `linear-gradient(
                         rgba(0, 0, 0, 0.5),
@@ -34,8 +34,8 @@ export const IndexPageTemplate = ({
                     backgroundAttachment: `fixed`,
                     backgroundSize: 'cover'
                 }}>
-                <ImageGallery className="pt-12" items={test} showThumbnails={false} showPlayButton={false} showBullets={true} autoPlay={true} slideDuration={2500} />
-                <div className="flex flex-col text-center pb-48 absolute" style={{alignItems: 'center',webkitBoxPack: 'center',msFlexPack: 'center',justifyContent: 'center',height: '100%'}}>
+                <ImageGallery className="pt-12" items={test} showThumbnails={false} showPlayButton={false} showBullets={true} autoPlay={true} slideDuration={1000} slideInterval={8000}/>
+                <div className="flex flex-col text-center absolute" style={{alignItems: 'center',webkitBoxPack: 'center',msFlexPack: 'center',justifyContent: 'center',height: '100%'}}>
                     <h1
                         className="text-5xl py-4 px-3"
                         >
