@@ -1,8 +1,9 @@
 ---
 templateKey: index-page
 title: BRF Sandbacken Malmö
-images: 
-    - image: /img/20190913_153843.jpg
+images:
+  - image: /img/20190913_153843.jpg
+  - image: /img/products-full-width.jpg
 heading: BRF Sandbacken Malmö
 subheading: En hemtrevlig förening i mysiga Kirseberg
 mainpitch:
