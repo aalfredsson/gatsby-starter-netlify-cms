@@ -22,17 +22,17 @@ const Footer = class extends React.Component {
                   <ul className="">
                     <li className="relative transition-super-fast hover:text-blue-500 hover:bg-blue-100 menu-border-right menu-border-mobile menu-item rounded">
                       <Link to="/" className="navbar-item block p-3 lg:p-4">
-                        Home
+                        BRF Sandbacken
                       </Link>
                     </li>
                     <li className="relative transition-super-fast hover:text-blue-500 hover:bg-blue-100 menu-border-right menu-border-mobile menu-item rounded">
                       <Link className="navbar-item block p-3 lg:p-4" to="/about">
-                        About
+                        Om Föreningen
                       </Link>
                     </li>
                     <li className="relative transition-super-fast hover:text-blue-500 hover:bg-blue-100 menu-border-right menu-border-mobile menu-item rounded">
                       <Link className="navbar-item block p-3 lg:p-4" to="/products">
-                        Products
+                        Bo i BRF
                       </Link>
                     </li>
                     <li className="relative transition-super-fast hover:text-blue-500 hover:bg-blue-100 menu-border-right menu-border-mobile menu-item rounded">
@@ -58,7 +58,7 @@ const Footer = class extends React.Component {
                   <ul className="">
                     <li className="relative transition-super-fast hover:text-blue-500 hover:bg-blue-100 menu-border-right menu-border-mobile menu-item rounded">
                       <Link className="navbar-item block p-3 lg:p-4" to="/blog">
-                        Latest Stories
+                        Anslagstavla
                       </Link>
                     </li>
                     <li className="relative transition-super-fast hover:text-blue-500 hover:bg-blue-100 menu-border-right menu-border-mobile menu-item rounded">

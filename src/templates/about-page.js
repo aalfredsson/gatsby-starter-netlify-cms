@@ -17,9 +17,9 @@ export const AboutPageTemplate = ({ title, content, contentComponent, firstImage
             <div className="container">
                 <div className="">
                     <div className="flex flex-col lg:flex-row pt-12 ">
-                        <PageContent className="flex flex-col flex-1 pl-3 pr-8 lgm:pb-12 justify-center" content={content} />
+                        <PageContent className="flex flex-col flex-1 px-3 md:pr-8 lgm:pb-12 justify-center" content={content} />
                         <div
-                            className="flex text-white justify-center pr-3 pl-8 flex-1 page-img">
+                            className="flex text-white justify-center px-3 md:pl-8 flex-1 page-img">
                                 <img src={!!firstImage && !!firstImage.childImageSharp ? firstImage.childImageSharp.fluid.src : firstImage}></img>
                         </div>
                     </div>
