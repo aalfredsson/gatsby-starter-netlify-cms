@@ -11,7 +11,7 @@ import ImageGallery from 'react-image-gallery'
 import "../../node_modules/react-image-gallery/styles/css/image-gallery.css";
 
 export const IndexPageTemplate = ({
-    image,
+    images,
     title,
     heading,
     subheading,
@@ -23,18 +23,8 @@ export const IndexPageTemplate = ({
         <div>
             <div
                 className="flex text-white justify-center page-img relative"
-                style={{
-                    backgroundImage: `linear-gradient(
-                        rgba(0, 0, 0, 0.5),
-                        rgba(0, 0, 0, 0.5)
-                      ),url(${
-                        !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-                    })`,
-                    backgroundPosition: `top left`,
-                    backgroundAttachment: `fixed`,
-                    backgroundSize: 'cover'
-                }}>
-                <ImageGallery className="pt-12" items={test} showThumbnails={false} showPlayButton={false} showBullets={true} autoPlay={true} slideDuration={1000} slideInterval={8000}/>
+                >
+                <ImageGallery className="pt-12" items={images} showThumbnails={false} showPlayButton={false} showBullets={true} autoPlay={true} slideDuration={1000} slideInterval={8000}/>
                 <div className="flex flex-col text-center absolute" style={{alignItems: 'center',webkitBoxPack: 'center',msFlexPack: 'center',justifyContent: 'center',height: '100%'}}>
                     <h1
                         className="text-5xl py-4 px-3"
@@ -116,7 +106,7 @@ export const IndexPageTemplate = ({
     )
 
 IndexPageTemplate.propTypes = {
-    image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    images: PropTypes.array,
     title: PropTypes.string,
     heading: PropTypes.string,
     subheading: PropTypes.string,
@@ -129,29 +119,18 @@ IndexPageTemplate.propTypes = {
 
 const IndexPage = ({ data }) => {
     const { frontmatter } = data.markdownRemark
-    const images = [
-        {
-          original: 'https://picsum.photos/id/1018/1000/600/',
-          thumbnail: 'https://picsum.photos/id/1018/250/150/',
-          sizes: '80vh'
-        },
-        {
-          original: 'https://picsum.photos/id/1015/1000/600/',
-          thumbnail: 'https://picsum.photos/id/1015/250/150/',
-          sizes: '80vh'
-        },
-        {
-          original: 'https://picsum.photos/id/1019/1000/600/',
-          thumbnail: 'https://picsum.photos/id/1019/250/150/',
-          sizes: '80vh'
-        },
-      ]
-
+    const images = frontmatter.images.map(image => {
+        console.log(image);
+        return {
+            original: image.image.childImageSharp.fluid.src,
+            thumbnail: 'https://picsum.photos/id/1018/250/150/',
+            sizes: '80vh'
+        };
+    })
     return (
         <Layout>
             <IndexPageTemplate
-                test={images}
-                image={frontmatter.image}
+                images={images}
                 title={frontmatter.title}
                 heading={frontmatter.heading}
                 subheading={frontmatter.subheading}
@@ -178,12 +157,14 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
+        images {
+            image {
+                childImageSharp {
+                    fluid(maxWidth: 2048, quality: 100) {
+                    ...GatsbyImageSharpFluid
+                    }
+                }
             }
-          }
         }
         heading
         subheading
