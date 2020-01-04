@@ -79,5 +79,6 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: Document Upload, name: docloader, widget: list, fields: [{label: File, name: file, widget: "file", publicURL: ''}]}
       - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "MenuItem Name", name: "menuitem", widget: "string", required: true}
