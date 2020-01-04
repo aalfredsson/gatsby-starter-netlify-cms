@@ -2,6 +2,8 @@
 templateKey: list-page
 title: Test list
 description: Beautiful test description
+docloader:
+  - file: /img/ettdokument.docx
 tags:
   - Taggy
   - tag
