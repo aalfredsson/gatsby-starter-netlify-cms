@@ -203,7 +203,7 @@ const Navbar = class extends React.Component {
                                                             <span className="flex items-center md:hidden chevron"></span>
                                                         </span>
                                                     </div>
-                                                    <div className="md:absolute md:bg-white md:shadow sido">
+                                                    <div className="md:absolute md:bg-white md:shadow sido md:rounded-sm">
                                                         <SideNav />
                                                     </div>
                                                 </div>
