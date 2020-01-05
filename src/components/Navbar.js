@@ -200,10 +200,10 @@ const Navbar = class extends React.Component {
                                                     <div  className={`mdm:flex mdm:items-center mdm:justify-between relative transition-super-fast mdm:pl-6 hover:text-blue-500 mdm:hover:bg-blue-100 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-item cursor-pointer`}>
                                                         <span className="flex justify-between items-center w-full">
                                                             Bo i BRF
-                                                            <span className="flex items-center md:hidden chevron"></span>
+                                                            <span className="flex items-center md:hidden arrow right"></span>
                                                         </span>
                                                     </div>
-                                                    <div className="md:absolute md:bg-white md:shadow sido md:rounded-sm">
+                                                    <div className="md:absolute md:bg-white md:shadow-lg sido md:rounded-sm md:width-200px">
                                                         <SideNav />
                                                     </div>
                                                 </div>

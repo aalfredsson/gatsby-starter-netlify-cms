@@ -10,31 +10,32 @@ const TemplateWrapper = ({ children }) => {
   return (
     <div>
       <Helmet>
-        <html lang="en" />
+        <html lang="sv" />
         <title>{title}</title>
         <meta name="description" content={description} />
 
         <link
-          rel="apple-touch-icon"
+          rel="housing-cooperative"
           sizes="180x180"
-          href="/img/apple-touch-icon.png"
+          href="/img/housingcooperative_white.png"
         />
         <link
           rel="icon"
           type="image/png"
-          href="/img/favicon-32x32.png"
+          href="/img/housingcooperative_white.png"
           sizes="32x32"
         />
         <link
           rel="icon"
           type="image/png"
-          href="/img/favicon-16x16.png"
+          href="/img/housingcooperative_white.png"
           sizes="16x16"
+          color="#fff"
         />
 
         <link
           rel="mask-icon"
-          href="/img/safari-pinned-tab.svg"
+          href="/img/housingcooperative.svg"
           color="#ff4400"
         />
         <meta name="theme-color" content="#fff" />

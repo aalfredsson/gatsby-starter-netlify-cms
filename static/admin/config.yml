@@ -63,12 +63,20 @@ collections:
         label: "Laundry Page"
         name: "laundry"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "laundry-page"}
           - {label: Title, name: title, widget: string}
           - {label: Heading, name: heading, widget: string}
           - {label: Description, name: body, widget: markdown}
           - {label: iOs-app Url, name: iosurl, widget: string}
           - {label: Android-app Url, name: androidurl, widget: string}
+      - file: "src/pages/contact/index.md"
+        label: "Contact Page"
+        name: "contact"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page"}
+          - {label: Title, name: title, widget: string}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Description, name: body, widget: markdown}
   - name: "list"
     label: "List"
     folder: "src/pages/lists"
