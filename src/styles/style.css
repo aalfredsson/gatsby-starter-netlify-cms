@@ -842,8 +842,8 @@ h3 {
 
 .arrow {
   position: relative;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 32px;
+  /* height: 2.5rem; */
   display: inline-block;
   transition: transform 0.1s linear;
 }
@@ -883,22 +883,22 @@ h3 {
   .arrow.right:after {
   left: -5%;
   height: 4px;
-  width: 15px;
+  width: 19px;
 }
 
 .arrow.up,
   .arrow.down {
-  height: 12px;
+  height: 0px;
 }
 
 .arrow.up:before,
   .arrow.down:before {
-  left: 55%;
+  left: 38%;
 }
 
 .arrow.up:after,
   .arrow.down:after {
-  right: 55%;
+  right: 38%;
 }
 
 .arrow.up:before,
@@ -907,7 +907,7 @@ h3 {
   .arrow.down:after {
   top: -5%;
   height: 4px;
-  width: 15px;
+  width: 18px;
 }
 
 .arrow.left:before,
@@ -979,8 +979,8 @@ h3 {
   transform: skew(0deg, -42deg);
 }
 
-input:checked + .subnav .arrow.right {
-  transform: rotate(90deg);
+input:checked + .subnav .arrow.up {
+  transform: rotate(-180deg);
 }
 
 @media screen and (min-width: 767px) {
@@ -994,8 +994,26 @@ input:checked + .subnav .arrow.right {
 }
 
 @media screen and (max-width: 767px) {
+  .subnav {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+  }
+
   input:checked  + .subnav .sido {
     display: block;
+  }
+
+  input:checked  + .subnav {
+    transition: box-shadow 0.05s linear;
+    box-shadow: 0px 0px 6px rgba(0,0,0,0.04) inset;
+    border-top: 1px solid rgba(0,0,0,0.06);
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+  }
+
+  input:checked  + .subnav .active-submenu-header {
+    transition: margin-left 0.1s linear;
+    color: #ababab;
+    margin-left: 2px;
   }
 }
 

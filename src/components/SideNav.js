@@ -26,7 +26,7 @@ class SideNav extends React.Component {
           posts.map(({ node: post }) => (
               <li className=" hover:text-blue-500 hover:bg-blue-100" key={post.id}>
                   <Link
-                      className="md:px-4 md:py-2 py-2 px-8 block md:hover:translate-r-2px md:transition-fast md:hover:text-gray-900 md:text-gray-600 md:font-medium transition-super-fast hover:text-blue-500 mdm:hover:bg-blue-100"
+                      className="md:px-4 md:py-2 py-2 px-8 block md:hover:translate-r-2px md:transition-fast md:hover:text-gray-900 md:text-gray-600 md:font-medium transition-super-fast hover:text-blue-500"
                       to={post.fields.slug}
                       activeClassName="md:translate-r-2px md:text-gray-900 text-blue-500 mdm:bg-blue-100 mdm:border-l-2 mdm:border-blue-500"
                   >
