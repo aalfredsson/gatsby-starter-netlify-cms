@@ -165,7 +165,7 @@ const Navbar = class extends React.Component {
                         }}>
                         <div className="flex flex-grow justify-between container">
                             <div className="flex mdm:hidden">
-                                <Link className="relative transition-super-fast hover:text-blue-500 p-3 lg:p-4" to="/">
+                                <Link className="relative transition-super-fast hover:text-blue-1000 p-3 lg:p-4" to="/">
                                     <h2>BRF Sandbacken</h2>
                                 </Link>
                             </div>
@@ -184,12 +184,12 @@ const Navbar = class extends React.Component {
                                 id="navMenu"
                                 className={`mdm:navbar-menu mdm:fixed md:flex mdm:w-76  z-10 ${this.state.navBarActiveClass} `}>
                                 <div className="md:justify-end overflow-hidden flex flex-col md:flex-row mdm:w-full">
-                                    <Link className="relative md:hidden transition-super-fast hover:text-blue-500 p-6 lg:p-4 mdm:menu-item" style={{ lineHeight:'1.4',borderBottom: '1px solid rgba(0,0,0,0.1)' }}
-                                        activeClassName="text-blue-500 mdm:bg-blue-100" to="/">
+                                    <Link className="relative md:hidden transition-super-fast hover:text-blue-1000 p-6 lg:p-4 mdm:menu-item" style={{ lineHeight:'1.4',borderBottom: '1px solid rgba(0,0,0,0.1)' }}
+                                        activeClassName="text-blue-1000 mdm:bg-gray-100" to="/">
                                         <h2>BRF Sandbacken</h2>
                                     </Link>
-                                    <Link className="relative transition-super-fast hover:text-blue-500  p-3 mdm:pl-6 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-item"
-                                        activeClassName="text-blue-500 mdm:bg-blue-100 mdm:border-l-2 mdm:border-blue-500" to="/about">
+                                    <Link className="relative transition-super-fast hover:text-blue-1000  p-3 mdm:pl-6 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-item"
+                                        activeClassName="text-blue-1000 mdm:bg-gray-100 mdm:border-l-2 mdm:border-blue-500" to="/about">
                                         Om Föreningen
                                     </Link>
                                     <div>
@@ -197,7 +197,7 @@ const Navbar = class extends React.Component {
                                             <label className={`sidenav-mobile ${this.state.navBarActiveClass}`}>
                                                 <input type="checkbox" className="hidden" checked={this.state.subNavActive}  onChange={() => this.redirect('lists')}></input>
                                                 <div className="subnav w-full">
-                                                    <div  className={`mdm:flex mdm:items-center mdm:justify-between relative transition-super-fast mdm:pl-6 hover:text-blue-500 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-item cursor-pointer`}>
+                                                    <div  className={`mdm:flex mdm:items-center mdm:justify-between relative transition-super-fast mdm:pl-6 hover:text-blue-1000 p-3 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-item cursor-pointer`}>
                                                         <span className="flex justify-between items-center w-full active-submenu-header">
                                                             Bo i BRF
                                                             <span className="flex items-center md:hidden arrow up"></span>
@@ -213,15 +213,15 @@ const Navbar = class extends React.Component {
                                         
                                     </div>
 
-                                    <Link className="relative transition-super-fast hover:text-blue-500 p-3 mdm:pl-6 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-item"
-                                        activeClassName="text-blue-500 mdm:bg-blue-100 mdm:border-l-2 mdm:border-blue-500" partiallyActive={true} to="/blog">
+                                    <Link className="relative transition-super-fast hover:text-blue-1000 p-3 mdm:pl-6 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-item"
+                                        activeClassName="text-blue-1000 mdm:bg-gray-100 mdm:border-l-2 mdm:border-blue-500" partiallyActive={true} to="/blog">
                                         Anslagstavla
                                     </Link>
-                                    <Link className="relative transition-super-fast hover:text-blue-500 p-3 mdm:pl-6 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-item"
-                                        activeClassName="text-blue-500 mdm:bg-blue-100 mdm:border-l-2 mdm:border-blue-500" to="/contact">
-                                        Närområde
+                                    <Link className="relative transition-super-fast hover:text-blue-1000 p-3 mdm:pl-6 lg:p-4 menu-border-right menu-border-mobile md:menu-border mdm:menu-item"
+                                        activeClassName="text-blue-1000 mdm:bg-gray-100 mdm:border-l-2 mdm:border-blue-500" to="/contact">
+                                        Kontakt
                                     </Link>
-                                    <Link className="relative transition-super-fast hover:text-blue-500 p-3 mdm:pl-6 lg:p-4 mdm:menu-item" activeClassName="text-blue-500 mdm:bg-blue-100 mdm:border-l-2 mdm:border-blue-500" to="/laundry">
+                                    <Link className="relative transition-super-fast hover:text-blue-1000 p-3 mdm:pl-6 lg:p-4 mdm:menu-item" activeClassName="text-blue-1000 mdm:bg-gray-100 mdm:border-l-2 mdm:border-blue-500" to="/laundry">
                                         Tvätt
                                     </Link>
                                 </div>

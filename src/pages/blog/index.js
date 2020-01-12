@@ -11,9 +11,9 @@ export default class BlogIndexPage extends React.Component {
           className="full-width-image-container margin-top-0 pb-12"
         >
           <h1
-            className="text-center text-2xl md:pb-4 mdm:py-4 md:pt-18 bg-page-header bg-blue-200"
+            className="text-center text-2xl md:pb-4 mdm:py-4 md:pt-18 bg-page-header bg-blue-1000"
           >
-            Latest Stories
+            Anslagstavla
           </h1>
         </div>
         <section className="section flex justify-center py-6">

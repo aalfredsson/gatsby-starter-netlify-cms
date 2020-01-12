@@ -77,21 +77,19 @@ export const IndexPageTemplate = ({
                                     <div className="flex justify-center px-3">
                                         <div className="container">
                                             <div className="">
-                                                <Link className="btn" to="/products">
-                                                    See all products
-                                                </Link>
+                                                
                                             </div>
                                         </div>  
                                     </div>
                                     <div className="flex justify-center px-3 bg-gray-100 pb-12">
                                         <div className="container mdm:px-4">
                                             <h1 className="text-center py-12">
-                                                Latest stories
+                                                Anslagstavla
                                             </h1>
                                             <BlogRoll />
                                             <div className="pt-4">
                                                 <Link className="btn" to="/blog">
-                                                    Read more
+                                                    Läs mer
                                                 </Link>
                                             </div>
                                         </div>

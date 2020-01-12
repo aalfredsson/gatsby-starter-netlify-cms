@@ -18,8 +18,16 @@ h3 {
     .translate-r-2px {
         transform: translateX(2px)!important;
     }
+    .text-blue-1000 {
+        color: #6fc6eb; /*6FC6EB*//*90caf9*/
+    }
   }
   
+@variants active { 
+    .border-blue-1000 {
+        border-color: #6fc6eb;
+    }
+}
 
 @responsive {
 
@@ -57,7 +65,6 @@ h3 {
 
     .scroll-nav {
         background-color: white;
-        color: black;
         -webkit-transition: background-color 200ms ease-in-out;
         -ms-transition: background-color 200ms ease-in-out;
         transition: background-color 200ms ease-in-out;
@@ -102,6 +109,23 @@ h3 {
 
 }
 
+body {
+    color: #202020;
+}
+
+button:focus {
+    outline: none;
+}
+
+.bg-blue-1000 {
+    background-color: #6fc6eb;
+}
+
+
+.text-blue-1000 {
+    color: #6fc6eb;
+}
+
 .sido {
     display: none;
 }
@@ -140,7 +164,7 @@ h3 {
 }
 
 .blurb-heading {
-    background-color: #a3d7f5;
+    background-color: #6fc6eb; /*a3d7f5*/
     text-align: center;
     font-size: 18px;
     margin-bottom: 36px;
@@ -167,7 +191,7 @@ h3 {
     width: 0;
     height: 0;
     border: 10px solid #092131;
-    border-color: transparent transparent #a3d7f5 #a3d7f5;
+    border-color: transparent transparent #6fc6eb #6fc6eb;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     -webkit-transform-origin: 0 0;
@@ -377,6 +401,19 @@ input:checked + .subnav .arrow.up {
     -ms-transform: rotate(-180deg);
     -o-transform: rotate(-180deg);
     transform: rotate(-180deg);
+}
+
+.contact-form {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.contact-form:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.input:focus, .textarea:focus {
+    outline: none;
 }
 
 @media screen and (min-width: 767px) {

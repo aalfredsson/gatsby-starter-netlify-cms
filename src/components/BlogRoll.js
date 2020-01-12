@@ -51,7 +51,7 @@ class BlogRoll extends React.Component {
                   
                 </div>
                 <div className="button mt-auto">
-                    Keep Reading →
+                    Fortsätt läs →
                 </div>
               </article>
             </Link>

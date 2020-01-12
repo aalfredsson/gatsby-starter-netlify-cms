@@ -10,7 +10,7 @@ import vimeo from '../img/social/vimeo.svg'
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="bg-gray-700">
+      <footer className="bg-gray-800">
         <div className="page-img justify-center flex text-center">
           <span className="text-4xl pt-20 pb-8">BRF Sandbacken Malmö</span>
         </div>
@@ -33,11 +33,6 @@ const Footer = class extends React.Component {
                     <li className="relative transition-super-fast hover:text-blue-500 hover:bg-blue-100 menu-border-right menu-border-mobile menu-item rounded">
                       <Link className="navbar-item block p-3 lg:p-4" to="/products">
                         Bo i BRF
-                      </Link>
-                    </li>
-                    <li className="relative transition-super-fast hover:text-blue-500 hover:bg-blue-100 menu-border-right menu-border-mobile menu-item rounded">
-                      <Link className="navbar-item block p-3 lg:p-4" to="/contact/examples">
-                        Form Examples
                       </Link>
                     </li>
                     <li className="relative transition-super-fast hover:text-blue-500 hover:bg-blue-100 menu-border-right menu-border-mobile menu-item rounded">

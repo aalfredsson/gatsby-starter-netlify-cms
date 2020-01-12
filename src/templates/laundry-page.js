@@ -20,7 +20,7 @@ export const LaundryPageTemplate = ({
     return (
   <div className="">
      <div className="">
-        <h1 className="text-center md:pb-4 mdm:py-4 md:pt-18 bg-page-header bg-blue-200">
+        <h1 className="text-center md:pb-4 mdm:py-4 md:pt-18 bg-page-header bg-blue-1000">
             {title}
         </h1>
         <div className=" flex justify-center">
