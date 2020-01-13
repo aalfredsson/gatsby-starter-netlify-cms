@@ -63,7 +63,6 @@ ListsPage.propTypes = {
 
 const PagePost = ({ data }) => {
     const { markdownRemark: post } = data
-    console.log(post.frontmatter.docloader);
 
     return (
         <Layout>

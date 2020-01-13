@@ -29,9 +29,9 @@ export const ContactPageTemplate = ({
         <section className="flex flex-col pb-12">
             <h1 className="text-center md:pb-4 mdm:py-4 md:pt-18 bg-page-header bg-blue-1000">{title}</h1>
             <div className="flex justify-center pt-12">
-                <div className="container flex-col flex">
+                <div className="container flex-col flex px-3">
                     <ContactContent content={content} className={''} />
-                    <section className="section contact-form mx-auto w-2/4">
+                    <section className="section contact-form mx-auto lg:w-2/4 md:w-3/4 w-full">
                         <div className="container">
                             <div className="content">
                                 <form
@@ -50,7 +50,7 @@ export const ContactPageTemplate = ({
                                                 <input name="bot-field" />
                                             </label>
                                         </div>
-                                        <div className="field pb-1 mb-8 mt-4 w-2/4 mx-auto border-b">
+                                        <div className="field pb-1 mb-8 mt-4 md:w-3/4 mx-auto border-b">
                                             <div className="control">
                                                 <input
                                                     className="input w-full"
@@ -62,7 +62,7 @@ export const ContactPageTemplate = ({
                                                 />
                                             </div>
                                         </div>
-                                        <div className="field pb-1 mb-8 w-2/4 mx-auto border-b">
+                                        <div className="field pb-1 mb-8 md:w-3/4 mx-auto border-b">
                                             <div className="control">
                                                 <input
                                                     className="input w-full"
@@ -74,7 +74,7 @@ export const ContactPageTemplate = ({
                                                 />
                                             </div>
                                         </div>
-                                        <div className="field pb-1 mb-8 w-2/4 mx-auto border-b">
+                                        <div className="field pb-1 mb-8 md:w-3/4 mx-auto border-b">
                                             <div className="control">
                                                 <input
                                                     className="input w-full"
@@ -86,7 +86,7 @@ export const ContactPageTemplate = ({
                                                 />
                                             </div>
                                         </div>
-                                        <div className="field pb-1 mb-8 w-2/4 mx-auto border-b">
+                                        <div className="field pb-1 mb-8 md:w-3/4 mx-auto border-b">
                                             <div className="control">
                                                 <textarea
                                                     className="textarea w-full"
