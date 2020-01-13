@@ -2,6 +2,8 @@
 templateKey: list-page
 title: Avtal
 description: I föreningen har vi olika avtal.
+docloader:
+  - file: /img/ettdokument.docx
 menuitem: Avtal
 ---
 * Tv-avtal
