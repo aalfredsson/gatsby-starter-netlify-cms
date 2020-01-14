@@ -21,9 +21,21 @@ export const ContactPageTemplate = ({
     }
 
     const handleSubmit = e => {
+        //e.preventDefault()
+        //const uri = 'subject=' + document.getElementById('subject').value + '&body=' + document.getElementById('message').value
+        //window.open('mailto:mailexample@example.com?' + uri);
         e.preventDefault()
-        const uri = 'subject=' + document.getElementById('subject').value + '&body=' + document.getElementById('message').value
-        window.open('mailto:mailexample@example.com?' + uri);
+        const form = e.target
+        fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: encode({
+            'form-name': form.getAttribute('name'),
+            ...{ name: document.getElementById('name').value, subject: document.getElementById('subject').value,  email: document.getElementById('email').value, message: document.getElementById('message').value},
+          }),
+        })
+          .then(() => navigate(form.getAttribute('action')))
+          .catch(error => alert(error))
     }
     return (
         <section className="flex flex-col pb-12">
