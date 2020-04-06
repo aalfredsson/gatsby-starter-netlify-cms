@@ -11,7 +11,7 @@ mainpitch:
   description: >
     På Solgatan 28 A-J och Vattenverksvägen 17 A-D hittar du vår förening som
     grundades 1946. Husen byggdes i etapper med start 1946 och stod helt färdigt
-    1950. Här finns totalt 117 lägenheter där de flesta är tvårumslägenheter,
+    1950. Här finns totalt 115 lägenheter där de flesta är tvårumslägenheter,
     men även en- och trerumslägenheter finns.
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
