@@ -21,26 +21,26 @@ description: >-
 intro:
   blurbs:
     - image: /img/coffee.png
+      relation: Parkering
       text: >-
         Med nära till grönområden och cykelavstånd till centrum är Kirseberg en
         given favorit! Här finns mycket goda bussförbindelser och du tar dig
         enkel runt inom Malmö men även till Lund. Här finns butiker, pubar och
         konditori! Som en egen stad i staden. Klicka här för att få veta mer.
       textheading: Att Flytta hit
-      relation: s
     - image: /img/coffee-gear.png
+      relation: Tips och tricks
       text: >-
         Om du som medlem i föreningen har funderingar kring saker som
         avfallshantering, tvättbokning eller behöver komma i kontakt med
         styrelsen - klicka dig vidare här.
       textheading: För medlemmar
-      relation: s
     - image: /img/tutorials.png
+      relation: Avtal
       text: >
         För att på ett enkelt och smidigt sätt hantera bostadsförsäljning kan du
         som mäklare få den information du behöver här!
       textheading: För mäklare
-      relation: s
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
