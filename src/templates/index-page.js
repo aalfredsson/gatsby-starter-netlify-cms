@@ -182,6 +182,7 @@ export const pageQuery = graphql`
             }
             textheading
             text
+            relation
           }
           heading
           description
@@ -190,3 +191,5 @@ export const pageQuery = graphql`
     }
   }
 `
+
+

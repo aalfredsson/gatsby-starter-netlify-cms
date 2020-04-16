@@ -27,17 +27,20 @@ intro:
         enkel runt inom Malmö men även till Lund. Här finns butiker, pubar och
         konditori! Som en egen stad i staden. Klicka här för att få veta mer.
       textheading: Att Flytta hit
+      relation: s
     - image: /img/coffee-gear.png
       text: >-
         Om du som medlem i föreningen har funderingar kring saker som
         avfallshantering, tvättbokning eller behöver komma i kontakt med
         styrelsen - klicka dig vidare här.
       textheading: För medlemmar
+      relation: s
     - image: /img/tutorials.png
       text: >
         För att på ett enkelt och smidigt sätt hantera bostadsförsäljning kan du
         som mäklare få den information du behöver här!
       textheading: För mäklare
+      relation: s
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their

@@ -31,7 +31,7 @@ const Footer = class extends React.Component {
                       </Link>
                     </li>
                     <li className="relative transition-super-fast hover:text-blue-500 hover:bg-blue-100 menu-border-right menu-border-mobile menu-item rounded">
-                      <Link className="navbar-item block p-3 lg:p-4" to="/products">
+                      <Link className="navbar-item block p-3 lg:p-4" to="/lists/parkering/">
                         Bo i BRF
                       </Link>
                     </li>
