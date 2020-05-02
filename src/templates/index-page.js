@@ -58,7 +58,7 @@ export const IndexPageTemplate = ({
                                             <div className="text-center pt-8">
                                                 <h1 className="text-4xl">{mainpitch.title}</h1>
                                             </div>
-                                            <div className="flex justify-center text-center pt-4 pb-8">
+                                            <div className="flex justify-center text-center pt-4 pb-16">
                                                 <h3 className="max-w-4xl xl:max-w-6xl">{mainpitch.description}</h3>
                                             </div>
                                         </div>

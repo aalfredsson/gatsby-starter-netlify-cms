@@ -5,11 +5,11 @@ import { Link } from 'gatsby'
 
 
 const FeatureGrid = ({ gridItems }) => (
-    <div className="flex flex-col lg:flex-row mb-16 container">
+    <div className="flex flex-col lg:flex-row mb-20 container">
         {gridItems.slice(0, 3).map(item => (
-            <div key={item.text} className="lgm:pb-12 flex-1 lg:blurb-middle-item">
+            <div key={item.text} className="lgm:pb-16 flex-1 lg:blurb-middle-item">
                 <section className="flex flex-col cursor-pointer">
-                    <Link to={'/lists/' + item.relation + '/'}>
+                    <Link to={'/lists/' + fixedEncodeURI(item.relation) + '/'}>
                         <div className="blurb-heading"><span>{item.textheading}</span></div>
                         <div className="flex flex-row">
                             
@@ -31,6 +31,10 @@ const FeatureGrid = ({ gridItems }) => (
         ))}
     </div>
 )
+
+function fixedEncodeURI(str) {
+    return encodeURI(str).toLowerCase().replace(/%20/g, '-').replace(/%5B/g, '[').replace(/%5D/g, ']');
+}
 
 FeatureGrid.propTypes = {
     gridItems: PropTypes.arrayOf(

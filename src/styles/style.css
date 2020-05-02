@@ -792,13 +792,31 @@ button:focus {
 }
 
 .blurb-heading {
-  background-color: #6fc6eb; /*a3d7f5*/
+  /*background-color: #6fc6eb; /*a3d7f5
   text-align: center;
   font-size: 18px;
   margin-bottom: 36px;
   position: relative;
   width: auto;
   color: white;
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  z-index: -1;
+  box-shadow: 2px 2px 2px 0 rgba(9, 33, 49, 0.1);*/
+  background-color: #c9e9f8;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 36px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 500;
+  color: #333333;
   padding: 6px;
   display: flex;
   justify-content: center;
@@ -818,14 +836,14 @@ button:focus {
   width: 0;
   height: 0;
   border: 10px solid #092131;
-  border-color: transparent transparent #6fc6eb #6fc6eb;
+  border-color: transparent transparent #c9e9f8 #c9e9f8; /*#6fc6eb #6fc6eb*/
   transform: rotate(-45deg);
   transform-origin: 0 0;
   box-shadow: -2px 2px 2px 0 rgba(9, 33, 49, 0.1);
 }
 
 .blurb-heading span {
-  padding: 0px 2em;
+  padding: 0px 4em;
 }
 
 .mdm\:navbar-menu {
