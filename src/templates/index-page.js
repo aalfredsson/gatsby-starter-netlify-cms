@@ -116,6 +116,7 @@ IndexPageTemplate.propTypes = {
 }
 
 const IndexPage = ({ data }) => {
+    console.log(data.markdownRemark);
     const { frontmatter } = data.markdownRemark
     const images = frontmatter.images.map(image => {
         console.log(image);
