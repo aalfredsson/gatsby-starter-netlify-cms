@@ -13,30 +13,27 @@ mainpitch:
     grundades 1946. Husen byggdes i etapper med start 1946 och stod helt färdigt
     1950. Här finns totalt 115 lägenheter där de flesta är tvårumslägenheter,
     men även en- och trerumslägenheter finns.
-description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+description: Kaldi is the ultimate spot for coffee lovers who want to learn
+  about their java’s origin and support the farmers that grew it. We take coffee
+  production, roasting and brewing seriously and we’re glad to pass that
+  knowledge to anyone.
 intro:
   blurbs:
     - image: /img/coffee.png
-      relation: Parkering
-      text: >-
-        Med nära till grönområden och cykelavstånd till centrum är Kirseberg en
+      relation: Avtal
+      text: Med nära till grönområden och cykelavstånd till centrum är Kirseberg en
         given favorit! Här finns mycket goda bussförbindelser och du tar dig
         enkel runt inom Malmö men även till Lund. Här finns butiker, pubar och
         konditori! Som en egen stad i staden. Klicka här för att få veta mer.
       textheading: Att Flytta hit
     - image: /img/coffee-gear.png
-      relation: Tips och tricks
-      text: >-
-        Om du som medlem i föreningen har funderingar kring saker som
+      relation: Tips och åtricks
+      text: Om du som medlem i föreningen har funderingar kring saker som
         avfallshantering, tvättbokning eller behöver komma i kontakt med
         styrelsen - klicka dig vidare här.
       textheading: För medlemmar
     - image: /img/tutorials.png
-      relation: Avtal
+      relation: tipso trickså hej%20så
       text: >
         För att på ett enkelt och smidigt sätt hantera bostadsförsäljning kan du
         som mäklare få den information du behöver här!
@@ -64,4 +61,3 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 ---
-
