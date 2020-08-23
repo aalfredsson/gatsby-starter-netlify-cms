@@ -250,8 +250,8 @@ button:focus {
 
 .bg-page-header {
     text-shadow: 0px 0px 2px rgba(0,0,0,0.2);
-    background-color: white;
-    color: #808080;
+    background-color: #e8e8e8;
+    color: #3d3d3d;
     padding-left: 3.75rem;
     padding-right: 3.75rem;
 }
@@ -843,14 +843,6 @@ button:focus {
   right: 0;
   top: 0;
   background-color: #cccccc7a;
-}
-
-.bg-page-header {
-    background-color: #606A67;
-    text-shadow: 0px 0px 2px rgba(0,0,0,0.2);
-    color: white;
-    padding-left: 3.75rem;
-    padding-right: 3.75rem;
 }
 
 .sub-not-active {
