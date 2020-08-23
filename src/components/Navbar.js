@@ -61,7 +61,7 @@ const Navbar = class extends React.Component {
         } else {
             this.setState({
                 scrolled: false,
-                scrollClass: 'scroll-nav md:absolute',
+                scrollClass: 'nav-scroll-mode md:fixed top-0',
                 scrollTop: 'py-4',
                 navbarScrolled: 'burger-not-scroll',
             })
@@ -226,7 +226,7 @@ const Navbar = class extends React.Component {
                                                                 <span className="flex items-center md:hidden arrow up"></span>
                                                             </span>
                                                         </div>
-                                                        <div className="md:absolute md:bg-white md:shadow-lg sido md:rounded-sm md:width-200px md:mt-4">
+                                                        <div className="md:absolute md:bg-white md:shadow-lg sido md:rounded-sm md:width-200px">
                                                             <SideNav />
                                                         </div>
                                                     </div>
