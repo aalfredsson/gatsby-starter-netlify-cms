@@ -24,7 +24,7 @@ export const IndexPageTemplate = ({
             <div
                 className="flex text-white justify-center page-img relative"
                 >
-                <ImageGallery className="pt-12" items={images} showThumbnails={false} showPlayButton={false} showBullets={true} autoPlay={true} slideDuration={1000} slideInterval={8000}/>
+                <ImageGallery className="pt-12" items={images} showNav={false} showThumbnails={false} showPlayButton={false} showBullets={true} autoPlay={true} slideDuration={1000} slideInterval={8000}/>
                 <div className="flex flex-col text-center absolute" style={{alignItems: 'center',webkitBoxPack: 'center',msFlexPack: 'center',justifyContent: 'center',height: '100%'}}>
                     <h1
                         className="text-5xl py-4 px-3"
