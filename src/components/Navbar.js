@@ -61,7 +61,7 @@ const Navbar = class extends React.Component {
         } else {
             this.setState({
                 scrolled: false,
-                scrollClass: 'nav-scroll-mode md:fixed top-0',
+                scrollClass: 'scroll-nav md:absolute top-0',
                 scrollTop: 'py-4',
                 navbarScrolled: 'burger-not-scroll',
             })

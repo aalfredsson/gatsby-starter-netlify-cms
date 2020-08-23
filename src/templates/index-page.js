@@ -22,7 +22,7 @@ export const IndexPageTemplate = ({
 }) => (
         <div>
             <div
-                className="flex text-white justify-center page-img relative"
+                className="flex justify-center page-img relative front-page-header"
                 >
                 <ImageGallery className="pt-12" items={images} showNav={false} showThumbnails={false} showPlayButton={false} showBullets={true} autoPlay={true} slideDuration={1000} slideInterval={8000}/>
                 <div className="flex flex-col text-center absolute" style={{alignItems: 'center',webkitBoxPack: 'center',msFlexPack: 'center',justifyContent: 'center',height: '100%'}}>
